@@ -1,0 +1,10 @@
+[2021-01-04 00:23:32,925][ERROR][SERVER][OnExecute][reqsched_thread] [search][0] Collection retina_face not found: Collection retina_face not found
+[2021-01-04 00:23:32,926][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30100): Collection retina_face does not exist. Use milvus.has_collection to verify whether the collection exists. You also can check whether the collection name exists.
+[2021-01-04 00:25:38,876][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Entities IDs are user-defined. Please provide IDs for all entities of the collection.
+[2021-01-04 00:25:38,876][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30109): Entities IDs are user-defined. Please provide IDs for all entities of the collection.
+[2021-01-04 00:25:38,903][ERROR][SERVER][OnExecute][reqsched_thread] [search][0] Collection retina_face not found: Collection retina_face not found
+[2021-01-04 00:25:38,904][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30100): Collection retina_face does not exist. Use milvus.has_collection to verify whether the collection exists. You also can check whether the collection name exists.
+[2021-01-04 00:25:49,062][ERROR][SERVER][OnExecute][reqsched_thread] [search][0] Collection retina_face not found: Collection retina_face not found
+[2021-01-04 00:25:49,063][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30100): Collection retina_face does not exist. Use milvus.has_collection to verify whether the collection exists. You also can check whether the collection name exists.
+[2021-01-04 00:34:27,959][ERROR][SERVER][OnExecute][reqsched_thread] [search][0] Collection retina_face not found: Collection retina_face not found
+[2021-01-04 00:34:27,960][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30100): Collection retina_face does not exist. Use milvus.has_collection to verify whether the collection exists. You also can check whether the collection name exists.

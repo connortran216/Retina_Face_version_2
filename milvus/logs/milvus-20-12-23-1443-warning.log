@@ -1,0 +1,1 @@
+[2020-12-23 14:44:50,573][WARNING][ENGINE][CreateCollection][reqsched_thread] You are using SQLite as the meta data management, which can't be used in production. Please change it to MySQL!

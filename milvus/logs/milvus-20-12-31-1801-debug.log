@@ -1,0 +1,78 @@
+[2020-12-31 18:01:40,608][DEBUG][ENGINE][CheckCpuInstructionSet][milvus_server] Supported CPU instruction sets: avx2, sse4_2
+[2020-12-31 18:01:40,615][DEBUG][ENGINE][Initialize][milvus_server] FAISS hook AVX2
+[2020-12-31 18:01:40,618][DEBUG][ENGINE][Build][milvus_server] MetaUri: sqlite://:@:/
+
+[2020-12-31 18:01:40,761][DEBUG][ENGINE][SqlTransaction][milvus_server] CREATE TABLE IF NOT EXISTS Environment(global_lsn INTEGER DEFAULT (0) NOT NULL);
+[2020-12-31 18:01:40,762][DEBUG][ENGINE][SqlTransaction][milvus_server] CREATE TABLE IF NOT EXISTS Tables(id INTEGER PRIMARY KEY NOT NULL,table_id TEXT UNIQUE NOT NULL,state INTEGER NOT NULL,dimension INTEGER NOT NULL,created_on INTEGER NOT NULL,flag INTEGER DEFAULT (0) NOT NULL,index_file_size INTEGER NOT NULL,engine_type INTEGER NOT NULL,index_params TEXT NOT NULL,metric_type INTEGER NOT NULL,owner_table TEXT DEFAULT ('') NOT NULL,partition_tag TEXT DEFAULT ('') NOT NULL,version TEXT DEFAULT ('0.10.4') NOT NULL,flush_lsn INTEGER NOT NULL);
+[2020-12-31 18:01:40,790][DEBUG][ENGINE][SqlTransaction][milvus_server] CREATE TABLE IF NOT EXISTS TableFiles(id INTEGER PRIMARY KEY NOT NULL,table_id TEXT NOT NULL,segment_id TEXT DEFAULT ('') NOT NULL,engine_type INTEGER NOT NULL,file_id TEXT NOT NULL,file_type INTEGER NOT NULL,file_size INTEGER DEFAULT (0) NOT NULL,row_count INTEGER DEFAULT (0) NOT NULL,updated_time INTEGER NOT NULL,created_on INTEGER NOT NULL,date INTEGER NOT NULL,flush_lsn INTEGER NOT NULL);
+[2020-12-31 18:01:40,791][DEBUG][ENGINE][SqlTransaction][milvus_server] CREATE TABLE IF NOT EXISTS Fields(collection_id TEXT NOT NULL,field_name TEXT NOT NULL,field_type INTEGER NOT NULL,field_params TEXT NOT NULL);
+[2020-12-31 18:01:40,792][DEBUG][ENGINE][SqlTransaction][milvus_server] DELETE FROM TableFiles WHERE file_type IN (0,5,6);
+[2020-12-31 18:01:40,793][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, dimension, engine_type, index_params, index_file_size, metric_type,owner_table, partition_tag, version, flush_lsn FROM 'Tables' WHERE state <> 1;
+[2020-12-31 18:01:40,793][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, state, dimension, created_on, flag, index_file_size, engine_type, index_params, metric_type ,owner_table, partition_tag, version, flush_lsn FROM Tables WHERE table_id = 'resnet18_simple' AND state <> 1;
+[2020-12-31 18:01:40,795][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, file_id, file_type, file_size, row_count, date, engine_type, created_on, updated_time FROM 'TableFiles' WHERE table_id = 'resnet18_simple' AND file_type = 1 ORDER BY row_count DESC;
+[2020-12-31 18:01:40,798][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT global_lsn FROM Environment;
+[2020-12-31 18:01:40,798][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, state, dimension, created_on, flag, index_file_size, engine_type, index_params, metric_type ,owner_table, partition_tag, version, flush_lsn FROM Tables WHERE table_id = 'retina_face' AND state <> 1;
+[2020-12-31 18:01:40,798][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, dimension, engine_type, index_params, index_file_size, metric_type,owner_table, partition_tag, version, flush_lsn FROM 'Tables' WHERE state <> 1;
+[2020-12-31 18:01:40,799][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, file_id, file_type, file_size, row_count, date, engine_type, created_on, updated_time FROM 'TableFiles' WHERE table_id = 'retina_face' AND file_type = 1 ORDER BY row_count DESC;
+[2020-12-31 18:01:40,799][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT table_id, id, state, dimension, created_on, flag, index_file_size, engine_type, index_params, metric_type, partition_tag, version, flush_lsn FROM Tables WHERE owner_table = 'resnet18_simple' AND state <> 1;
+[2020-12-31 18:01:40,800][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT table_id, id, state, dimension, created_on, flag, index_file_size, engine_type, index_params, metric_type, partition_tag, version, flush_lsn FROM Tables WHERE owner_table = 'retina_face' AND state <> 1;
+[2020-12-31 18:01:40,800][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, engine_type, file_id, file_type, date FROM TableFiles WHERE file_type IN (4,7) AND updated_time < 1609408890800560;
+[2020-12-31 18:01:40,802][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id FROM Tables WHERE state = 1;
+[2020-12-31 18:01:40,802][DEBUG][WAL][Init][milvus_server] start_lsn 4295396812 end_lsn 4295442748
+[2020-12-31 18:01:40,852][DEBUG][ENGINE][SqlQuery][wal_thread] SELECT global_lsn FROM Environment;
+[2020-12-31 18:01:40,853][DEBUG][ENGINE][SetGlobalLastLSN][wal_thread] Update global lsn = 0
+[2020-12-31 18:01:40,854][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, engine_type, file_id, file_type, date FROM TableFiles WHERE file_type IN (4,7) AND updated_time < 1609408890854629;
+[2020-12-31 18:01:40,855][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id FROM Tables WHERE state = 1;
+[2020-12-31 18:01:41,852][DEBUG][ENGINE][SqlQuery][wal_thread] SELECT global_lsn FROM Environment;
+[2020-12-31 18:01:41,853][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, file_id, file_type, file_size, row_count, date, engine_type, created_on, updated_time FROM 'TableFiles' WHERE file_type = 2;
+[2020-12-31 18:01:41,854][DEBUG][ENGINE][SetGlobalLastLSN][wal_thread] Update global lsn = 0
+[2020-12-31 18:01:41,855][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, engine_type, file_id, file_type, date FROM TableFiles WHERE file_type IN (4,7) AND updated_time < 1609408891855750;
+[2020-12-31 18:01:41,856][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id FROM Tables WHERE state = 1;
+[2020-12-31 18:01:42,852][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, file_id, file_type, file_size, row_count, date, engine_type, created_on, updated_time FROM 'TableFiles' WHERE file_type = 2;
+[2020-12-31 18:01:42,855][DEBUG][ENGINE][SqlQuery][wal_thread] SELECT global_lsn FROM Environment;
+[2020-12-31 18:01:42,867][DEBUG][ENGINE][SetGlobalLastLSN][wal_thread] Update global lsn = 0
+[2020-12-31 18:01:42,867][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, engine_type, file_id, file_type, date FROM TableFiles WHERE file_type IN (4,7) AND updated_time < 1609408892867451;
+[2020-12-31 18:01:42,867][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id FROM Tables WHERE state = 1;
+[2020-12-31 18:01:43,853][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, file_id, file_type, file_size, row_count, date, engine_type, created_on, updated_time FROM 'TableFiles' WHERE file_type = 2;
+[2020-12-31 18:01:43,867][DEBUG][ENGINE][SqlQuery][wal_thread] SELECT global_lsn FROM Environment;
+[2020-12-31 18:01:43,868][DEBUG][ENGINE][SetGlobalLastLSN][wal_thread] Update global lsn = 0
+[2020-12-31 18:01:43,874][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, engine_type, file_id, file_type, date FROM TableFiles WHERE file_type IN (4,7) AND updated_time < 1609408893874320;
+[2020-12-31 18:01:43,874][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id FROM Tables WHERE state = 1;
+[2020-12-31 18:01:44,853][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, file_id, file_type, file_size, row_count, date, engine_type, created_on, updated_time FROM 'TableFiles' WHERE file_type = 2;
+[2020-12-31 18:01:44,874][DEBUG][ENGINE][SqlQuery][wal_thread] SELECT global_lsn FROM Environment;
+[2020-12-31 18:01:44,875][DEBUG][ENGINE][SetGlobalLastLSN][wal_thread] Update global lsn = 0
+[2020-12-31 18:01:44,876][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, engine_type, file_id, file_type, date FROM TableFiles WHERE file_type IN (4,7) AND updated_time < 1609408894876155;
+[2020-12-31 18:01:44,876][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id FROM Tables WHERE state = 1;
+[2020-12-31 18:01:45,854][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, file_id, file_type, file_size, row_count, date, engine_type, created_on, updated_time FROM 'TableFiles' WHERE file_type = 2;
+[2020-12-31 18:01:45,876][DEBUG][ENGINE][SqlQuery][wal_thread] SELECT global_lsn FROM Environment;
+[2020-12-31 18:01:45,879][DEBUG][ENGINE][SetGlobalLastLSN][wal_thread] Update global lsn = 0
+[2020-12-31 18:01:45,881][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, engine_type, file_id, file_type, date FROM TableFiles WHERE file_type IN (4,7) AND updated_time < 1609408895881133;
+[2020-12-31 18:01:45,882][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id FROM Tables WHERE state = 1;
+[2020-12-31 18:01:46,854][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, file_id, file_type, file_size, row_count, date, engine_type, created_on, updated_time FROM 'TableFiles' WHERE file_type = 2;
+[2020-12-31 18:01:46,881][DEBUG][ENGINE][SqlQuery][wal_thread] SELECT global_lsn FROM Environment;
+[2020-12-31 18:01:46,882][DEBUG][ENGINE][SetGlobalLastLSN][wal_thread] Update global lsn = 0
+[2020-12-31 18:01:46,883][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, engine_type, file_id, file_type, date FROM TableFiles WHERE file_type IN (4,7) AND updated_time < 1609408896883087;
+[2020-12-31 18:01:46,883][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id FROM Tables WHERE state = 1;
+[2020-12-31 18:01:47,855][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, file_id, file_type, file_size, row_count, date, engine_type, created_on, updated_time FROM 'TableFiles' WHERE file_type = 2;
+[2020-12-31 18:01:47,883][DEBUG][ENGINE][SqlQuery][wal_thread] SELECT global_lsn FROM Environment;
+[2020-12-31 18:01:47,886][DEBUG][ENGINE][SetGlobalLastLSN][wal_thread] Update global lsn = 0
+[2020-12-31 18:01:47,888][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, engine_type, file_id, file_type, date FROM TableFiles WHERE file_type IN (4,7) AND updated_time < 1609408897888523;
+[2020-12-31 18:01:47,890][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id FROM Tables WHERE state = 1;
+[2020-12-31 18:01:48,855][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, file_id, file_type, file_size, row_count, date, engine_type, created_on, updated_time FROM 'TableFiles' WHERE file_type = 2;
+[2020-12-31 18:01:48,888][DEBUG][ENGINE][SqlQuery][wal_thread] SELECT global_lsn FROM Environment;
+[2020-12-31 18:01:48,889][DEBUG][ENGINE][SetGlobalLastLSN][wal_thread] Update global lsn = 0
+[2020-12-31 18:01:48,889][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, engine_type, file_id, file_type, date FROM TableFiles WHERE file_type IN (4,7) AND updated_time < 1609408898889641;
+[2020-12-31 18:01:48,890][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id FROM Tables WHERE state = 1;
+[2020-12-31 18:01:49,856][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, file_id, file_type, file_size, row_count, date, engine_type, created_on, updated_time FROM 'TableFiles' WHERE file_type = 2;
+[2020-12-31 18:01:49,889][DEBUG][ENGINE][SqlQuery][wal_thread] SELECT global_lsn FROM Environment;
+[2020-12-31 18:01:49,890][DEBUG][ENGINE][SetGlobalLastLSN][wal_thread] Update global lsn = 0
+[2020-12-31 18:01:49,891][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, engine_type, file_id, file_type, date FROM TableFiles WHERE file_type IN (4,7) AND updated_time < 1609408899891299;
+[2020-12-31 18:01:49,891][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id FROM Tables WHERE state = 1;
+[2020-12-31 18:01:50,357][DEBUG][ENGINE][SqlQuery][wal_thread] SELECT global_lsn FROM Environment;
+[2020-12-31 18:01:50,357][DEBUG][ENGINE][SetGlobalLastLSN][wal_thread] Update global lsn = 0
+[2020-12-31 18:01:50,358][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, engine_type, file_id, file_type, date FROM TableFiles WHERE file_type IN (4,7) AND updated_time < 1609408900358317;
+[2020-12-31 18:01:50,358][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id FROM Tables WHERE state = 1;
+[2020-12-31 18:01:50,359][DEBUG][ENGINE][BackgroundWalThread][wal_thread] WAL background thread exit
+[2020-12-31 18:01:50,359][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, file_id, file_type, file_size, row_count, date, engine_type, created_on, updated_time FROM 'TableFiles' WHERE file_type = 2;
+[2020-12-31 18:01:50,360][DEBUG][ENGINE][BackgroundIndexThread][index_thread] DB background thread exit
+[2020-12-31 18:01:50,360][DEBUG][ENGINE][SqlTransaction][milvus_server] DELETE FROM TableFiles WHERE file_type IN (0,5,6);

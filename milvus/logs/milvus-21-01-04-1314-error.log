@@ -1,0 +1,5 @@
+[2021-01-04 13:17:29,808][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Entities IDs are user-defined. Please provide IDs for all entities of the collection.
+[2021-01-04 13:17:29,823][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30109): Entities IDs are user-defined. Please provide IDs for all entities of the collection.
+[2021-01-04 13:20:17,036][ERROR][SERVER][TakeToExecute][reqsched_thread] Take null from request queue, stop thread
+[2021-01-04 13:20:17,036][ERROR][SERVER][TakeToExecute][reqsched_thread] Take null from request queue, stop thread
+[2021-01-04 13:20:17,037][ERROR][SERVER][TakeToExecute][reqsched_thread] Take null from request queue, stop thread

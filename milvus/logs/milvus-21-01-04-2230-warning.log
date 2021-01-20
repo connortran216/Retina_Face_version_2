@@ -1,0 +1,6 @@
+[2021-01-04 22:36:44,719][WARNING][ENGINE][CreateCollectionFile][wal_thread] You are using SQLite as the meta data management, which can't be used in production. Please change it to MySQL!
+[2021-01-04 22:36:44,892][WARNING][ENGINE][CreateCollectionFile][milvus_server] You are using SQLite as the meta data management, which can't be used in production. Please change it to MySQL!
+[2021-01-04 22:38:30,720][WARNING][ENGINE][CreateCollectionFile][wal_thread] You are using SQLite as the meta data management, which can't be used in production. Please change it to MySQL!
+[2021-01-04 22:38:30,811][WARNING][ENGINE][CreateCollectionFile][milvus_server] You are using SQLite as the meta data management, which can't be used in production. Please change it to MySQL!
+[2021-01-04 22:38:43,325][WARNING][ENGINE][CreateCollectionFile][wal_thread] You are using SQLite as the meta data management, which can't be used in production. Please change it to MySQL!
+[2021-01-04 22:38:43,378][WARNING][ENGINE][CreateCollectionFile][milvus_server] You are using SQLite as the meta data management, which can't be used in production. Please change it to MySQL!

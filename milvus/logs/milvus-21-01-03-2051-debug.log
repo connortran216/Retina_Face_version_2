@@ -1,0 +1,18 @@
+[2021-01-03 20:51:16,923][DEBUG][ENGINE][CheckCpuInstructionSet][milvus_server] Supported CPU instruction sets: avx2, sse4_2
+[2021-01-03 20:51:16,942][DEBUG][ENGINE][Initialize][milvus_server] FAISS hook AVX2
+[2021-01-03 20:51:16,944][DEBUG][ENGINE][Build][milvus_server] MetaUri: sqlite://:@:/
+
+[2021-01-03 20:51:16,963][DEBUG][ENGINE][SqlTransaction][milvus_server] CREATE TABLE IF NOT EXISTS Environment(global_lsn INTEGER DEFAULT (0) NOT NULL);
+[2021-01-03 20:51:16,963][DEBUG][ENGINE][SqlTransaction][milvus_server] CREATE TABLE IF NOT EXISTS Tables(id INTEGER PRIMARY KEY NOT NULL,table_id TEXT UNIQUE NOT NULL,state INTEGER NOT NULL,dimension INTEGER NOT NULL,created_on INTEGER NOT NULL,flag INTEGER DEFAULT (0) NOT NULL,index_file_size INTEGER NOT NULL,engine_type INTEGER NOT NULL,index_params TEXT NOT NULL,metric_type INTEGER NOT NULL,owner_table TEXT DEFAULT ('') NOT NULL,partition_tag TEXT DEFAULT ('') NOT NULL,version TEXT DEFAULT ('0.10.4') NOT NULL,flush_lsn INTEGER NOT NULL);
+[2021-01-03 20:51:16,974][DEBUG][ENGINE][SqlTransaction][milvus_server] CREATE TABLE IF NOT EXISTS TableFiles(id INTEGER PRIMARY KEY NOT NULL,table_id TEXT NOT NULL,segment_id TEXT DEFAULT ('') NOT NULL,engine_type INTEGER NOT NULL,file_id TEXT NOT NULL,file_type INTEGER NOT NULL,file_size INTEGER DEFAULT (0) NOT NULL,row_count INTEGER DEFAULT (0) NOT NULL,updated_time INTEGER NOT NULL,created_on INTEGER NOT NULL,date INTEGER NOT NULL,flush_lsn INTEGER NOT NULL);
+[2021-01-03 20:51:16,974][DEBUG][ENGINE][SqlTransaction][milvus_server] CREATE TABLE IF NOT EXISTS Fields(collection_id TEXT NOT NULL,field_name TEXT NOT NULL,field_type INTEGER NOT NULL,field_params TEXT NOT NULL);
+[2021-01-03 20:51:16,975][DEBUG][ENGINE][SqlTransaction][milvus_server] DELETE FROM TableFiles WHERE file_type IN (0,5,6);
+[2021-01-03 20:51:16,976][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, dimension, engine_type, index_params, index_file_size, metric_type,owner_table, partition_tag, version, flush_lsn FROM 'Tables' WHERE state <> 1;
+[2021-01-03 20:51:16,977][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, state, dimension, created_on, flag, index_file_size, engine_type, index_params, metric_type ,owner_table, partition_tag, version, flush_lsn FROM Tables WHERE table_id = 'resnet18_simple' AND state <> 1;
+[2021-01-03 20:51:16,977][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, file_id, file_type, file_size, row_count, date, engine_type, created_on, updated_time FROM 'TableFiles' WHERE table_id = 'resnet18_simple' AND file_type = 1 ORDER BY row_count DESC;
+[2021-01-03 20:51:16,978][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT global_lsn FROM Environment;
+[2021-01-03 20:51:16,979][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, dimension, engine_type, index_params, index_file_size, metric_type,owner_table, partition_tag, version, flush_lsn FROM 'Tables' WHERE state <> 1;
+[2021-01-03 20:51:16,979][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT table_id, id, state, dimension, created_on, flag, index_file_size, engine_type, index_params, metric_type, partition_tag, version, flush_lsn FROM Tables WHERE owner_table = 'resnet18_simple' AND state <> 1;
+[2021-01-03 20:51:16,979][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id, segment_id, engine_type, file_id, file_type, date FROM TableFiles WHERE file_type IN (4,7) AND updated_time < 1609678266978724;
+[2021-01-03 20:51:16,980][DEBUG][WAL][Init][milvus_server] start_lsn 4295444836 end_lsn 8589938768
+[2021-01-03 20:51:16,980][DEBUG][ENGINE][SqlQuery][milvus_server] SELECT id, table_id FROM Tables WHERE state = 1;

@@ -1,0 +1,456 @@
+[2021-01-18 15:19:29,859][INFO][SERVER][Check][milvus_server] InstanceLockCheck passed.
+[2021-01-18 15:19:29,863][INFO][SERVER][Check][milvus_server] InstanceLockCheck passed.
+[2021-01-18 15:19:29,864][INFO][SERVER][Start][milvus_server] Milvus Release version: v0.10.4, built at 2020-12-01 14:51.19
+[2021-01-18 15:19:29,865][INFO][SERVER][Start][milvus_server] CPU edition
+[2021-01-18 15:19:29,873][INFO][SERVER][CheckCpuInstructionSet][milvus_server] Supported CPU instruction sets: avx2, sse4_2
+[2021-01-18 15:19:29,934][INFO][SERVER][LogConfigInFile][milvus_server] 
+
+***************Config in file***************
+
+version: 0.5
+cluster:
+  enable: false
+  role: rw
+general:
+  timezone: UTC+8
+  meta_uri: sqlite://:@:/
+network:
+  bind.address: 0.0.0.0
+  bind.port: 19530
+  http.enable: true
+  http.port: 19121
+storage:
+  path: /var/lib/milvus
+  auto_flush_interval: 1
+wal:
+  enable: true
+  recovery_error_ignore: false
+  buffer_size: 256MB
+  path: /var/lib/milvus/wal
+cache:
+  cache_size: 1GB
+  insert_buffer_size: 1GB
+  preload_collection: ~
+gpu:
+  enable: false
+  cache_size: 1GB
+  gpu_search_threshold: 1000
+  search_devices:
+    - gpu0
+  build_index_devices:
+    - gpu0
+fpga:
+  enable: false
+  search_devices:
+    - fpga0
+logs:
+  level: debug
+  trace.enable: true
+  path: /var/lib/milvus/logs
+  max_log_file_size: 1024MB
+  log_rotate_num: 0
+metric:
+  enable: false
+  address: 127.0.0.1
+  port: 9091
+[2021-01-18 15:19:29,985][INFO][SERVER][LogCpuInfo][milvus_server] 
+
+***************CPU***************
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+stepping	: 10
+microcode	: 0xffffffff
+cpu MHz		: 1799.998
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 1
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 21
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology cpuid pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 xsaves flush_l1d arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 3599.99
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+
+[2021-01-18 15:19:29,987][INFO][SERVER][LogConfigInMem][milvus_server] 
+
+***************Config in memory***************
+
+{
+   "cache": {
+      "cache_insert_data": "false",
+      "cache_size": "1GB",
+      "cpu_cache_threshold": "0.7",
+      "insert_buffer_size": "1GB",
+      "preload_collection": ""
+   },
+   "cluster": {
+      "enable": "false",
+      "role": "rw"
+   },
+   "db_config": {
+      "archive_days_threshold": "0",
+      "archive_disk_threshold": "0"
+   },
+   "engine_config": {
+      "max_partition_num": "4096",
+      "omp_thread_num": "0",
+      "simd_type": "auto",
+      "use_blas_threshold": "1100"
+   },
+   "general": {
+      "meta_uri": "sqlite://:@:/",
+      "timezone": "UTC+8"
+   },
+   "logs": {
+      "level": "debug",
+      "log_rotate_num": "0",
+      "max_log_file_size": "1024MB",
+      "path": "/var/lib/milvus/logs",
+      "trace.enable": "true"
+   },
+   "metric": {
+      "address": "127.0.0.1",
+      "enable": "false",
+      "port": "9091"
+   },
+   "network": {
+      "bind.address": "0.0.0.0",
+      "bind.port": "19530",
+      "http.enable": "true",
+      "http.port": "19121"
+   },
+   "storage": {
+      "auto_flush_interval": "1",
+      "path": "/var/lib/milvus"
+   },
+   "tracing_config": {
+      "json_config_path": ""
+   },
+   "wal": {
+      "buffer_size": "256MB",
+      "enable": "true",
+      "path": "/var/lib/milvus/wal",
+      "recovery_error_ignore": "false"
+   }
+}
+[2021-01-18 15:19:30,249][INFO][ENGINE][Build][milvus_server] Using SQLite
+[2021-01-18 15:19:39,473][INFO][SERVER][Cmd][grpcpp_sync_ser] Request [0] Cmd begin.
+[2021-01-18 15:19:39,475][INFO][SERVER][PutToQueue][grpcpp_sync_ser] Create new thread for request group: info
+[2021-01-18 15:19:39,477][INFO][SERVER][Cmd][grpcpp_sync_ser] Request [0] Cmd end.
+[2021-01-18 15:19:39,481][INFO][SERVER][HasCollection][grpcpp_sync_ser] Request [1] HasCollection begin.
+[2021-01-18 15:19:39,526][INFO][SERVER][HasCollection][grpcpp_sync_ser] Request [1] HasCollection end.
+[2021-01-18 15:21:59,575][INFO][SERVER][Cmd][grpcpp_sync_ser] Request [2] Cmd begin.
+[2021-01-18 15:21:59,576][INFO][SERVER][Cmd][grpcpp_sync_ser] Request [2] Cmd end.
+[2021-01-18 15:21:59,579][INFO][SERVER][HasCollection][grpcpp_sync_ser] Request [3] HasCollection begin.
+[2021-01-18 15:21:59,580][INFO][SERVER][HasCollection][grpcpp_sync_ser] Request [3] HasCollection end.
+[2021-01-18 15:40:41,608][INFO][SERVER][Search][grpcpp_sync_ser] Request [4] Search begin.
+[2021-01-18 15:40:41,631][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:40:41,664][INFO][SERVER][PutToQueue][grpcpp_sync_ser] Create new thread for request group: dql
+[2021-01-18 15:40:41,691][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:40:41,796][INFO][SERVER][CpuCacheMgr][reqsched_thread] cpu cache.size: 1073741824
+[2021-01-18 15:40:41,984][INFO][SERVER][Search][grpcpp_sync_ser] Request [4] Search end.
+[2021-01-18 15:40:42,065][INFO][SERVER][Search][grpcpp_sync_ser] Request [5] Search begin.
+[2021-01-18 15:40:42,065][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:40:42,066][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:40:42,076][INFO][SERVER][Search][grpcpp_sync_ser] Request [5] Search end.
+[2021-01-18 15:40:45,027][INFO][SERVER][Search][grpcpp_sync_ser] Request [6] Search begin.
+[2021-01-18 15:40:45,027][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:40:45,028][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:40:45,037][INFO][SERVER][Search][grpcpp_sync_ser] Request [6] Search end.
+[2021-01-18 15:40:45,217][INFO][SERVER][Search][grpcpp_sync_ser] Request [7] Search begin.
+[2021-01-18 15:40:45,217][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:40:45,218][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:40:45,228][INFO][SERVER][Search][grpcpp_sync_ser] Request [7] Search end.
+[2021-01-18 15:40:46,409][INFO][SERVER][Search][grpcpp_sync_ser] Request [8] Search begin.
+[2021-01-18 15:40:46,409][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:40:46,410][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:40:46,419][INFO][SERVER][Search][grpcpp_sync_ser] Request [8] Search end.
+[2021-01-18 15:40:48,503][INFO][SERVER][Search][grpcpp_sync_ser] Request [9] Search begin.
+[2021-01-18 15:40:48,503][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:40:48,504][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:40:48,519][INFO][SERVER][Search][grpcpp_sync_ser] Request [9] Search end.
+[2021-01-18 15:40:50,348][INFO][SERVER][Search][grpcpp_sync_ser] Request [10] Search begin.
+[2021-01-18 15:40:50,348][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:40:50,349][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:40:50,360][INFO][SERVER][Search][grpcpp_sync_ser] Request [10] Search end.
+[2021-01-18 15:40:52,356][INFO][SERVER][Search][grpcpp_sync_ser] Request [11] Search begin.
+[2021-01-18 15:40:52,357][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:40:52,358][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:40:52,373][INFO][SERVER][Search][grpcpp_sync_ser] Request [11] Search end.
+[2021-01-18 15:40:56,091][INFO][SERVER][Search][grpcpp_sync_ser] Request [12] Search begin.
+[2021-01-18 15:40:56,092][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:40:56,093][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:40:56,107][INFO][SERVER][Search][grpcpp_sync_ser] Request [12] Search end.
+[2021-01-18 15:47:12,979][INFO][SERVER][Insert][grpcpp_sync_ser] Request [13] Insert begin.
+[2021-01-18 15:47:12,980][INFO][SERVER][PutToQueue][grpcpp_sync_ser] Create new thread for request group: ddl_dml
+[2021-01-18 15:47:12,981][INFO][SERVER][OnExecute][reqsched_thread] [insert][0] Execute insert request.
+[2021-01-18 15:47:12,989][INFO][WAL][Insert][reqsched_thread] [insert][0]retina_face insert in part  with lsn 4295484508
+[2021-01-18 15:47:12,992][INFO][WAL][GetNextRecord][wal_thread] record type 2 collection retina_face lsn 4295484508
+[2021-01-18 15:47:12,995][INFO][SERVER][Insert][grpcpp_sync_ser] Request [13] Insert end.
+[2021-01-18 15:47:12,997][INFO][SERVER][Flush][grpcpp_sync_ser] Request [14] Flush begin.
+[2021-01-18 15:47:13,002][INFO][WAL][Flush][reqsched_thread] retina_face want to be flush, lsn 4295484508
+[2021-01-18 15:47:13,127][INFO][WAL][operator()][wal_thread] record flush collection retina_face lsn 4295484508
+[2021-01-18 15:47:13,317][INFO][WAL][CollectionFlushed][wal_thread] retina_face is flushed by lsn 4295484508
+[2021-01-18 15:47:13,319][INFO][SERVER][Flush][grpcpp_sync_ser] Request [14] Flush end.
+[2021-01-18 15:47:30,386][INFO][SERVER][Insert][grpcpp_sync_ser] Request [15] Insert begin.
+[2021-01-18 15:47:30,386][INFO][SERVER][OnExecute][reqsched_thread] [insert][0] Execute insert request.
+[2021-01-18 15:47:30,388][INFO][WAL][Insert][reqsched_thread] [insert][0]retina_face insert in part  with lsn 4295486596
+[2021-01-18 15:47:30,389][INFO][WAL][GetNextRecord][wal_thread] record type 2 collection retina_face lsn 4295486596
+[2021-01-18 15:47:30,391][INFO][SERVER][Insert][grpcpp_sync_ser] Request [15] Insert end.
+[2021-01-18 15:47:30,393][INFO][SERVER][Flush][grpcpp_sync_ser] Request [16] Flush begin.
+[2021-01-18 15:47:30,395][INFO][WAL][Flush][reqsched_thread] retina_face want to be flush, lsn 4295486596
+[2021-01-18 15:47:30,397][INFO][WAL][operator()][wal_thread] record flush collection retina_face lsn 4295486596
+[2021-01-18 15:47:30,438][INFO][WAL][CollectionFlushed][wal_thread] retina_face is flushed by lsn 4295486596
+[2021-01-18 15:47:30,439][INFO][SERVER][Flush][grpcpp_sync_ser] Request [16] Flush end.
+[2021-01-18 15:47:45,668][INFO][SERVER][Insert][grpcpp_sync_ser] Request [17] Insert begin.
+[2021-01-18 15:47:45,668][INFO][SERVER][OnExecute][reqsched_thread] [insert][0] Execute insert request.
+[2021-01-18 15:47:45,670][INFO][WAL][Insert][reqsched_thread] [insert][0]retina_face insert in part  with lsn 4295488684
+[2021-01-18 15:47:45,671][INFO][WAL][GetNextRecord][wal_thread] record type 2 collection retina_face lsn 4295488684
+[2021-01-18 15:47:45,674][INFO][SERVER][Insert][grpcpp_sync_ser] Request [17] Insert end.
+[2021-01-18 15:47:45,676][INFO][SERVER][Flush][grpcpp_sync_ser] Request [18] Flush begin.
+[2021-01-18 15:47:45,678][INFO][WAL][Flush][reqsched_thread] retina_face want to be flush, lsn 4295488684
+[2021-01-18 15:47:45,699][INFO][WAL][operator()][wal_thread] record flush collection retina_face lsn 4295488684
+[2021-01-18 15:47:45,733][INFO][WAL][CollectionFlushed][wal_thread] retina_face is flushed by lsn 4295488684
+[2021-01-18 15:47:45,735][INFO][SERVER][Flush][grpcpp_sync_ser] Request [18] Flush end.
+[2021-01-18 15:48:29,259][INFO][SERVER][Search][grpcpp_sync_ser] Request [19] Search begin.
+[2021-01-18 15:48:29,260][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:48:29,261][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:48:29,280][INFO][SERVER][Search][grpcpp_sync_ser] Request [19] Search end.
+[2021-01-18 15:48:29,329][INFO][SERVER][Search][grpcpp_sync_ser] Request [20] Search begin.
+[2021-01-18 15:48:29,330][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:48:29,330][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:48:29,340][INFO][SERVER][Search][grpcpp_sync_ser] Request [20] Search end.
+[2021-01-18 15:48:33,284][INFO][SERVER][Search][grpcpp_sync_ser] Request [21] Search begin.
+[2021-01-18 15:48:33,285][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:48:33,285][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:48:33,294][INFO][SERVER][Search][grpcpp_sync_ser] Request [21] Search end.
+[2021-01-18 15:48:33,545][INFO][SERVER][Search][grpcpp_sync_ser] Request [22] Search begin.
+[2021-01-18 15:48:33,546][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:48:33,546][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:48:33,561][INFO][SERVER][Search][grpcpp_sync_ser] Request [22] Search end.
+[2021-01-18 15:48:35,376][INFO][SERVER][Search][grpcpp_sync_ser] Request [23] Search begin.
+[2021-01-18 15:48:35,376][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:48:35,377][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:48:35,397][INFO][SERVER][Search][grpcpp_sync_ser] Request [23] Search end.
+[2021-01-18 15:48:39,797][INFO][SERVER][Search][grpcpp_sync_ser] Request [24] Search begin.
+[2021-01-18 15:48:39,798][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:48:39,799][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:48:39,814][INFO][SERVER][Search][grpcpp_sync_ser] Request [24] Search end.
+[2021-01-18 15:48:40,457][INFO][SERVER][Search][grpcpp_sync_ser] Request [25] Search begin.
+[2021-01-18 15:48:40,457][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:48:40,458][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:48:40,480][INFO][SERVER][Search][grpcpp_sync_ser] Request [25] Search end.
+[2021-01-18 15:48:41,655][INFO][SERVER][Search][grpcpp_sync_ser] Request [26] Search begin.
+[2021-01-18 15:48:41,656][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:48:41,656][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:48:41,666][INFO][SERVER][Search][grpcpp_sync_ser] Request [26] Search end.
+[2021-01-18 15:48:45,155][INFO][SERVER][Search][grpcpp_sync_ser] Request [27] Search begin.
+[2021-01-18 15:48:45,156][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:48:45,157][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:48:45,170][INFO][SERVER][Search][grpcpp_sync_ser] Request [27] Search end.
+[2021-01-18 15:50:07,037][INFO][SERVER][Search][grpcpp_sync_ser] Request [28] Search begin.
+[2021-01-18 15:50:07,037][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:50:07,040][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:50:07,050][INFO][SERVER][Search][grpcpp_sync_ser] Request [28] Search end.
+[2021-01-18 15:50:11,548][INFO][SERVER][Search][grpcpp_sync_ser] Request [29] Search begin.
+[2021-01-18 15:50:11,548][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:50:11,549][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:50:11,558][INFO][SERVER][Search][grpcpp_sync_ser] Request [29] Search end.
+[2021-01-18 15:50:12,119][INFO][SERVER][Search][grpcpp_sync_ser] Request [30] Search begin.
+[2021-01-18 15:50:12,119][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:50:12,120][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:50:12,129][INFO][SERVER][Search][grpcpp_sync_ser] Request [30] Search end.
+[2021-01-18 15:50:12,228][INFO][SERVER][Search][grpcpp_sync_ser] Request [31] Search begin.
+[2021-01-18 15:50:12,229][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:50:12,230][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:50:12,240][INFO][SERVER][Search][grpcpp_sync_ser] Request [31] Search end.
+[2021-01-18 15:50:13,849][INFO][SERVER][Search][grpcpp_sync_ser] Request [32] Search begin.
+[2021-01-18 15:50:13,850][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:50:13,850][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:50:13,862][INFO][SERVER][Search][grpcpp_sync_ser] Request [32] Search end.
+[2021-01-18 15:50:17,048][INFO][SERVER][Search][grpcpp_sync_ser] Request [33] Search begin.
+[2021-01-18 15:50:17,048][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:50:17,049][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:50:17,060][INFO][SERVER][Search][grpcpp_sync_ser] Request [33] Search end.
+[2021-01-18 15:50:19,335][INFO][SERVER][Search][grpcpp_sync_ser] Request [34] Search begin.
+[2021-01-18 15:50:19,338][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:50:19,340][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:50:19,359][INFO][SERVER][Search][grpcpp_sync_ser] Request [34] Search end.
+[2021-01-18 15:50:19,393][INFO][SERVER][Search][grpcpp_sync_ser] Request [35] Search begin.
+[2021-01-18 15:50:19,393][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:50:19,393][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:50:19,405][INFO][SERVER][Search][grpcpp_sync_ser] Request [35] Search end.
+[2021-01-18 15:50:22,731][INFO][SERVER][Search][grpcpp_sync_ser] Request [36] Search begin.
+[2021-01-18 15:50:22,732][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:50:22,733][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:50:22,744][INFO][SERVER][Search][grpcpp_sync_ser] Request [36] Search end.
+[2021-01-18 15:52:50,436][INFO][SERVER][Search][grpcpp_sync_ser] Request [37] Search begin.
+[2021-01-18 15:52:50,436][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:52:50,437][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:52:50,450][INFO][SERVER][Search][grpcpp_sync_ser] Request [37] Search end.
+[2021-01-18 15:52:50,556][INFO][SERVER][Search][grpcpp_sync_ser] Request [38] Search begin.
+[2021-01-18 15:52:50,557][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:52:50,558][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:52:50,575][INFO][SERVER][Search][grpcpp_sync_ser] Request [38] Search end.
+[2021-01-18 15:52:50,724][INFO][SERVER][Search][grpcpp_sync_ser] Request [39] Search begin.
+[2021-01-18 15:52:50,724][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:52:50,725][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:52:50,735][INFO][SERVER][Search][grpcpp_sync_ser] Request [39] Search end.
+[2021-01-18 15:52:55,427][INFO][SERVER][Search][grpcpp_sync_ser] Request [40] Search begin.
+[2021-01-18 15:52:55,427][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:52:55,428][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:52:55,438][INFO][SERVER][Search][grpcpp_sync_ser] Request [40] Search end.
+[2021-01-18 15:52:56,500][INFO][SERVER][Search][grpcpp_sync_ser] Request [41] Search begin.
+[2021-01-18 15:52:56,500][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:52:56,501][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:52:56,545][INFO][SERVER][Search][grpcpp_sync_ser] Request [41] Search end.
+[2021-01-18 15:52:56,580][INFO][SERVER][Search][grpcpp_sync_ser] Request [42] Search begin.
+[2021-01-18 15:52:56,580][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:52:56,583][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:52:56,608][INFO][SERVER][Search][grpcpp_sync_ser] Request [42] Search end.
+[2021-01-18 15:52:56,666][INFO][SERVER][Search][grpcpp_sync_ser] Request [43] Search begin.
+[2021-01-18 15:52:56,668][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:52:56,670][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:52:56,686][INFO][SERVER][Search][grpcpp_sync_ser] Request [43] Search end.
+[2021-01-18 15:53:04,650][INFO][SERVER][Search][grpcpp_sync_ser] Request [44] Search begin.
+[2021-01-18 15:53:04,651][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:53:04,651][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:53:04,667][INFO][SERVER][Search][grpcpp_sync_ser] Request [44] Search end.
+[2021-01-18 15:53:04,763][INFO][SERVER][Search][grpcpp_sync_ser] Request [45] Search begin.
+[2021-01-18 15:53:04,763][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:53:04,763][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:53:04,773][INFO][SERVER][Search][grpcpp_sync_ser] Request [45] Search end.
+[2021-01-18 15:53:05,402][INFO][SERVER][Search][grpcpp_sync_ser] Request [46] Search begin.
+[2021-01-18 15:53:05,402][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:53:05,403][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:53:05,415][INFO][SERVER][Search][grpcpp_sync_ser] Request [46] Search end.
+[2021-01-18 15:53:05,534][INFO][SERVER][Search][grpcpp_sync_ser] Request [47] Search begin.
+[2021-01-18 15:53:05,534][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:53:05,535][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:53:05,542][INFO][SERVER][Search][grpcpp_sync_ser] Request [47] Search end.
+[2021-01-18 15:53:10,846][INFO][SERVER][Search][grpcpp_sync_ser] Request [48] Search begin.
+[2021-01-18 15:53:10,846][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:53:10,847][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:53:10,857][INFO][SERVER][Search][grpcpp_sync_ser] Request [48] Search end.
+[2021-01-18 15:53:11,737][INFO][SERVER][Search][grpcpp_sync_ser] Request [49] Search begin.
+[2021-01-18 15:53:11,738][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:53:11,738][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:53:11,746][INFO][SERVER][Search][grpcpp_sync_ser] Request [49] Search end.
+[2021-01-18 15:53:12,071][INFO][SERVER][Search][grpcpp_sync_ser] Request [50] Search begin.
+[2021-01-18 15:53:12,071][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:53:12,072][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:53:12,083][INFO][SERVER][Search][grpcpp_sync_ser] Request [50] Search end.
+[2021-01-18 15:53:16,196][INFO][SERVER][Search][grpcpp_sync_ser] Request [51] Search begin.
+[2021-01-18 15:53:16,196][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:53:16,197][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:53:16,206][INFO][SERVER][Search][grpcpp_sync_ser] Request [51] Search end.
+[2021-01-18 15:53:17,426][INFO][SERVER][Search][grpcpp_sync_ser] Request [52] Search begin.
+[2021-01-18 15:53:17,426][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:53:17,427][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:53:17,470][INFO][SERVER][Search][grpcpp_sync_ser] Request [52] Search end.
+[2021-01-18 15:53:20,215][INFO][SERVER][Search][grpcpp_sync_ser] Request [53] Search begin.
+[2021-01-18 15:53:20,215][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:53:20,216][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:53:20,229][INFO][SERVER][Search][grpcpp_sync_ser] Request [53] Search end.
+[2021-01-18 15:53:21,216][INFO][SERVER][Search][grpcpp_sync_ser] Request [54] Search begin.
+[2021-01-18 15:53:21,216][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:53:21,217][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:53:21,231][INFO][SERVER][Search][grpcpp_sync_ser] Request [54] Search end.
+[2021-01-18 15:54:52,138][INFO][SERVER][Search][grpcpp_sync_ser] Request [55] Search begin.
+[2021-01-18 15:54:52,138][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:54:52,139][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:54:52,168][INFO][SERVER][Search][grpcpp_sync_ser] Request [55] Search end.
+[2021-01-18 15:54:52,446][INFO][SERVER][Search][grpcpp_sync_ser] Request [56] Search begin.
+[2021-01-18 15:54:52,446][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:54:52,448][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:54:52,474][INFO][SERVER][Search][grpcpp_sync_ser] Request [56] Search end.
+[2021-01-18 15:54:53,130][INFO][SERVER][Search][grpcpp_sync_ser] Request [57] Search begin.
+[2021-01-18 15:54:53,130][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:54:53,131][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:54:53,553][INFO][SERVER][Search][grpcpp_sync_ser] Request [57] Search end.
+[2021-01-18 15:54:53,585][INFO][SERVER][Search][grpcpp_sync_ser] Request [58] Search begin.
+[2021-01-18 15:54:53,585][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:54:53,585][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:54:53,617][INFO][SERVER][Search][grpcpp_sync_ser] Request [58] Search end.
+[2021-01-18 15:54:56,641][INFO][SERVER][Search][grpcpp_sync_ser] Request [59] Search begin.
+[2021-01-18 15:54:56,641][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:54:56,642][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:54:56,667][INFO][SERVER][Search][grpcpp_sync_ser] Request [59] Search end.
+[2021-01-18 15:55:00,228][INFO][SERVER][Search][grpcpp_sync_ser] Request [60] Search begin.
+[2021-01-18 15:55:00,228][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:55:00,229][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:55:00,237][INFO][SERVER][Search][grpcpp_sync_ser] Request [60] Search end.
+[2021-01-18 15:55:01,904][INFO][SERVER][Search][grpcpp_sync_ser] Request [61] Search begin.
+[2021-01-18 15:55:01,904][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:55:01,905][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:55:01,913][INFO][SERVER][Search][grpcpp_sync_ser] Request [61] Search end.
+[2021-01-18 15:55:04,517][INFO][SERVER][Search][grpcpp_sync_ser] Request [62] Search begin.
+[2021-01-18 15:55:04,517][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:55:04,517][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:55:04,527][INFO][SERVER][Search][grpcpp_sync_ser] Request [62] Search end.
+[2021-01-18 15:55:07,377][INFO][SERVER][Search][grpcpp_sync_ser] Request [63] Search begin.
+[2021-01-18 15:55:07,378][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:55:07,379][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:55:07,387][INFO][SERVER][Search][grpcpp_sync_ser] Request [63] Search end.
+[2021-01-18 15:55:08,276][INFO][SERVER][Search][grpcpp_sync_ser] Request [64] Search begin.
+[2021-01-18 15:55:08,276][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:55:08,277][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:55:08,286][INFO][SERVER][Search][grpcpp_sync_ser] Request [64] Search end.
+[2021-01-18 15:55:10,483][INFO][SERVER][Search][grpcpp_sync_ser] Request [65] Search begin.
+[2021-01-18 15:55:10,484][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:55:10,484][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:55:10,492][INFO][SERVER][Search][grpcpp_sync_ser] Request [65] Search end.
+[2021-01-18 15:55:11,602][INFO][SERVER][Search][grpcpp_sync_ser] Request [66] Search begin.
+[2021-01-18 15:55:11,602][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:55:11,603][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:55:11,611][INFO][SERVER][Search][grpcpp_sync_ser] Request [66] Search end.
+[2021-01-18 15:55:13,227][INFO][SERVER][Search][grpcpp_sync_ser] Request [67] Search begin.
+[2021-01-18 15:55:13,227][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:55:13,227][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:55:13,237][INFO][SERVER][Search][grpcpp_sync_ser] Request [67] Search end.
+[2021-01-18 15:55:16,613][INFO][SERVER][Search][grpcpp_sync_ser] Request [68] Search begin.
+[2021-01-18 15:55:16,614][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:55:16,614][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:55:16,626][INFO][SERVER][Search][grpcpp_sync_ser] Request [68] Search end.
+[2021-01-18 15:55:17,192][INFO][SERVER][Search][grpcpp_sync_ser] Request [69] Search begin.
+[2021-01-18 15:55:17,192][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:55:17,195][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:55:17,210][INFO][SERVER][Search][grpcpp_sync_ser] Request [69] Search end.
+[2021-01-18 15:55:20,335][INFO][SERVER][Search][grpcpp_sync_ser] Request [70] Search begin.
+[2021-01-18 15:55:20,336][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:55:20,337][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:55:20,355][INFO][SERVER][Search][grpcpp_sync_ser] Request [70] Search end.
+[2021-01-18 15:55:23,914][INFO][SERVER][Search][grpcpp_sync_ser] Request [71] Search begin.
+[2021-01-18 15:55:23,914][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:55:23,915][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:55:23,929][INFO][SERVER][Search][grpcpp_sync_ser] Request [71] Search end.
+[2021-01-18 15:55:27,531][INFO][SERVER][Search][grpcpp_sync_ser] Request [72] Search begin.
+[2021-01-18 15:55:27,531][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-18 15:55:27,532][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-18 15:55:27,544][INFO][SERVER][Search][grpcpp_sync_ser] Request [72] Search end.
+[2021-01-18 15:57:17,799][INFO][SERVER][HandleSignal][milvus_server] Release lock!15
+[2021-01-18 15:57:17,799][INFO][SERVER][HandleSignal][milvus_server] Server received critical signal: 15
+[2021-01-18 15:57:17,800][INFO][SERVER][PrintStacktrace][milvus_server] Call stack:
+[2021-01-18 15:57:19,125][INFO][SERVER][PrintStacktrace][milvus_server] /var/lib/milvus/bin/milvus_server() [0x6717ec]
+[2021-01-18 15:57:19,126][INFO][SERVER][PrintStacktrace][milvus_server] /var/lib/milvus/bin/milvus_server() [0x6722d4]
+[2021-01-18 15:57:19,126][INFO][SERVER][PrintStacktrace][milvus_server] /lib64/libc.so.6(+0x36400) [0x7eff999b2400]
+[2021-01-18 15:57:19,127][INFO][SERVER][PrintStacktrace][milvus_server] /lib64/libpthread.so.0(pause+0x2d) [0x7eff9a78df5d]
+[2021-01-18 15:57:19,127][INFO][SERVER][PrintStacktrace][milvus_server] /var/lib/milvus/bin/milvus_server() [0x428609]
+[2021-01-18 15:57:19,127][INFO][SERVER][PrintStacktrace][milvus_server] /lib64/libc.so.6(__libc_start_main+0xf5) [0x7eff9999e555]
+[2021-01-18 15:57:19,128][INFO][SERVER][PrintStacktrace][milvus_server] /var/lib/milvus/bin/milvus_server() [0x432727]
+[2021-01-18 15:57:23,457][INFO][SERVER][Stop][milvus_server] Scheduler gonna stop...
+[2021-01-18 15:57:23,459][INFO][SERVER][Stop][milvus_server] Scheduler stopped

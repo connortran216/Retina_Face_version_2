@@ -1,0 +1,361 @@
+[2020-12-28 14:36:06,532][INFO][SERVER][Check][milvus_server] InstanceLockCheck passed.
+[2020-12-28 14:36:06,534][INFO][SERVER][Check][milvus_server] InstanceLockCheck passed.
+[2020-12-28 14:36:06,534][INFO][SERVER][Start][milvus_server] Milvus Release version: v0.9.1, built at 2020-05-28 17:39.31
+[2020-12-28 14:36:06,534][INFO][SERVER][Start][milvus_server] CPU edition
+[2020-12-28 14:36:06,537][INFO][SERVER][CheckCpuInstructionSet][milvus_server] Supported CPU instruction sets: avx2, sse4_2
+[2020-12-28 14:36:06,541][INFO][SERVER][LogConfigInFile][milvus_server] 
+
+***************Config in file***************
+
+version: 0.4
+server_config:
+  address: 0.0.0.0
+  port: 19530
+  deploy_mode: single
+  time_zone: UTC+8
+  web_enable: true
+  web_port: 19121
+db_config:
+  backend_url: sqlite://:@:/
+  preload_collection: ~
+  auto_flush_interval: 1
+storage_config:
+  primary_path: /var/lib/milvus
+  secondary_path: ~
+  file_cleanup_timeout: 10
+metric_config:
+  enable_monitor: false
+  address: 127.0.0.1
+  port: 9091
+cache_config:
+  cpu_cache_capacity: 1
+  insert_buffer_size: 1
+  cache_insert_data: false
+engine_config:
+  use_blas_threshold: 1100
+  gpu_search_threshold: 1000
+gpu_resource_config:
+  enable: false
+  cache_capacity: 1
+  search_resources:
+    - gpu0
+  build_index_resources:
+    - gpu0
+tracing_config:
+  json_config_path: ~
+wal_config:
+  enable: true
+  recovery_error_ignore: true
+  buffer_size: 256
+  wal_path: /var/lib/milvus/wal
+logs:
+  trace.enable: true
+  debug.enable: true
+  info.enable: true
+  warning.enable: true
+  error.enable: true
+  fatal.enable: true
+  path: /var/lib/milvus/logs
+  max_log_file_size: 1024
+  log_rotate_num: 0
+[2020-12-28 14:36:06,542][INFO][SERVER][LogCpuInfo][milvus_server] 
+
+***************CPU***************
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+stepping	: 10
+microcode	: 0xffffffff
+cpu MHz		: 1800.000
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 1
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 21
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology cpuid pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 xsaves flush_l1d arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 3600.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+
+[2020-12-28 14:36:06,542][INFO][SERVER][LogConfigInMem][milvus_server] 
+
+***************Config in memory***************
+
+{
+   "cache_config": {
+      "cache_insert_data": "false",
+      "cpu_cache_capacity": "1",
+      "cpu_cache_threshold": "0.7",
+      "insert_buffer_size": "1"
+   },
+   "db_config": {
+      "archive_days_threshold": "0",
+      "archive_disk_threshold": "0",
+      "auto_flush_interval": "1",
+      "backend_url": "sqlite://:@:/",
+      "preload_collection": ""
+   },
+   "engine_config": {
+      "omp_thread_num": "0",
+      "simd_type": "auto",
+      "use_blas_threshold": "1100"
+   },
+   "logs": {
+      "debug.enable": "true",
+      "error.enable": "true",
+      "fatal.enable": "true",
+      "info.enable": "true",
+      "log_rotate_num": "0",
+      "max_log_file_size": "1024",
+      "path": "/var/lib/milvus/logs",
+      "trace.enable": "true",
+      "warning.enable": "true"
+   },
+   "metric_config": {
+      "address": "127.0.0.1",
+      "enable_monitor": "false",
+      "port": "9091"
+   },
+   "server_config": {
+      "address": "0.0.0.0",
+      "deploy_mode": "single",
+      "port": "19530",
+      "time_zone": "UTC+8",
+      "web_enable": "true",
+      "web_port": "19121"
+   },
+   "storage_config": {
+      "primary_path": "/var/lib/milvus",
+      "secondary_path": ""
+   },
+   "tracing_config": {
+      "json_config_path": ""
+   },
+   "wal_config": {
+      "buffer_size": "256",
+      "enable": "true",
+      "recovery_error_ignore": "true",
+      "wal_path": "/var/lib/milvus/wal"
+   }
+}
+[2020-12-28 14:36:06,574][INFO][ENGINE][Build][milvus_server] Using SQLite
+[2020-12-28 14:36:07,807][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:08,808][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:09,809][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:10,810][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:11,811][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:12,812][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:13,813][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:14,813][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:15,814][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:16,815][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:17,816][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:18,817][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:19,817][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:20,818][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:21,819][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:22,820][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:23,821][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:24,822][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:25,823][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:26,824][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:27,824][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:28,825][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:29,826][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:30,827][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:31,828][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:32,829][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:33,830][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:34,831][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:35,832][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:36,833][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:37,834][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:38,834][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:39,835][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:40,836][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:41,837][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:42,838][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:43,839][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:44,840][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:53,685][INFO][SERVER][Check][milvus_server] InstanceLockCheck passed.
+[2020-12-28 14:36:53,686][INFO][SERVER][Check][milvus_server] InstanceLockCheck passed.
+[2020-12-28 14:36:53,686][INFO][SERVER][Start][milvus_server] Milvus Release version: v0.9.1, built at 2020-05-28 17:39.31
+[2020-12-28 14:36:53,686][INFO][SERVER][Start][milvus_server] CPU edition
+[2020-12-28 14:36:53,691][INFO][SERVER][CheckCpuInstructionSet][milvus_server] Supported CPU instruction sets: avx2, sse4_2
+[2020-12-28 14:36:53,694][INFO][SERVER][LogConfigInFile][milvus_server] 
+
+***************Config in file***************
+
+version: 0.4
+server_config:
+  address: 0.0.0.0
+  port: 19530
+  deploy_mode: single
+  time_zone: UTC+8
+  web_enable: true
+  web_port: 19121
+db_config:
+  backend_url: sqlite://:@:/
+  preload_collection: ~
+  auto_flush_interval: 1
+storage_config:
+  primary_path: /var/lib/milvus
+  secondary_path: ~
+  file_cleanup_timeout: 10
+metric_config:
+  enable_monitor: false
+  address: 127.0.0.1
+  port: 9091
+cache_config:
+  cpu_cache_capacity: 1
+  insert_buffer_size: 1
+  cache_insert_data: false
+engine_config:
+  use_blas_threshold: 1100
+  gpu_search_threshold: 1000
+gpu_resource_config:
+  enable: false
+  cache_capacity: 1
+  search_resources:
+    - gpu0
+  build_index_resources:
+    - gpu0
+tracing_config:
+  json_config_path: ~
+wal_config:
+  enable: true
+  recovery_error_ignore: true
+  buffer_size: 256
+  wal_path: /var/lib/milvus/wal
+logs:
+  trace.enable: true
+  debug.enable: true
+  info.enable: true
+  warning.enable: true
+  error.enable: true
+  fatal.enable: true
+  path: /var/lib/milvus/logs
+  max_log_file_size: 1024
+  log_rotate_num: 0
+[2020-12-28 14:36:53,694][INFO][SERVER][LogCpuInfo][milvus_server] 
+
+***************CPU***************
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+stepping	: 10
+microcode	: 0xffffffff
+cpu MHz		: 1800.000
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 1
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 21
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology cpuid pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 xsaves flush_l1d arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 3600.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+
+[2020-12-28 14:36:53,694][INFO][SERVER][LogConfigInMem][milvus_server] 
+
+***************Config in memory***************
+
+{
+   "cache_config": {
+      "cache_insert_data": "false",
+      "cpu_cache_capacity": "1",
+      "cpu_cache_threshold": "0.7",
+      "insert_buffer_size": "1"
+   },
+   "db_config": {
+      "archive_days_threshold": "0",
+      "archive_disk_threshold": "0",
+      "auto_flush_interval": "1",
+      "backend_url": "sqlite://:@:/",
+      "preload_collection": ""
+   },
+   "engine_config": {
+      "omp_thread_num": "0",
+      "simd_type": "auto",
+      "use_blas_threshold": "1100"
+   },
+   "logs": {
+      "debug.enable": "true",
+      "error.enable": "true",
+      "fatal.enable": "true",
+      "info.enable": "true",
+      "log_rotate_num": "0",
+      "max_log_file_size": "1024",
+      "path": "/var/lib/milvus/logs",
+      "trace.enable": "true",
+      "warning.enable": "true"
+   },
+   "metric_config": {
+      "address": "127.0.0.1",
+      "enable_monitor": "false",
+      "port": "9091"
+   },
+   "server_config": {
+      "address": "0.0.0.0",
+      "deploy_mode": "single",
+      "port": "19530",
+      "time_zone": "UTC+8",
+      "web_enable": "true",
+      "web_port": "19121"
+   },
+   "storage_config": {
+      "primary_path": "/var/lib/milvus",
+      "secondary_path": ""
+   },
+   "tracing_config": {
+      "json_config_path": ""
+   },
+   "wal_config": {
+      "buffer_size": "256",
+      "enable": "true",
+      "recovery_error_ignore": "true",
+      "wal_path": "/var/lib/milvus/wal"
+   }
+}
+[2020-12-28 14:36:53,697][INFO][ENGINE][Build][milvus_server] Using SQLite
+[2020-12-28 14:36:54,800][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:55,801][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:56,802][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:57,803][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:58,803][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:36:59,804][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:37:00,805][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:37:01,806][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:37:02,807][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:37:03,808][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:37:04,808][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:37:05,809][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:37:06,810][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:37:07,811][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-28 14:37:08,811][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0

@@ -1,0 +1,34 @@
+version: '2'
+
+services:
+    ### ZOOKEEPER    
+    zookeeper:
+        image: wurstmeister/zookeeper
+        ports:
+            - "2181:2181"
+        networks:
+            facial_recognition_network:
+                aliases:
+                    -   zookeeper
+
+    ### KAFKA
+    kafka:
+        image: wurstmeister/kafka
+        ports:
+            - "9092:9092"
+            - "9093:9093"
+        environment:
+            KAFKA_ADVERTISED_LISTENERS: INSIDE://:9092, OUTSIDE://localhost:9093
+            KAFKA_LISTENERS: INSIDE://:9092,OUTSIDE://:9093
+            KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT
+            KAFKA_INTER_BROKER_LISTENER_NAME: INSIDE
+            KAFKA_CREATE_TOPICS: "embedder_request, embedder_response"
+            KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+            KAFKA_NUM_PARTITIONS: 10
+        networks:
+            facial_recognition_network:
+                aliases:
+                    - kafka
+networks:
+    facial_recognition_network:
+        external: true

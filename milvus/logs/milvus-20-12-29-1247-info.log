@@ -1,0 +1,234 @@
+[2020-12-29 12:47:14,411][INFO][SERVER][Check][milvus_server] InstanceLockCheck passed.
+[2020-12-29 12:47:14,412][INFO][SERVER][Check][milvus_server] InstanceLockCheck passed.
+[2020-12-29 12:47:14,412][INFO][SERVER][Start][milvus_server] Milvus Release version: v0.9.1, built at 2020-05-28 17:39.31
+[2020-12-29 12:47:14,412][INFO][SERVER][Start][milvus_server] CPU edition
+[2020-12-29 12:47:14,413][INFO][SERVER][CheckCpuInstructionSet][milvus_server] Supported CPU instruction sets: avx2, sse4_2
+[2020-12-29 12:47:14,416][INFO][SERVER][LogConfigInFile][milvus_server] 
+
+***************Config in file***************
+
+version: 0.4
+server_config:
+  address: 0.0.0.0
+  port: 19530
+  deploy_mode: single
+  time_zone: UTC+8
+  web_enable: true
+  web_port: 19121
+db_config:
+  backend_url: sqlite://:@:/
+  preload_collection: ~
+  auto_flush_interval: 1
+storage_config:
+  primary_path: /var/lib/milvus
+  secondary_path: ~
+  file_cleanup_timeout: 10
+metric_config:
+  enable_monitor: false
+  address: 127.0.0.1
+  port: 9091
+cache_config:
+  cpu_cache_capacity: 1
+  insert_buffer_size: 1
+  cache_insert_data: false
+engine_config:
+  use_blas_threshold: 1100
+  gpu_search_threshold: 1000
+gpu_resource_config:
+  enable: false
+  cache_capacity: 1
+  search_resources:
+    - gpu0
+  build_index_resources:
+    - gpu0
+tracing_config:
+  json_config_path: ~
+wal_config:
+  enable: true
+  recovery_error_ignore: true
+  buffer_size: 256
+  wal_path: /var/lib/milvus/wal
+logs:
+  trace.enable: true
+  debug.enable: true
+  info.enable: true
+  warning.enable: true
+  error.enable: true
+  fatal.enable: true
+  path: /var/lib/milvus/logs
+  max_log_file_size: 1024
+  log_rotate_num: 0
+[2020-12-29 12:47:14,430][INFO][SERVER][LogCpuInfo][milvus_server] 
+
+***************CPU***************
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+stepping	: 10
+microcode	: 0xffffffff
+cpu MHz		: 1799.999
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 1
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 21
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology cpuid pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 xsaves flush_l1d arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 3599.99
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+
+[2020-12-29 12:47:14,430][INFO][SERVER][LogConfigInMem][milvus_server] 
+
+***************Config in memory***************
+
+{
+   "cache_config": {
+      "cache_insert_data": "false",
+      "cpu_cache_capacity": "1",
+      "cpu_cache_threshold": "0.7",
+      "insert_buffer_size": "1"
+   },
+   "db_config": {
+      "archive_days_threshold": "0",
+      "archive_disk_threshold": "0",
+      "auto_flush_interval": "1",
+      "backend_url": "sqlite://:@:/",
+      "preload_collection": ""
+   },
+   "engine_config": {
+      "omp_thread_num": "0",
+      "simd_type": "auto",
+      "use_blas_threshold": "1100"
+   },
+   "logs": {
+      "debug.enable": "true",
+      "error.enable": "true",
+      "fatal.enable": "true",
+      "info.enable": "true",
+      "log_rotate_num": "0",
+      "max_log_file_size": "1024",
+      "path": "/var/lib/milvus/logs",
+      "trace.enable": "true",
+      "warning.enable": "true"
+   },
+   "metric_config": {
+      "address": "127.0.0.1",
+      "enable_monitor": "false",
+      "port": "9091"
+   },
+   "server_config": {
+      "address": "0.0.0.0",
+      "deploy_mode": "single",
+      "port": "19530",
+      "time_zone": "UTC+8",
+      "web_enable": "true",
+      "web_port": "19121"
+   },
+   "storage_config": {
+      "primary_path": "/var/lib/milvus",
+      "secondary_path": ""
+   },
+   "tracing_config": {
+      "json_config_path": ""
+   },
+   "wal_config": {
+      "buffer_size": "256",
+      "enable": "true",
+      "recovery_error_ignore": "true",
+      "wal_path": "/var/lib/milvus/wal"
+   }
+}
+[2020-12-29 12:47:14,432][INFO][ENGINE][Build][milvus_server] Using SQLite
+[2020-12-29 12:47:15,502][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:16,503][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:17,505][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:18,509][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:19,512][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:20,516][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:21,518][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:22,522][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:23,525][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:24,530][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:25,532][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:26,537][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:27,541][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:28,543][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:29,546][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:30,547][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:31,548][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:32,550][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:33,554][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:34,557][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:35,561][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:36,564][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:37,567][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:38,568][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:39,570][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:40,573][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:41,575][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:42,576][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:43,578][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:44,581][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:45,582][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:46,584][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:47,588][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:48,589][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:49,590][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:50,592][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:51,595][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:52,597][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:53,599][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:54,601][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:55,603][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:56,607][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:57,609][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:58,611][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:47:59,614][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:00,617][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:01,621][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:02,624][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:03,628][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:04,632][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:05,635][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:06,638][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:07,640][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:08,643][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:09,644][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:10,645][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:11,646][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:12,648][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:13,650][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:14,652][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:15,653][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:16,654][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:17,657][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:18,659][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:19,662][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:20,664][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:21,667][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:22,670][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:23,671][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:24,674][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:25,675][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:26,676][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:27,679][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:28,681][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:29,683][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:30,685][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:31,686][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:32,688][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:33,689][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0
+[2020-12-29 12:48:34,691][INFO][WAL][CollectionFlushed][wal_thread]  is flushed by lsn 0

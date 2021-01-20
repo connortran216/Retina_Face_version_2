@@ -1,0 +1,267 @@
+[2021-01-04 00:19:26,899][INFO][SERVER][Check][milvus_server] InstanceLockCheck passed.
+[2021-01-04 00:19:26,901][INFO][SERVER][Check][milvus_server] InstanceLockCheck passed.
+[2021-01-04 00:19:26,901][INFO][SERVER][Start][milvus_server] Milvus Release version: v0.10.4, built at 2020-12-01 14:51.19
+[2021-01-04 00:19:26,902][INFO][SERVER][Start][milvus_server] CPU edition
+[2021-01-04 00:19:26,902][INFO][SERVER][CheckCpuInstructionSet][milvus_server] Supported CPU instruction sets: avx2, sse4_2
+[2021-01-04 00:19:26,905][INFO][SERVER][LogConfigInFile][milvus_server] 
+
+***************Config in file***************
+
+version: 0.5
+cluster:
+  enable: false
+  role: rw
+general:
+  timezone: UTC+8
+  meta_uri: sqlite://:@:/
+network:
+  bind.address: 0.0.0.0
+  bind.port: 19530
+  http.enable: true
+  http.port: 19121
+storage:
+  path: /var/lib/milvus
+  auto_flush_interval: 1
+wal:
+  enable: true
+  recovery_error_ignore: false
+  buffer_size: 256MB
+  path: /var/lib/milvus/wal
+cache:
+  cache_size: 1GB
+  insert_buffer_size: 1GB
+  preload_collection: ~
+gpu:
+  enable: false
+  cache_size: 1GB
+  gpu_search_threshold: 1000
+  search_devices:
+    - gpu0
+  build_index_devices:
+    - gpu0
+fpga:
+  enable: false
+  search_devices:
+    - fpga0
+logs:
+  level: debug
+  trace.enable: true
+  path: /var/lib/milvus/logs
+  max_log_file_size: 1024MB
+  log_rotate_num: 0
+metric:
+  enable: false
+  address: 127.0.0.1
+  port: 9091
+[2021-01-04 00:19:26,929][INFO][SERVER][LogCpuInfo][milvus_server] 
+
+***************CPU***************
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+stepping	: 10
+microcode	: 0xffffffff
+cpu MHz		: 1799.999
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 1
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 21
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology cpuid pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single ssbd ibrs ibpb stibp fsgsbase bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 xsaves flush_l1d arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 3599.99
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+
+[2021-01-04 00:19:26,932][INFO][SERVER][LogConfigInMem][milvus_server] 
+
+***************Config in memory***************
+
+{
+   "cache": {
+      "cache_insert_data": "false",
+      "cache_size": "1GB",
+      "cpu_cache_threshold": "0.7",
+      "insert_buffer_size": "1GB",
+      "preload_collection": ""
+   },
+   "cluster": {
+      "enable": "false",
+      "role": "rw"
+   },
+   "db_config": {
+      "archive_days_threshold": "0",
+      "archive_disk_threshold": "0"
+   },
+   "engine_config": {
+      "max_partition_num": "4096",
+      "omp_thread_num": "0",
+      "simd_type": "auto",
+      "use_blas_threshold": "1100"
+   },
+   "general": {
+      "meta_uri": "sqlite://:@:/",
+      "timezone": "UTC+8"
+   },
+   "logs": {
+      "level": "debug",
+      "log_rotate_num": "0",
+      "max_log_file_size": "1024MB",
+      "path": "/var/lib/milvus/logs",
+      "trace.enable": "true"
+   },
+   "metric": {
+      "address": "127.0.0.1",
+      "enable": "false",
+      "port": "9091"
+   },
+   "network": {
+      "bind.address": "0.0.0.0",
+      "bind.port": "19530",
+      "http.enable": "true",
+      "http.port": "19121"
+   },
+   "storage": {
+      "auto_flush_interval": "1",
+      "path": "/var/lib/milvus"
+   },
+   "tracing_config": {
+      "json_config_path": ""
+   },
+   "wal": {
+      "buffer_size": "256MB",
+      "enable": "true",
+      "path": "/var/lib/milvus/wal",
+      "recovery_error_ignore": "false"
+   }
+}
+[2021-01-04 00:19:26,944][INFO][ENGINE][Build][milvus_server] Using SQLite
+[2021-01-04 00:23:32,504][INFO][SERVER][Cmd][grpcpp_sync_ser] Request [0] Cmd begin.
+[2021-01-04 00:23:32,505][INFO][SERVER][PutToQueue][grpcpp_sync_ser] Create new thread for request group: info
+[2021-01-04 00:23:32,508][INFO][SERVER][Cmd][grpcpp_sync_ser] Request [0] Cmd end.
+[2021-01-04 00:23:32,513][INFO][SERVER][HasCollection][grpcpp_sync_ser] Request [1] HasCollection begin.
+[2021-01-04 00:23:32,532][INFO][SERVER][HasCollection][grpcpp_sync_ser] Request [1] HasCollection end.
+[2021-01-04 00:23:32,535][INFO][SERVER][Insert][grpcpp_sync_ser] Request [2] Insert begin.
+[2021-01-04 00:23:32,535][INFO][SERVER][PutToQueue][grpcpp_sync_ser] Create new thread for request group: ddl_dml
+[2021-01-04 00:23:32,536][INFO][SERVER][OnExecute][reqsched_thread] [insert][0] Execute insert request.
+[2021-01-04 00:23:32,555][INFO][WAL][Insert][reqsched_thread] [insert][0]retina_face insert in part  with lsn 4295386372
+[2021-01-04 00:23:32,556][INFO][WAL][GetNextRecord][wal_thread] record type 2 collection retina_face lsn 4295386372
+[2021-01-04 00:23:32,561][INFO][SERVER][Insert][grpcpp_sync_ser] Request [2] Insert end.
+[2021-01-04 00:23:32,563][INFO][SERVER][Flush][grpcpp_sync_ser] Request [3] Flush begin.
+[2021-01-04 00:23:32,580][INFO][WAL][Flush][reqsched_thread] retina_face want to be flush, lsn 4295386372
+[2021-01-04 00:23:32,585][INFO][WAL][operator()][wal_thread] record flush collection retina_face lsn 4295386372
+[2021-01-04 00:23:32,711][INFO][WAL][CollectionFlushed][wal_thread] retina_face is flushed by lsn 4295386372
+[2021-01-04 00:23:32,713][INFO][SERVER][Flush][grpcpp_sync_ser] Request [3] Flush end.
+[2021-01-04 00:23:32,715][INFO][SERVER][DropCollection][grpcpp_sync_ser] Request [4] DropCollection begin.
+[2021-01-04 00:23:32,720][INFO][WAL][DropCollection][reqsched_thread] drop collection retina_face
+[2021-01-04 00:23:32,733][INFO][WAL][Flush][reqsched_thread]  want to be flush, lsn 4295386372
+[2021-01-04 00:23:32,733][INFO][WAL][operator()][wal_thread] record flush collection  lsn 4295386372
+[2021-01-04 00:23:32,920][INFO][SERVER][DropCollection][grpcpp_sync_ser] Request [4] DropCollection end.
+[2021-01-04 00:23:32,922][INFO][SERVER][Search][grpcpp_sync_ser] Request [5] Search begin.
+[2021-01-04 00:23:32,923][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-04 00:23:32,923][INFO][SERVER][PutToQueue][grpcpp_sync_ser] Create new thread for request group: dql
+[2021-01-04 00:23:32,924][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-04 00:23:32,927][INFO][SERVER][Search][grpcpp_sync_ser] Request [5] Search end.
+[2021-01-04 00:23:42,971][INFO][SERVER][CpuCacheMgr][milvus_server] cpu cache.size: 1073741824
+[2021-01-04 00:25:01,734][INFO][SERVER][Cmd][grpcpp_sync_ser] Request [6] Cmd begin.
+[2021-01-04 00:25:01,735][INFO][SERVER][Cmd][grpcpp_sync_ser] Request [6] Cmd end.
+[2021-01-04 00:25:01,738][INFO][SERVER][HasCollection][grpcpp_sync_ser] Request [7] HasCollection begin.
+[2021-01-04 00:25:01,739][INFO][SERVER][HasCollection][grpcpp_sync_ser] Request [7] HasCollection end.
+[2021-01-04 00:25:01,741][INFO][SERVER][CreateCollection][grpcpp_sync_ser] Request [8] CreateCollection begin.
+[2021-01-04 00:25:01,742][INFO][WAL][CreateCollection][reqsched_thread] create collection retina_face 4295386372
+[2021-01-04 00:25:01,751][INFO][SERVER][CreateCollection][grpcpp_sync_ser] Request [8] CreateCollection end.
+[2021-01-04 00:25:01,753][INFO][SERVER][DescribeCollection][grpcpp_sync_ser] Request [9] DescribeCollection begin.
+[2021-01-04 00:25:01,754][INFO][SERVER][DescribeCollection][grpcpp_sync_ser] Request [9] DescribeCollection end.
+[2021-01-04 00:25:01,756][INFO][SERVER][Insert][grpcpp_sync_ser] Request [10] Insert begin.
+[2021-01-04 00:25:01,756][INFO][SERVER][OnExecute][reqsched_thread] [insert][0] Execute insert request.
+[2021-01-04 00:25:01,758][INFO][WAL][Insert][reqsched_thread] [insert][0]retina_face insert in part  with lsn 4295388460
+[2021-01-04 00:25:01,759][INFO][WAL][GetNextRecord][wal_thread] record type 2 collection retina_face lsn 4295388460
+[2021-01-04 00:25:01,762][INFO][SERVER][Insert][grpcpp_sync_ser] Request [10] Insert end.
+[2021-01-04 00:25:01,765][INFO][SERVER][Flush][grpcpp_sync_ser] Request [11] Flush begin.
+[2021-01-04 00:25:01,768][INFO][WAL][Flush][reqsched_thread] retina_face want to be flush, lsn 4295388460
+[2021-01-04 00:25:01,768][INFO][WAL][operator()][wal_thread] record flush collection retina_face lsn 4295388460
+[2021-01-04 00:25:01,805][INFO][WAL][CollectionFlushed][wal_thread] retina_face is flushed by lsn 4295388460
+[2021-01-04 00:25:01,806][INFO][SERVER][Flush][grpcpp_sync_ser] Request [11] Flush end.
+[2021-01-04 00:25:38,867][INFO][SERVER][Cmd][grpcpp_sync_ser] Request [12] Cmd begin.
+[2021-01-04 00:25:38,869][INFO][SERVER][Cmd][grpcpp_sync_ser] Request [12] Cmd end.
+[2021-01-04 00:25:38,871][INFO][SERVER][HasCollection][grpcpp_sync_ser] Request [13] HasCollection begin.
+[2021-01-04 00:25:38,872][INFO][SERVER][HasCollection][grpcpp_sync_ser] Request [13] HasCollection end.
+[2021-01-04 00:25:38,874][INFO][SERVER][Insert][grpcpp_sync_ser] Request [14] Insert begin.
+[2021-01-04 00:25:38,875][INFO][SERVER][OnExecute][reqsched_thread] [insert][0] Execute insert request.
+[2021-01-04 00:25:38,877][INFO][SERVER][Insert][grpcpp_sync_ser] Request [14] Insert end.
+[2021-01-04 00:25:38,879][INFO][SERVER][Flush][grpcpp_sync_ser] Request [15] Flush begin.
+[2021-01-04 00:25:38,882][INFO][WAL][Flush][reqsched_thread] retina_face want to be flush, lsn 0
+[2021-01-04 00:25:38,883][INFO][SERVER][Flush][grpcpp_sync_ser] Request [15] Flush end.
+[2021-01-04 00:25:38,885][INFO][SERVER][DropCollection][grpcpp_sync_ser] Request [16] DropCollection begin.
+[2021-01-04 00:25:38,887][INFO][WAL][DropCollection][reqsched_thread] drop collection retina_face
+[2021-01-04 00:25:38,891][INFO][WAL][Flush][reqsched_thread]  want to be flush, lsn 4295388460
+[2021-01-04 00:25:38,892][INFO][WAL][operator()][wal_thread] record flush collection  lsn 4295388460
+[2021-01-04 00:25:38,894][INFO][SERVER][DropCollection][grpcpp_sync_ser] Request [16] DropCollection end.
+[2021-01-04 00:25:38,897][INFO][SERVER][Search][grpcpp_sync_ser] Request [17] Search begin.
+[2021-01-04 00:25:38,897][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-04 00:25:38,899][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-04 00:25:38,905][INFO][SERVER][Search][grpcpp_sync_ser] Request [17] Search end.
+[2021-01-04 00:25:48,979][INFO][SERVER][Cmd][grpcpp_sync_ser] Request [18] Cmd begin.
+[2021-01-04 00:25:48,980][INFO][SERVER][Cmd][grpcpp_sync_ser] Request [18] Cmd end.
+[2021-01-04 00:25:48,983][INFO][SERVER][HasCollection][grpcpp_sync_ser] Request [19] HasCollection begin.
+[2021-01-04 00:25:48,984][INFO][SERVER][HasCollection][grpcpp_sync_ser] Request [19] HasCollection end.
+[2021-01-04 00:25:48,986][INFO][SERVER][CreateCollection][grpcpp_sync_ser] Request [20] CreateCollection begin.
+[2021-01-04 00:25:48,987][INFO][WAL][CreateCollection][reqsched_thread] create collection retina_face 4295388460
+[2021-01-04 00:25:48,995][INFO][SERVER][CreateCollection][grpcpp_sync_ser] Request [20] CreateCollection end.
+[2021-01-04 00:25:48,998][INFO][SERVER][Insert][grpcpp_sync_ser] Request [21] Insert begin.
+[2021-01-04 00:25:48,998][INFO][SERVER][OnExecute][reqsched_thread] [insert][0] Execute insert request.
+[2021-01-04 00:25:49,000][INFO][WAL][Insert][reqsched_thread] [insert][0]retina_face insert in part  with lsn 4295390548
+[2021-01-04 00:25:49,001][INFO][WAL][GetNextRecord][wal_thread] record type 2 collection retina_face lsn 4295390548
+[2021-01-04 00:25:49,004][INFO][SERVER][Insert][grpcpp_sync_ser] Request [21] Insert end.
+[2021-01-04 00:25:49,006][INFO][SERVER][Flush][grpcpp_sync_ser] Request [22] Flush begin.
+[2021-01-04 00:25:49,009][INFO][WAL][Flush][reqsched_thread] retina_face want to be flush, lsn 4295390548
+[2021-01-04 00:25:49,010][INFO][WAL][operator()][wal_thread] record flush collection retina_face lsn 4295390548
+[2021-01-04 00:25:49,046][INFO][WAL][CollectionFlushed][wal_thread] retina_face is flushed by lsn 4295390548
+[2021-01-04 00:25:49,047][INFO][SERVER][Flush][grpcpp_sync_ser] Request [22] Flush end.
+[2021-01-04 00:25:49,049][INFO][SERVER][DropCollection][grpcpp_sync_ser] Request [23] DropCollection begin.
+[2021-01-04 00:25:49,051][INFO][WAL][DropCollection][reqsched_thread] drop collection retina_face
+[2021-01-04 00:25:49,055][INFO][WAL][Flush][reqsched_thread]  want to be flush, lsn 4295390548
+[2021-01-04 00:25:49,055][INFO][WAL][operator()][wal_thread] record flush collection  lsn 4295390548
+[2021-01-04 00:25:49,058][INFO][SERVER][DropCollection][grpcpp_sync_ser] Request [23] DropCollection end.
+[2021-01-04 00:25:49,060][INFO][SERVER][Search][grpcpp_sync_ser] Request [24] Search begin.
+[2021-01-04 00:25:49,061][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-04 00:25:49,061][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-04 00:25:49,064][INFO][SERVER][Search][grpcpp_sync_ser] Request [24] Search end.
+[2021-01-04 00:34:27,805][INFO][SERVER][Cmd][grpcpp_sync_ser] Request [25] Cmd begin.
+[2021-01-04 00:34:27,806][INFO][SERVER][Cmd][grpcpp_sync_ser] Request [25] Cmd end.
+[2021-01-04 00:34:27,808][INFO][SERVER][HasCollection][grpcpp_sync_ser] Request [26] HasCollection begin.
+[2021-01-04 00:34:27,810][INFO][SERVER][HasCollection][grpcpp_sync_ser] Request [26] HasCollection end.
+[2021-01-04 00:34:27,811][INFO][SERVER][CreateCollection][grpcpp_sync_ser] Request [27] CreateCollection begin.
+[2021-01-04 00:34:27,812][INFO][WAL][CreateCollection][reqsched_thread] create collection retina_face 4295390548
+[2021-01-04 00:34:27,846][INFO][SERVER][CreateCollection][grpcpp_sync_ser] Request [27] CreateCollection end.
+[2021-01-04 00:34:27,848][INFO][SERVER][Insert][grpcpp_sync_ser] Request [28] Insert begin.
+[2021-01-04 00:34:27,849][INFO][SERVER][OnExecute][reqsched_thread] [insert][0] Execute insert request.
+[2021-01-04 00:34:27,852][INFO][WAL][Insert][reqsched_thread] [insert][0]retina_face insert in part  with lsn 4295392636
+[2021-01-04 00:34:27,854][INFO][WAL][GetNextRecord][wal_thread] record type 2 collection retina_face lsn 4295392636
+[2021-01-04 00:34:27,857][INFO][SERVER][Insert][grpcpp_sync_ser] Request [28] Insert end.
+[2021-01-04 00:34:27,859][INFO][SERVER][Flush][grpcpp_sync_ser] Request [29] Flush begin.
+[2021-01-04 00:34:27,862][INFO][WAL][Flush][reqsched_thread] retina_face want to be flush, lsn 4295392636
+[2021-01-04 00:34:27,863][INFO][WAL][operator()][wal_thread] record flush collection retina_face lsn 4295392636
+[2021-01-04 00:34:27,937][INFO][WAL][CollectionFlushed][wal_thread] retina_face is flushed by lsn 4295392636
+[2021-01-04 00:34:27,939][INFO][SERVER][Flush][grpcpp_sync_ser] Request [29] Flush end.
+[2021-01-04 00:34:27,942][INFO][SERVER][DropCollection][grpcpp_sync_ser] Request [30] DropCollection begin.
+[2021-01-04 00:34:27,944][INFO][WAL][DropCollection][reqsched_thread] drop collection retina_face
+[2021-01-04 00:34:27,949][INFO][WAL][Flush][reqsched_thread]  want to be flush, lsn 4295392636
+[2021-01-04 00:34:27,949][INFO][WAL][operator()][wal_thread] record flush collection  lsn 4295392636
+[2021-01-04 00:34:27,951][INFO][SERVER][DropCollection][grpcpp_sync_ser] Request [30] DropCollection end.
+[2021-01-04 00:34:27,953][INFO][SERVER][Search][grpcpp_sync_ser] Request [31] Search begin.
+[2021-01-04 00:34:27,954][INFO][SERVER][OnPreExecute][grpcpp_sync_ser] [search][0] Search pre-execute. Check search parameters
+[2021-01-04 00:34:27,955][INFO][SERVER][OnExecute][reqsched_thread] [search][0] Search execute.
+[2021-01-04 00:34:27,960][INFO][SERVER][Search][grpcpp_sync_ser] Request [31] Search end.

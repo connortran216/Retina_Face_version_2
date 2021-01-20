@@ -1,0 +1,5 @@
+[2021-01-05 13:00:30,998][ERROR][SERVER][OnExecute][reqsched_thread] [search][0] Collection retina_face not found: Collection retina_face not found
+[2021-01-05 13:00:31,001][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30100): Collection retina_face does not exist. Use milvus.has_collection to verify whether the collection exists. You also can check whether the collection name exists.
+[2021-01-05 14:15:33,047][ERROR][SERVER][TakeToExecute][reqsched_thread] Take null from request queue, stop thread
+[2021-01-05 14:15:33,047][ERROR][SERVER][TakeToExecute][reqsched_thread] Take null from request queue, stop thread
+[2021-01-05 14:15:33,048][ERROR][SERVER][TakeToExecute][reqsched_thread] Take null from request queue, stop thread

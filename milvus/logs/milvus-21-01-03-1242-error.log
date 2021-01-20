@@ -1,0 +1,8 @@
+[2021-01-03 12:43:54,938][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Entities IDs are auto-generated. All vectors of this collection must use auto-generated IDs.
+[2021-01-03 12:43:54,939][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30109): Entities IDs are auto-generated. All vectors of this collection must use auto-generated IDs.
+[2021-01-03 13:25:22,995][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Entities IDs are auto-generated. All vectors of this collection must use auto-generated IDs.
+[2021-01-03 13:25:22,996][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30109): Entities IDs are auto-generated. All vectors of this collection must use auto-generated IDs.
+[2021-01-03 13:29:49,601][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Entities IDs are auto-generated. All vectors of this collection must use auto-generated IDs.
+[2021-01-03 13:29:49,601][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30109): Entities IDs are auto-generated. All vectors of this collection must use auto-generated IDs.
+[2021-01-03 13:37:46,460][ERROR][SERVER][TakeToExecute][reqsched_thread] Take null from request queue, stop thread
+[2021-01-03 13:37:46,478][ERROR][SERVER][TakeToExecute][reqsched_thread] Take null from request queue, stop thread

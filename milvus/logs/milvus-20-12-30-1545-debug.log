@@ -1,0 +1,1394 @@
+[2020-12-30 15:45:23,154][DEBUG][ENGINE][CheckCpuInstructionSet][milvus_server] Supported CPU instruction sets: avx2, sse4_2
+[2020-12-30 15:45:23,207][DEBUG][ENGINE][Initialize][milvus_server] FAISS hook AVX2
+[2020-12-30 15:45:23,417][DEBUG][WAL][Init][milvus_server] start_lsn 4295396812 end_lsn 4295400988
+[2020-12-30 15:53:01,301][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 0
+[2020-12-30 15:53:01,304][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.001100 ms])
+[2020-12-30 15:53:01,306][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 1
+[2020-12-30 15:53:01,309][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000136 second [0.135800 ms])
+[2020-12-30 15:53:01,312][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 2
+[2020-12-30 15:53:01,314][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000177 second [0.176700 ms])
+[2020-12-30 15:53:01,335][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 3
+[2020-12-30 15:53:01,337][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): check validation (0.000104 second [0.103900 ms])
+[2020-12-30 15:53:01,338][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): prepare vectors data (0.000548 second [0.548200 ms])
+[2020-12-30 15:53:01,341][DEBUG][ENGINE][UpdateCollectionFlag][reqsched_thread] Successfully update collection flag, collection id = retina_face
+[2020-12-30 15:53:01,342][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): add vectors to engine (0.003996 second [3.995900 ms])
+[2020-12-30 15:53:01,343][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): total cost (0.005650 second [5.649700 ms])
+[2020-12-30 15:53:01,345][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 4
+[2020-12-30 15:53:01,346][DEBUG][SERVER][OnExecute][reqsched_thread] FlushRequest flush collections: retina_face, 
+[2020-12-30 15:53:01,348][DEBUG][ENGINE][CreateCollectionFile][wal_thread] Successfully create collection file, file id = 1609314781342688000
+[2020-12-30 15:53:01,353][DEBUG][ENGINE][Add][wal_thread] [insert][0]Insert float data into segment
+[2020-12-30 15:53:01,353][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush collection: retina_face
+[2020-12-30 15:53:01,353][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 15:53:01,354][DEBUG][ENGINE][Flush][wal_thread] Flushing collection: retina_face
+[2020-12-30 15:53:01,379][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.024244 second [24.244300 ms])
+[2020-12-30 15:53:01,388][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Adding 1 ids to bloom filter (0.008473 second [8.473400 ms])
+[2020-12-30 15:53:01,388][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000548 second [0.547700 ms])
+[2020-12-30 15:53:01,391][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing bloom filter done (0.036166 second [36.166200 ms])
+[2020-12-30 15:53:01,416][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write rv done (0.022948 second [22.948200 ms])
+[2020-12-30 15:53:01,418][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write uids done (0.002586 second [2.586300 ms])
+[2020-12-30 15:53:01,419][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing vectors and uids done (0.028481 second [28.480800 ms])
+[2020-12-30 15:53:01,425][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing deleted docs done (0.005524 second [5.524400 ms])
+[2020-12-30 15:53:01,426][DEBUG][ENGINE][Serialize][wal_thread] New raw file 1609314781342688000 of size 2048 bytes, lsn = 4295403076
+[2020-12-30 15:53:01,426][DEBUG][ENGINE][Serialize][wal_thread] Flushed segment 1609314781342688000
+[2020-12-30 15:53:01,433][DEBUG][ENGINE][UpdateCollectionFiles][wal_thread] Update 1 collection files
+[2020-12-30 15:53:01,434][DEBUG][ENGINE][UpdateCollectionFlushLSN][wal_thread] Successfully update collection flush_lsn, collection id = retina_face flush_lsn = 4295403076
+[2020-12-30 15:53:01,435][DEBUG][SERVER][PrintTimeRecord][wal_thread] MemTable::Serialize collection retina_face: Finished flushing (0.080181 second [80.181100 ms])
+[2020-12-30 15:53:01,435][DEBUG][ENGINE][Flush][wal_thread] Flushed collection: retina_face
+[2020-12-30 15:53:01,436][DEBUG][ENGINE][Flush][reqsched_thread] End flush collection: retina_face
+[2020-12-30 15:53:01,436][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] FlushRequest flush collections: retina_face, : totally cost (0.090110 second [90.110000 ms])
+[2020-12-30 15:53:01,438][DEBUG][ENGINE][FilesToMerge][milvus_server] Collect 2 to-merge files in collection retina_face
+[2020-12-30 15:53:01,438][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609310548848272000 refcount:1
+[2020-12-30 15:53:01,439][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609314781342688000 refcount:1
+[2020-12-30 15:53:01,439][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 5
+[2020-12-30 15:53:01,440][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): check validation (0.000105 second [0.104600 ms])
+[2020-12-30 15:53:01,441][DEBUG][ENGINE][CreateCollectionFile][milvus_server] Successfully create collection file, file id = 1609314781440885000
+[2020-12-30 15:53:01,446][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609314781342688000 to /var/lib/milvus/db/tables/retina_face/1609314781440885000
+[2020-12-30 15:53:01,447][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): totally cost (0.007071 second [7.071300 ms])
+[2020-12-30 15:53:01,449][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 6
+[2020-12-30 15:53:01,450][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609310548848272000 refcount:2
+[2020-12-30 15:53:01,452][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609314781342688000 refcount:2
+[2020-12-30 15:53:01,452][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:2 to_index files:0 index files:0
+[2020-12-30 15:53:01,453][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609310548848272000 refcount:1
+[2020-12-30 15:53:01,453][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609314781342688000 refcount:1
+[2020-12-30 15:53:01,453][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] ShowCollectionInfoRequest(collection=retina_face): totally cost (0.003503 second [3.503400 ms])
+[2020-12-30 15:53:01,455][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 7
+[2020-12-30 15:53:01,457][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): check validation (0.000223 second [0.222800 ms])
+[2020-12-30 15:53:01,457][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush all collections
+[2020-12-30 15:53:01,458][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 15:53:01,459][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.011482 second [11.482300 ms])
+[2020-12-30 15:53:01,460][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.001385 second [1.384600 ms])
+[2020-12-30 15:53:01,460][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 1 vectors and uids (0.000462 second [0.462200 ms])
+[2020-12-30 15:53:01,461][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609314781342688000 to /var/lib/milvus/db/tables/retina_face/1609314781440885000
+[2020-12-30 15:53:01,462][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609310548848272000 to /var/lib/milvus/db/tables/retina_face/1609314781440885000
+[2020-12-30 15:53:01,519][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.056902 second [56.902100 ms])
+[2020-12-30 15:53:01,520][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000676 second [0.675800 ms])
+[2020-12-30 15:53:01,520][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 22 vectors and uids (0.000439 second [0.438700 ms])
+[2020-12-30 15:53:01,520][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609310548848272000 to /var/lib/milvus/db/tables/retina_face/1609314781440885000
+[2020-12-30 15:53:01,521][DEBUG][ENGINE][Execute][milvus_server] Merge task files size info:2056, 45232, 
+[2020-12-30 15:53:01,527][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.005783 second [5.782800 ms])
+[2020-12-30 15:53:01,565][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Adding 23 ids to bloom filter (0.037841 second [37.841300 ms])
+[2020-12-30 15:53:01,565][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000377 second [0.376800 ms])
+[2020-12-30 15:53:01,566][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing bloom filter done (0.044306 second [44.306300 ms])
+[2020-12-30 15:53:01,569][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write rv done (0.001973 second [1.972800 ms])
+[2020-12-30 15:53:01,571][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write uids done (0.002329 second [2.328800 ms])
+[2020-12-30 15:53:01,572][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing vectors and uids done (0.006291 second [6.291000 ms])
+[2020-12-30 15:53:01,578][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing deleted docs done (0.005661 second [5.661200 ms])
+[2020-12-30 15:53:01,579][DEBUG][ENGINE][UpdateCollectionFiles][milvus_server] Update 3 collection files
+[2020-12-30 15:53:01,579][DEBUG][ENGINE][Execute][milvus_server] New merged segment 1609314781440885000 of size 47288 bytes
+[2020-12-30 15:53:01,580][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609314781342688000 refcount:0
+[2020-12-30 15:53:01,593][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609310548848272000 refcount:0
+[2020-12-30 15:53:01,598][DEBUG][ENGINE][Flush][reqsched_thread] End flush all collections
+[2020-12-30 15:53:01,601][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609314781440885000 refcount:1
+[2020-12-30 15:53:01,602][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:1 new files:0 new_merge files:0 new_index files:0 to_index files:0
+[2020-12-30 15:53:01,602][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609314781440885000 refcount:0
+[2020-12-30 15:53:01,603][DEBUG][ENGINE][WaitCollectionIndexRecursively][reqsched_thread] WaitCollectionIndexRecursively finished
+[2020-12-30 15:53:01,603][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): totally cost (0.146370 second [146.370100 ms])
+[2020-12-30 15:53:01,605][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 8
+[2020-12-30 15:53:01,606][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeIndexRequest(collection=retina_face): totally cost (0.000120 second [0.119800 ms])
+[2020-12-30 15:53:11,626][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609310548848272000 location:/var/lib/milvus/db/tables/retina_face/1609310548848272000/1609310548848272000
+[2020-12-30 15:53:11,630][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609314781342688000 location:/var/lib/milvus/db/tables/retina_face/1609314781342688000/1609314781342688000
+[2020-12-30 15:53:11,636][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Clean 2 files expired in 10 seconds
+[2020-12-30 15:53:11,662][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609310548848272000
+[2020-12-30 15:53:11,670][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609314781342688000
+[2020-12-30 15:53:11,670][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove 2 segments folder
+[2020-12-30 15:53:52,381][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 9
+[2020-12-30 15:53:52,383][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.000900 ms])
+[2020-12-30 15:53:52,384][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 10
+[2020-12-30 15:53:52,386][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000087 second [0.086700 ms])
+[2020-12-30 15:53:52,387][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 11
+[2020-12-30 15:53:52,388][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000112 second [0.112300 ms])
+[2020-12-30 15:53:52,390][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 12
+[2020-12-30 15:53:52,391][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): check validation (0.000121 second [0.120800 ms])
+[2020-12-30 15:53:52,391][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): prepare vectors data (0.000345 second [0.345500 ms])
+[2020-12-30 15:53:52,394][DEBUG][ENGINE][UpdateCollectionFlag][reqsched_thread] Successfully update collection flag, collection id = retina_face
+[2020-12-30 15:53:52,395][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): add vectors to engine (0.002794 second [2.794200 ms])
+[2020-12-30 15:53:52,395][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): total cost (0.003912 second [3.911900 ms])
+[2020-12-30 15:53:52,396][DEBUG][ENGINE][CreateCollectionFile][wal_thread] Successfully create collection file, file id = 1609314832395178000
+[2020-12-30 15:53:52,397][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 13
+[2020-12-30 15:53:52,398][DEBUG][SERVER][OnExecute][reqsched_thread] FlushRequest flush collections: retina_face, 
+[2020-12-30 15:53:52,401][DEBUG][ENGINE][Add][wal_thread] [insert][0]Insert float data into segment
+[2020-12-30 15:53:52,402][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush collection: retina_face
+[2020-12-30 15:53:52,402][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 15:53:52,403][DEBUG][ENGINE][Flush][wal_thread] Flushing collection: retina_face
+[2020-12-30 15:53:52,409][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.005253 second [5.253000 ms])
+[2020-12-30 15:53:52,419][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Adding 1 ids to bloom filter (0.010138 second [10.138200 ms])
+[2020-12-30 15:53:52,419][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000407 second [0.406900 ms])
+[2020-12-30 15:53:52,420][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing bloom filter done (0.016289 second [16.288600 ms])
+[2020-12-30 15:53:52,423][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write rv done (0.002037 second [2.037200 ms])
+[2020-12-30 15:53:52,425][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write uids done (0.002293 second [2.293200 ms])
+[2020-12-30 15:53:52,426][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing vectors and uids done (0.006108 second [6.108400 ms])
+[2020-12-30 15:53:52,430][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing deleted docs done (0.004507 second [4.506800 ms])
+[2020-12-30 15:53:52,431][DEBUG][ENGINE][Serialize][wal_thread] New raw file 1609314832395178000 of size 2048 bytes, lsn = 4295405164
+[2020-12-30 15:53:52,431][DEBUG][ENGINE][Serialize][wal_thread] Flushed segment 1609314832395178000
+[2020-12-30 15:53:52,470][DEBUG][ENGINE][UpdateCollectionFiles][wal_thread] Update 1 collection files
+[2020-12-30 15:53:52,473][DEBUG][ENGINE][UpdateCollectionFlushLSN][wal_thread] Successfully update collection flush_lsn, collection id = retina_face flush_lsn = 4295405164
+[2020-12-30 15:53:52,474][DEBUG][SERVER][PrintTimeRecord][wal_thread] MemTable::Serialize collection retina_face: Finished flushing (0.070024 second [70.023700 ms])
+[2020-12-30 15:53:52,475][DEBUG][ENGINE][Flush][wal_thread] Flushed collection: retina_face
+[2020-12-30 15:53:52,477][DEBUG][ENGINE][Flush][reqsched_thread] End flush collection: retina_face
+[2020-12-30 15:53:52,478][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] FlushRequest flush collections: retina_face, : totally cost (0.079961 second [79.961100 ms])
+[2020-12-30 15:53:52,480][DEBUG][ENGINE][FilesToMerge][milvus_server] Collect 2 to-merge files in collection retina_face
+[2020-12-30 15:53:52,482][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609314781440885000 refcount:1
+[2020-12-30 15:53:52,483][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 14
+[2020-12-30 15:53:52,484][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609314832395178000 refcount:1
+[2020-12-30 15:53:52,488][DEBUG][ENGINE][CreateCollectionFile][milvus_server] Successfully create collection file, file id = 1609314832487402000
+[2020-12-30 15:53:52,496][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609314832395178000 to /var/lib/milvus/db/tables/retina_face/1609314832487402000
+[2020-12-30 15:53:52,496][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): check validation (0.008176 second [8.175500 ms])
+[2020-12-30 15:53:52,497][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): totally cost (0.009183 second [9.182800 ms])
+[2020-12-30 15:53:52,498][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 15
+[2020-12-30 15:53:52,500][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609314781440885000 refcount:2
+[2020-12-30 15:53:52,502][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609314832395178000 refcount:2
+[2020-12-30 15:53:52,502][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:2 to_index files:0 index files:0
+[2020-12-30 15:53:52,503][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609314781440885000 refcount:1
+[2020-12-30 15:53:52,503][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609314832395178000 refcount:1
+[2020-12-30 15:53:52,504][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] ShowCollectionInfoRequest(collection=retina_face): totally cost (0.004269 second [4.268800 ms])
+[2020-12-30 15:53:52,505][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 16
+[2020-12-30 15:53:52,506][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): check validation (0.000147 second [0.147400 ms])
+[2020-12-30 15:53:52,507][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush all collections
+[2020-12-30 15:53:52,507][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 15:53:52,508][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.010527 second [10.527400 ms])
+[2020-12-30 15:53:52,509][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.002189 second [2.189300 ms])
+[2020-12-30 15:53:52,509][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 1 vectors and uids (0.000876 second [0.875700 ms])
+[2020-12-30 15:53:52,510][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609314832395178000 to /var/lib/milvus/db/tables/retina_face/1609314832487402000
+[2020-12-30 15:53:52,510][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609314781440885000 to /var/lib/milvus/db/tables/retina_face/1609314832487402000
+[2020-12-30 15:53:52,518][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.007205 second [7.204900 ms])
+[2020-12-30 15:53:52,518][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000411 second [0.410700 ms])
+[2020-12-30 15:53:52,519][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 23 vectors and uids (0.000566 second [0.566500 ms])
+[2020-12-30 15:53:52,519][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609314781440885000 to /var/lib/milvus/db/tables/retina_face/1609314832487402000
+[2020-12-30 15:53:52,520][DEBUG][ENGINE][Execute][milvus_server] Merge task files size info:2056, 47288, 
+[2020-12-30 15:53:52,525][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.004722 second [4.721800 ms])
+[2020-12-30 15:53:52,550][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Adding 24 ids to bloom filter (0.025333 second [25.333000 ms])
+[2020-12-30 15:53:52,550][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000361 second [0.360700 ms])
+[2020-12-30 15:53:52,551][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing bloom filter done (0.030954 second [30.954400 ms])
+[2020-12-30 15:53:52,554][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write rv done (0.002135 second [2.135200 ms])
+[2020-12-30 15:53:52,556][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write uids done (0.002261 second [2.261100 ms])
+[2020-12-30 15:53:52,557][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing vectors and uids done (0.006437 second [6.437100 ms])
+[2020-12-30 15:53:52,561][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing deleted docs done (0.004050 second [4.050200 ms])
+[2020-12-30 15:53:52,562][DEBUG][ENGINE][UpdateCollectionFiles][milvus_server] Update 3 collection files
+[2020-12-30 15:53:52,563][DEBUG][ENGINE][Execute][milvus_server] New merged segment 1609314832487402000 of size 49344 bytes
+[2020-12-30 15:53:52,564][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609314832395178000 refcount:0
+[2020-12-30 15:53:52,573][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609314781440885000 refcount:0
+[2020-12-30 15:53:52,577][DEBUG][ENGINE][Flush][reqsched_thread] End flush all collections
+[2020-12-30 15:53:52,586][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609314832487402000 refcount:1
+[2020-12-30 15:53:52,586][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:1 new files:0 new_merge files:0 new_index files:0 to_index files:0
+[2020-12-30 15:53:52,587][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609314832487402000 refcount:0
+[2020-12-30 15:53:52,587][DEBUG][ENGINE][WaitCollectionIndexRecursively][reqsched_thread] WaitCollectionIndexRecursively finished
+[2020-12-30 15:53:52,588][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): totally cost (0.081430 second [81.430200 ms])
+[2020-12-30 15:53:52,589][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 17
+[2020-12-30 15:53:52,590][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeIndexRequest(collection=retina_face): totally cost (0.000132 second [0.132400 ms])
+[2020-12-30 15:54:02,603][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609314781440885000 location:/var/lib/milvus/db/tables/retina_face/1609314781440885000/1609314781440885000
+[2020-12-30 15:54:02,606][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609314832395178000 location:/var/lib/milvus/db/tables/retina_face/1609314832395178000/1609314832395178000
+[2020-12-30 15:54:02,612][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Clean 2 files expired in 10 seconds
+[2020-12-30 15:54:02,630][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609314781440885000
+[2020-12-30 15:54:02,640][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609314832395178000
+[2020-12-30 15:54:02,640][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove 2 segments folder
+[2020-12-30 15:59:53,270][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 18
+[2020-12-30 15:59:53,274][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.001100 ms])
+[2020-12-30 15:59:53,276][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 19
+[2020-12-30 15:59:53,277][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000090 second [0.089900 ms])
+[2020-12-30 15:59:53,279][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 20
+[2020-12-30 15:59:53,280][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000101 second [0.101400 ms])
+[2020-12-30 15:59:53,283][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 21
+[2020-12-30 15:59:53,284][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): check validation (0.000123 second [0.123300 ms])
+[2020-12-30 15:59:53,284][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): prepare vectors data (0.000514 second [0.514200 ms])
+[2020-12-30 15:59:53,287][DEBUG][ENGINE][UpdateCollectionFlag][reqsched_thread] Successfully update collection flag, collection id = retina_face
+[2020-12-30 15:59:53,288][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): add vectors to engine (0.002804 second [2.803800 ms])
+[2020-12-30 15:59:53,288][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): total cost (0.004272 second [4.271900 ms])
+[2020-12-30 15:59:53,289][DEBUG][ENGINE][CreateCollectionFile][wal_thread] Successfully create collection file, file id = 1609315193288201000
+[2020-12-30 15:59:53,291][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 22
+[2020-12-30 15:59:53,292][DEBUG][SERVER][OnExecute][reqsched_thread] FlushRequest flush collections: retina_face, 
+[2020-12-30 15:59:53,295][DEBUG][ENGINE][Add][wal_thread] [insert][0]Insert float data into segment
+[2020-12-30 15:59:53,296][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush collection: retina_face
+[2020-12-30 15:59:53,296][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 15:59:53,297][DEBUG][ENGINE][Flush][wal_thread] Flushing collection: retina_face
+[2020-12-30 15:59:53,326][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.028490 second [28.490100 ms])
+[2020-12-30 15:59:53,334][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Adding 1 ids to bloom filter (0.008016 second [8.015500 ms])
+[2020-12-30 15:59:53,334][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000459 second [0.458800 ms])
+[2020-12-30 15:59:53,335][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing bloom filter done (0.037412 second [37.412300 ms])
+[2020-12-30 15:59:53,339][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write rv done (0.002912 second [2.912400 ms])
+[2020-12-30 15:59:53,343][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write uids done (0.003985 second [3.985300 ms])
+[2020-12-30 15:59:53,344][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing vectors and uids done (0.008784 second [8.784000 ms])
+[2020-12-30 15:59:53,348][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing deleted docs done (0.004357 second [4.356500 ms])
+[2020-12-30 15:59:53,348][DEBUG][ENGINE][Serialize][wal_thread] New raw file 1609315193288201000 of size 2048 bytes, lsn = 4295407252
+[2020-12-30 15:59:53,349][DEBUG][ENGINE][Serialize][wal_thread] Flushed segment 1609315193288201000
+[2020-12-30 15:59:53,355][DEBUG][ENGINE][UpdateCollectionFiles][wal_thread] Update 1 collection files
+[2020-12-30 15:59:53,356][DEBUG][ENGINE][UpdateCollectionFlushLSN][wal_thread] Successfully update collection flush_lsn, collection id = retina_face flush_lsn = 4295407252
+[2020-12-30 15:59:53,357][DEBUG][SERVER][PrintTimeRecord][wal_thread] MemTable::Serialize collection retina_face: Finished flushing (0.059316 second [59.315800 ms])
+[2020-12-30 15:59:53,357][DEBUG][ENGINE][Flush][wal_thread] Flushed collection: retina_face
+[2020-12-30 15:59:53,358][DEBUG][ENGINE][Flush][reqsched_thread] End flush collection: retina_face
+[2020-12-30 15:59:53,359][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] FlushRequest flush collections: retina_face, : totally cost (0.066921 second [66.921300 ms])
+[2020-12-30 15:59:53,360][DEBUG][ENGINE][FilesToMerge][milvus_server] Collect 2 to-merge files in collection retina_face
+[2020-12-30 15:59:53,361][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609314832487402000 refcount:1
+[2020-12-30 15:59:53,361][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609315193288201000 refcount:1
+[2020-12-30 15:59:53,362][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 23
+[2020-12-30 15:59:53,363][DEBUG][ENGINE][CreateCollectionFile][milvus_server] Successfully create collection file, file id = 1609315193363103000
+[2020-12-30 15:59:53,367][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609315193288201000 to /var/lib/milvus/db/tables/retina_face/1609315193363103000
+[2020-12-30 15:59:53,368][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): check validation (0.004611 second [4.611100 ms])
+[2020-12-30 15:59:53,368][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): totally cost (0.005353 second [5.353000 ms])
+[2020-12-30 15:59:53,370][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 24
+[2020-12-30 15:59:53,372][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609314832487402000 refcount:2
+[2020-12-30 15:59:53,373][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315193288201000 refcount:2
+[2020-12-30 15:59:53,373][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:2 to_index files:0 index files:0
+[2020-12-30 15:59:53,374][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609314832487402000 refcount:1
+[2020-12-30 15:59:53,374][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315193288201000 refcount:1
+[2020-12-30 15:59:53,375][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] ShowCollectionInfoRequest(collection=retina_face): totally cost (0.003556 second [3.556100 ms])
+[2020-12-30 15:59:53,376][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 25
+[2020-12-30 15:59:53,377][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.009324 second [9.324400 ms])
+[2020-12-30 15:59:53,378][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000633 second [0.633300 ms])
+[2020-12-30 15:59:53,378][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): check validation (0.000142 second [0.142100 ms])
+[2020-12-30 15:59:53,378][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush all collections
+[2020-12-30 15:59:53,379][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 15:59:53,379][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 1 vectors and uids (0.000333 second [0.333400 ms])
+[2020-12-30 15:59:53,380][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609315193288201000 to /var/lib/milvus/db/tables/retina_face/1609315193363103000
+[2020-12-30 15:59:53,380][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609314832487402000 to /var/lib/milvus/db/tables/retina_face/1609315193363103000
+[2020-12-30 15:59:53,387][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.006854 second [6.854300 ms])
+[2020-12-30 15:59:53,388][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000381 second [0.381400 ms])
+[2020-12-30 15:59:53,388][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 24 vectors and uids (0.000299 second [0.298600 ms])
+[2020-12-30 15:59:53,388][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609314832487402000 to /var/lib/milvus/db/tables/retina_face/1609315193363103000
+[2020-12-30 15:59:53,389][DEBUG][ENGINE][Execute][milvus_server] Merge task files size info:2056, 49344, 
+[2020-12-30 15:59:53,394][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.004925 second [4.925200 ms])
+[2020-12-30 15:59:53,423][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Adding 25 ids to bloom filter (0.028654 second [28.653600 ms])
+[2020-12-30 15:59:53,423][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000489 second [0.489300 ms])
+[2020-12-30 15:59:53,424][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing bloom filter done (0.034423 second [34.423500 ms])
+[2020-12-30 15:59:53,428][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write rv done (0.002723 second [2.723000 ms])
+[2020-12-30 15:59:53,430][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write uids done (0.002534 second [2.534200 ms])
+[2020-12-30 15:59:53,431][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing vectors and uids done (0.007480 second [7.480200 ms])
+[2020-12-30 15:59:53,436][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing deleted docs done (0.004451 second [4.451000 ms])
+[2020-12-30 15:59:53,438][DEBUG][ENGINE][UpdateCollectionFiles][milvus_server] Update 3 collection files
+[2020-12-30 15:59:53,438][DEBUG][ENGINE][Execute][milvus_server] New merged segment 1609315193363103000 of size 51400 bytes
+[2020-12-30 15:59:53,439][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609315193288201000 refcount:0
+[2020-12-30 15:59:53,449][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609314832487402000 refcount:0
+[2020-12-30 15:59:53,455][DEBUG][ENGINE][Flush][reqsched_thread] End flush all collections
+[2020-12-30 15:59:53,459][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315193363103000 refcount:1
+[2020-12-30 15:59:53,460][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:1 new files:0 new_merge files:0 new_index files:0 to_index files:0
+[2020-12-30 15:59:53,460][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315193363103000 refcount:0
+[2020-12-30 15:59:53,461][DEBUG][ENGINE][WaitCollectionIndexRecursively][reqsched_thread] WaitCollectionIndexRecursively finished
+[2020-12-30 15:59:53,461][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): totally cost (0.083704 second [83.704400 ms])
+[2020-12-30 15:59:53,463][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 26
+[2020-12-30 15:59:53,464][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeIndexRequest(collection=retina_face): totally cost (0.000132 second [0.132200 ms])
+[2020-12-30 16:00:02,853][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 27
+[2020-12-30 16:00:02,855][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.000600 ms])
+[2020-12-30 16:00:02,856][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 28
+[2020-12-30 16:00:02,857][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000138 second [0.138400 ms])
+[2020-12-30 16:00:02,859][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 29
+[2020-12-30 16:00:02,860][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000089 second [0.089100 ms])
+[2020-12-30 16:00:02,861][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 30
+[2020-12-30 16:00:02,862][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): check validation (0.000144 second [0.143900 ms])
+[2020-12-30 16:00:02,863][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): prepare vectors data (0.000462 second [0.462100 ms])
+[2020-12-30 16:00:02,865][DEBUG][ENGINE][UpdateCollectionFlag][reqsched_thread] Successfully update collection flag, collection id = retina_face
+[2020-12-30 16:00:02,865][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): add vectors to engine (0.002215 second [2.214600 ms])
+[2020-12-30 16:00:02,866][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): total cost (0.003333 second [3.332800 ms])
+[2020-12-30 16:00:02,867][DEBUG][ENGINE][CreateCollectionFile][wal_thread] Successfully create collection file, file id = 1609315202865933000
+[2020-12-30 16:00:02,868][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 31
+[2020-12-30 16:00:02,869][DEBUG][SERVER][OnExecute][reqsched_thread] FlushRequest flush collections: retina_face, 
+[2020-12-30 16:00:02,890][DEBUG][ENGINE][Add][wal_thread] [insert][0]Insert float data into segment
+[2020-12-30 16:00:02,891][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush collection: retina_face
+[2020-12-30 16:00:02,892][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 16:00:02,894][DEBUG][ENGINE][Flush][wal_thread] Flushing collection: retina_face
+[2020-12-30 16:00:02,901][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.006646 second [6.646400 ms])
+[2020-12-30 16:00:02,910][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Adding 1 ids to bloom filter (0.008819 second [8.819500 ms])
+[2020-12-30 16:00:02,911][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000412 second [0.411900 ms])
+[2020-12-30 16:00:02,911][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing bloom filter done (0.016272 second [16.271700 ms])
+[2020-12-30 16:00:02,914][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write rv done (0.001864 second [1.863700 ms])
+[2020-12-30 16:00:02,917][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write uids done (0.002565 second [2.565000 ms])
+[2020-12-30 16:00:02,918][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing vectors and uids done (0.006740 second [6.740000 ms])
+[2020-12-30 16:00:02,923][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing deleted docs done (0.005094 second [5.094300 ms])
+[2020-12-30 16:00:02,923][DEBUG][ENGINE][Serialize][wal_thread] New raw file 1609315202865933000 of size 2048 bytes, lsn = 4295409340
+[2020-12-30 16:00:02,923][DEBUG][ENGINE][Serialize][wal_thread] Flushed segment 1609315202865933000
+[2020-12-30 16:00:02,926][DEBUG][ENGINE][UpdateCollectionFiles][wal_thread] Update 1 collection files
+[2020-12-30 16:00:02,927][DEBUG][ENGINE][UpdateCollectionFlushLSN][wal_thread] Successfully update collection flush_lsn, collection id = retina_face flush_lsn = 4295409340
+[2020-12-30 16:00:02,928][DEBUG][SERVER][PrintTimeRecord][wal_thread] MemTable::Serialize collection retina_face: Finished flushing (0.033261 second [33.261000 ms])
+[2020-12-30 16:00:02,928][DEBUG][ENGINE][Flush][wal_thread] Flushed collection: retina_face
+[2020-12-30 16:00:02,929][DEBUG][ENGINE][Flush][reqsched_thread] End flush collection: retina_face
+[2020-12-30 16:00:02,929][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] FlushRequest flush collections: retina_face, : totally cost (0.060060 second [60.059700 ms])
+[2020-12-30 16:00:02,930][DEBUG][ENGINE][FilesToMerge][milvus_server] Collect 2 to-merge files in collection retina_face
+[2020-12-30 16:00:02,931][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609315193363103000 refcount:1
+[2020-12-30 16:00:02,931][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609315202865933000 refcount:1
+[2020-12-30 16:00:02,931][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 32
+[2020-12-30 16:00:02,933][DEBUG][ENGINE][CreateCollectionFile][milvus_server] Successfully create collection file, file id = 1609315202932541000
+[2020-12-30 16:00:02,938][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609315202865933000 to /var/lib/milvus/db/tables/retina_face/1609315202932541000
+[2020-12-30 16:00:02,938][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): check validation (0.005730 second [5.730300 ms])
+[2020-12-30 16:00:02,939][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): totally cost (0.006632 second [6.632000 ms])
+[2020-12-30 16:00:02,940][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 33
+[2020-12-30 16:00:02,942][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315193363103000 refcount:2
+[2020-12-30 16:00:02,943][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315202865933000 refcount:2
+[2020-12-30 16:00:02,943][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:2 to_index files:0 index files:0
+[2020-12-30 16:00:02,944][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315193363103000 refcount:1
+[2020-12-30 16:00:02,946][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315202865933000 refcount:1
+[2020-12-30 16:00:02,946][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] ShowCollectionInfoRequest(collection=retina_face): totally cost (0.004963 second [4.962700 ms])
+[2020-12-30 16:00:02,948][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 34
+[2020-12-30 16:00:02,949][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): check validation (0.000144 second [0.144100 ms])
+[2020-12-30 16:00:02,950][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush all collections
+[2020-12-30 16:00:02,950][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 16:00:02,951][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.011074 second [11.074500 ms])
+[2020-12-30 16:00:02,952][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.002471 second [2.470700 ms])
+[2020-12-30 16:00:02,953][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 1 vectors and uids (0.000869 second [0.869300 ms])
+[2020-12-30 16:00:02,953][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609315202865933000 to /var/lib/milvus/db/tables/retina_face/1609315202932541000
+[2020-12-30 16:00:02,953][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609315193363103000 to /var/lib/milvus/db/tables/retina_face/1609315202932541000
+[2020-12-30 16:00:02,961][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.007023 second [7.023100 ms])
+[2020-12-30 16:00:02,961][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000283 second [0.282700 ms])
+[2020-12-30 16:00:02,962][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 25 vectors and uids (0.000360 second [0.360000 ms])
+[2020-12-30 16:00:02,962][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609315193363103000 to /var/lib/milvus/db/tables/retina_face/1609315202932541000
+[2020-12-30 16:00:02,962][DEBUG][ENGINE][Execute][milvus_server] Merge task files size info:2056, 51400, 
+[2020-12-30 16:00:02,969][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.006484 second [6.484400 ms])
+[2020-12-30 16:00:02,997][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Adding 26 ids to bloom filter (0.027394 second [27.394200 ms])
+[2020-12-30 16:00:02,997][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000402 second [0.401600 ms])
+[2020-12-30 16:00:02,997][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing bloom filter done (0.034638 second [34.638000 ms])
+[2020-12-30 16:00:03,001][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write rv done (0.002646 second [2.646000 ms])
+[2020-12-30 16:00:03,004][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write uids done (0.002829 second [2.828900 ms])
+[2020-12-30 16:00:03,005][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing vectors and uids done (0.007664 second [7.664100 ms])
+[2020-12-30 16:00:03,009][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing deleted docs done (0.004119 second [4.118700 ms])
+[2020-12-30 16:00:03,010][DEBUG][ENGINE][UpdateCollectionFiles][milvus_server] Update 3 collection files
+[2020-12-30 16:00:03,011][DEBUG][ENGINE][Execute][milvus_server] New merged segment 1609315202932541000 of size 53456 bytes
+[2020-12-30 16:00:03,012][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609315202865933000 refcount:0
+[2020-12-30 16:00:03,022][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609315193363103000 refcount:0
+[2020-12-30 16:00:03,026][DEBUG][ENGINE][Flush][reqsched_thread] End flush all collections
+[2020-12-30 16:00:03,031][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315202932541000 refcount:1
+[2020-12-30 16:00:03,031][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:1 new files:0 new_merge files:0 new_index files:0 to_index files:0
+[2020-12-30 16:00:03,032][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315202932541000 refcount:0
+[2020-12-30 16:00:03,032][DEBUG][ENGINE][WaitCollectionIndexRecursively][reqsched_thread] WaitCollectionIndexRecursively finished
+[2020-12-30 16:00:03,033][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): totally cost (0.083584 second [83.584400 ms])
+[2020-12-30 16:00:03,035][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 35
+[2020-12-30 16:00:03,036][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeIndexRequest(collection=retina_face): totally cost (0.000168 second [0.167500 ms])
+[2020-12-30 16:00:04,032][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609314832487402000 location:/var/lib/milvus/db/tables/retina_face/1609314832487402000/1609314832487402000
+[2020-12-30 16:00:04,034][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609315193288201000 location:/var/lib/milvus/db/tables/retina_face/1609315193288201000/1609315193288201000
+[2020-12-30 16:00:04,038][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Clean 2 files expired in 10 seconds
+[2020-12-30 16:00:04,050][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609314832487402000
+[2020-12-30 16:00:04,060][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609315193288201000
+[2020-12-30 16:00:04,060][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove 2 segments folder
+[2020-12-30 16:00:13,056][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609315193363103000 location:/var/lib/milvus/db/tables/retina_face/1609315193363103000/1609315193363103000
+[2020-12-30 16:00:13,060][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609315202865933000 location:/var/lib/milvus/db/tables/retina_face/1609315202865933000/1609315202865933000
+[2020-12-30 16:00:13,065][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Clean 2 files expired in 10 seconds
+[2020-12-30 16:00:13,078][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609315193363103000
+[2020-12-30 16:00:13,087][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609315202865933000
+[2020-12-30 16:00:13,087][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove 2 segments folder
+[2020-12-30 16:03:48,396][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 36
+[2020-12-30 16:03:48,398][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000002 second [0.002100 ms])
+[2020-12-30 16:03:48,400][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 37
+[2020-12-30 16:03:48,401][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000080 second [0.080300 ms])
+[2020-12-30 16:03:48,403][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 38
+[2020-12-30 16:03:48,404][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000101 second [0.100800 ms])
+[2020-12-30 16:03:48,406][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 39
+[2020-12-30 16:03:48,407][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): check validation (0.000110 second [0.109900 ms])
+[2020-12-30 16:03:48,408][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): prepare vectors data (0.000498 second [0.498000 ms])
+[2020-12-30 16:03:48,410][DEBUG][ENGINE][UpdateCollectionFlag][reqsched_thread] Successfully update collection flag, collection id = retina_face
+[2020-12-30 16:03:48,410][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): add vectors to engine (0.002200 second [2.200200 ms])
+[2020-12-30 16:03:48,411][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): total cost (0.003255 second [3.254700 ms])
+[2020-12-30 16:03:48,412][DEBUG][ENGINE][CreateCollectionFile][wal_thread] Successfully create collection file, file id = 1609315428411926000
+[2020-12-30 16:03:48,413][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 40
+[2020-12-30 16:03:48,414][DEBUG][SERVER][OnExecute][reqsched_thread] FlushRequest flush collections: retina_face, 
+[2020-12-30 16:03:48,416][DEBUG][ENGINE][Add][wal_thread] [insert][0]Insert float data into segment
+[2020-12-30 16:03:48,416][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush collection: retina_face
+[2020-12-30 16:03:48,417][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 16:03:48,418][DEBUG][ENGINE][Flush][wal_thread] Flushing collection: retina_face
+[2020-12-30 16:03:48,423][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.005003 second [5.003000 ms])
+[2020-12-30 16:03:48,431][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Adding 1 ids to bloom filter (0.007789 second [7.789500 ms])
+[2020-12-30 16:03:48,431][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000481 second [0.481400 ms])
+[2020-12-30 16:03:48,432][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing bloom filter done (0.013706 second [13.705700 ms])
+[2020-12-30 16:03:48,435][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write rv done (0.002430 second [2.430400 ms])
+[2020-12-30 16:03:48,439][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write uids done (0.003633 second [3.632900 ms])
+[2020-12-30 16:03:48,440][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing vectors and uids done (0.008343 second [8.343400 ms])
+[2020-12-30 16:03:48,444][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing deleted docs done (0.004251 second [4.251000 ms])
+[2020-12-30 16:03:48,445][DEBUG][ENGINE][Serialize][wal_thread] New raw file 1609315428411926000 of size 2048 bytes, lsn = 4295411428
+[2020-12-30 16:03:48,445][DEBUG][ENGINE][Serialize][wal_thread] Flushed segment 1609315428411926000
+[2020-12-30 16:03:48,451][DEBUG][ENGINE][UpdateCollectionFiles][wal_thread] Update 1 collection files
+[2020-12-30 16:03:48,453][DEBUG][ENGINE][UpdateCollectionFlushLSN][wal_thread] Successfully update collection flush_lsn, collection id = retina_face flush_lsn = 4295411428
+[2020-12-30 16:03:48,453][DEBUG][SERVER][PrintTimeRecord][wal_thread] MemTable::Serialize collection retina_face: Finished flushing (0.035419 second [35.418900 ms])
+[2020-12-30 16:03:48,454][DEBUG][ENGINE][Flush][wal_thread] Flushed collection: retina_face
+[2020-12-30 16:03:48,454][DEBUG][ENGINE][Flush][reqsched_thread] End flush collection: retina_face
+[2020-12-30 16:03:48,455][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] FlushRequest flush collections: retina_face, : totally cost (0.041067 second [41.067100 ms])
+[2020-12-30 16:03:48,456][DEBUG][ENGINE][FilesToMerge][milvus_server] Collect 2 to-merge files in collection retina_face
+[2020-12-30 16:03:48,456][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609315202932541000 refcount:1
+[2020-12-30 16:03:48,457][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609315428411926000 refcount:1
+[2020-12-30 16:03:48,457][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 41
+[2020-12-30 16:03:48,458][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): check validation (0.000159 second [0.159300 ms])
+[2020-12-30 16:03:48,460][DEBUG][ENGINE][CreateCollectionFile][milvus_server] Successfully create collection file, file id = 1609315428458998000
+[2020-12-30 16:03:48,465][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609315428411926000 to /var/lib/milvus/db/tables/retina_face/1609315428458998000
+[2020-12-30 16:03:48,465][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): totally cost (0.007019 second [7.019000 ms])
+[2020-12-30 16:03:48,468][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 42
+[2020-12-30 16:03:48,469][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315202932541000 refcount:2
+[2020-12-30 16:03:48,471][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315428411926000 refcount:2
+[2020-12-30 16:03:48,471][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:2 to_index files:0 index files:0
+[2020-12-30 16:03:48,471][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315202932541000 refcount:1
+[2020-12-30 16:03:48,472][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315428411926000 refcount:1
+[2020-12-30 16:03:48,472][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] ShowCollectionInfoRequest(collection=retina_face): totally cost (0.003329 second [3.329300 ms])
+[2020-12-30 16:03:48,474][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 43
+[2020-12-30 16:03:48,475][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): check validation (0.000143 second [0.143200 ms])
+[2020-12-30 16:03:48,476][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.010235 second [10.234700 ms])
+[2020-12-30 16:03:48,476][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000791 second [0.790600 ms])
+[2020-12-30 16:03:48,477][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 1 vectors and uids (0.000330 second [0.330400 ms])
+[2020-12-30 16:03:48,477][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush all collections
+[2020-12-30 16:03:48,477][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 16:03:48,479][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609315428411926000 to /var/lib/milvus/db/tables/retina_face/1609315428458998000
+[2020-12-30 16:03:48,479][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609315202932541000 to /var/lib/milvus/db/tables/retina_face/1609315428458998000
+[2020-12-30 16:03:48,486][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.007048 second [7.047900 ms])
+[2020-12-30 16:03:48,487][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000373 second [0.372900 ms])
+[2020-12-30 16:03:48,487][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 26 vectors and uids (0.000291 second [0.291200 ms])
+[2020-12-30 16:03:48,487][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609315202932541000 to /var/lib/milvus/db/tables/retina_face/1609315428458998000
+[2020-12-30 16:03:48,488][DEBUG][ENGINE][Execute][milvus_server] Merge task files size info:2056, 53456, 
+[2020-12-30 16:03:48,494][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.006043 second [6.043100 ms])
+[2020-12-30 16:03:48,531][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Adding 27 ids to bloom filter (0.037095 second [37.094900 ms])
+[2020-12-30 16:03:48,532][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000608 second [0.607600 ms])
+[2020-12-30 16:03:48,533][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing bloom filter done (0.044405 second [44.405300 ms])
+[2020-12-30 16:03:48,537][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write rv done (0.003364 second [3.364300 ms])
+[2020-12-30 16:03:48,543][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write uids done (0.005373 second [5.373000 ms])
+[2020-12-30 16:03:48,544][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing vectors and uids done (0.011469 second [11.468700 ms])
+[2020-12-30 16:03:48,549][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing deleted docs done (0.005325 second [5.324900 ms])
+[2020-12-30 16:03:48,551][DEBUG][ENGINE][UpdateCollectionFiles][milvus_server] Update 3 collection files
+[2020-12-30 16:03:48,551][DEBUG][ENGINE][Execute][milvus_server] New merged segment 1609315428458998000 of size 55512 bytes
+[2020-12-30 16:03:48,552][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609315428411926000 refcount:0
+[2020-12-30 16:03:48,565][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609315202932541000 refcount:0
+[2020-12-30 16:03:48,570][DEBUG][ENGINE][Flush][reqsched_thread] End flush all collections
+[2020-12-30 16:03:48,578][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315428458998000 refcount:1
+[2020-12-30 16:03:48,579][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:1 new files:0 new_merge files:0 new_index files:0 to_index files:0
+[2020-12-30 16:03:48,579][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315428458998000 refcount:0
+[2020-12-30 16:03:48,580][DEBUG][ENGINE][WaitCollectionIndexRecursively][reqsched_thread] WaitCollectionIndexRecursively finished
+[2020-12-30 16:03:48,581][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): totally cost (0.105908 second [105.907700 ms])
+[2020-12-30 16:03:48,585][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 44
+[2020-12-30 16:03:48,588][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeIndexRequest(collection=retina_face): totally cost (0.000303 second [0.303200 ms])
+[2020-12-30 16:03:58,585][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609315202932541000 location:/var/lib/milvus/db/tables/retina_face/1609315202932541000/1609315202932541000
+[2020-12-30 16:03:58,588][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609315428411926000 location:/var/lib/milvus/db/tables/retina_face/1609315428411926000/1609315428411926000
+[2020-12-30 16:03:58,589][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Clean 2 files expired in 10 seconds
+[2020-12-30 16:03:58,597][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609315202932541000
+[2020-12-30 16:03:58,607][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609315428411926000
+[2020-12-30 16:03:58,608][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove 2 segments folder
+[2020-12-30 16:04:04,461][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 45
+[2020-12-30 16:04:04,462][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.000700 ms])
+[2020-12-30 16:04:04,464][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 46
+[2020-12-30 16:04:04,465][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000092 second [0.091900 ms])
+[2020-12-30 16:04:04,467][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 47
+[2020-12-30 16:04:04,468][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000128 second [0.128300 ms])
+[2020-12-30 16:04:04,470][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 48
+[2020-12-30 16:04:04,472][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): check validation (0.000128 second [0.128000 ms])
+[2020-12-30 16:04:04,472][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): prepare vectors data (0.000418 second [0.418000 ms])
+[2020-12-30 16:04:04,474][DEBUG][ENGINE][UpdateCollectionFlag][reqsched_thread] Successfully update collection flag, collection id = retina_face
+[2020-12-30 16:04:04,474][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): add vectors to engine (0.002380 second [2.379600 ms])
+[2020-12-30 16:04:04,475][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): total cost (0.003340 second [3.339600 ms])
+[2020-12-30 16:04:04,477][DEBUG][ENGINE][CreateCollectionFile][wal_thread] Successfully create collection file, file id = 1609315444475930000
+[2020-12-30 16:04:04,478][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 49
+[2020-12-30 16:04:04,480][DEBUG][SERVER][OnExecute][reqsched_thread] FlushRequest flush collections: retina_face, 
+[2020-12-30 16:04:04,483][DEBUG][ENGINE][Add][wal_thread] [insert][0]Insert float data into segment
+[2020-12-30 16:04:04,484][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush collection: retina_face
+[2020-12-30 16:04:04,484][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 16:04:04,486][DEBUG][ENGINE][Flush][wal_thread] Flushing collection: retina_face
+[2020-12-30 16:04:04,492][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.005879 second [5.879500 ms])
+[2020-12-30 16:04:04,499][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Adding 1 ids to bloom filter (0.007283 second [7.283400 ms])
+[2020-12-30 16:04:04,500][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000597 second [0.596800 ms])
+[2020-12-30 16:04:04,500][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing bloom filter done (0.014146 second [14.145700 ms])
+[2020-12-30 16:04:04,504][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write rv done (0.002357 second [2.357400 ms])
+[2020-12-30 16:04:04,506][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write uids done (0.002399 second [2.398900 ms])
+[2020-12-30 16:04:04,507][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing vectors and uids done (0.007139 second [7.139400 ms])
+[2020-12-30 16:04:04,511][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing deleted docs done (0.003726 second [3.726400 ms])
+[2020-12-30 16:04:04,512][DEBUG][ENGINE][Serialize][wal_thread] New raw file 1609315444475930000 of size 2048 bytes, lsn = 4295413516
+[2020-12-30 16:04:04,512][DEBUG][ENGINE][Serialize][wal_thread] Flushed segment 1609315444475930000
+[2020-12-30 16:04:04,517][DEBUG][ENGINE][UpdateCollectionFiles][wal_thread] Update 1 collection files
+[2020-12-30 16:04:04,518][DEBUG][ENGINE][UpdateCollectionFlushLSN][wal_thread] Successfully update collection flush_lsn, collection id = retina_face flush_lsn = 4295413516
+[2020-12-30 16:04:04,519][DEBUG][SERVER][PrintTimeRecord][wal_thread] MemTable::Serialize collection retina_face: Finished flushing (0.033358 second [33.357900 ms])
+[2020-12-30 16:04:04,520][DEBUG][ENGINE][Flush][wal_thread] Flushed collection: retina_face
+[2020-12-30 16:04:04,520][DEBUG][ENGINE][Flush][reqsched_thread] End flush collection: retina_face
+[2020-12-30 16:04:04,521][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] FlushRequest flush collections: retina_face, : totally cost (0.041112 second [41.112400 ms])
+[2020-12-30 16:04:04,521][DEBUG][ENGINE][FilesToMerge][milvus_server] Collect 2 to-merge files in collection retina_face
+[2020-12-30 16:04:04,522][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609315428458998000 refcount:1
+[2020-12-30 16:04:04,522][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609315444475930000 refcount:1
+[2020-12-30 16:04:04,522][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 50
+[2020-12-30 16:04:04,524][DEBUG][ENGINE][CreateCollectionFile][milvus_server] Successfully create collection file, file id = 1609315444523936000
+[2020-12-30 16:04:04,528][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609315444475930000 to /var/lib/milvus/db/tables/retina_face/1609315444523936000
+[2020-12-30 16:04:04,529][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): check validation (0.004342 second [4.342300 ms])
+[2020-12-30 16:04:04,529][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): totally cost (0.005322 second [5.322200 ms])
+[2020-12-30 16:04:04,531][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 51
+[2020-12-30 16:04:04,537][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315428458998000 refcount:2
+[2020-12-30 16:04:04,538][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315444475930000 refcount:2
+[2020-12-30 16:04:04,539][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:2 to_index files:0 index files:0
+[2020-12-30 16:04:04,539][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315428458998000 refcount:1
+[2020-12-30 16:04:04,539][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315444475930000 refcount:1
+[2020-12-30 16:04:04,540][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] ShowCollectionInfoRequest(collection=retina_face): totally cost (0.003268 second [3.267500 ms])
+[2020-12-30 16:04:04,541][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 52
+[2020-12-30 16:04:04,542][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.013259 second [13.259000 ms])
+[2020-12-30 16:04:04,543][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000686 second [0.685500 ms])
+[2020-12-30 16:04:04,543][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): check validation (0.000208 second [0.208500 ms])
+[2020-12-30 16:04:04,543][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush all collections
+[2020-12-30 16:04:04,544][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 1 vectors and uids (0.000755 second [0.755000 ms])
+[2020-12-30 16:04:04,544][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609315444475930000 to /var/lib/milvus/db/tables/retina_face/1609315444523936000
+[2020-12-30 16:04:04,544][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609315428458998000 to /var/lib/milvus/db/tables/retina_face/1609315444523936000
+[2020-12-30 16:04:04,545][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 16:04:04,552][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.007415 second [7.414500 ms])
+[2020-12-30 16:04:04,553][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000335 second [0.335200 ms])
+[2020-12-30 16:04:04,553][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 27 vectors and uids (0.000275 second [0.275400 ms])
+[2020-12-30 16:04:04,553][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609315428458998000 to /var/lib/milvus/db/tables/retina_face/1609315444523936000
+[2020-12-30 16:04:04,554][DEBUG][ENGINE][Execute][milvus_server] Merge task files size info:2056, 55512, 
+[2020-12-30 16:04:04,558][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.003893 second [3.892900 ms])
+[2020-12-30 16:04:04,584][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Adding 28 ids to bloom filter (0.026180 second [26.179600 ms])
+[2020-12-30 16:04:04,585][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000425 second [0.425000 ms])
+[2020-12-30 16:04:04,585][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing bloom filter done (0.030940 second [30.940300 ms])
+[2020-12-30 16:04:04,594][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write rv done (0.008249 second [8.248900 ms])
+[2020-12-30 16:04:04,597][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write uids done (0.002592 second [2.591500 ms])
+[2020-12-30 16:04:04,599][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing vectors and uids done (0.013792 second [13.791900 ms])
+[2020-12-30 16:04:04,603][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing deleted docs done (0.004709 second [4.709100 ms])
+[2020-12-30 16:04:04,605][DEBUG][ENGINE][UpdateCollectionFiles][milvus_server] Update 3 collection files
+[2020-12-30 16:04:04,605][DEBUG][ENGINE][Execute][milvus_server] New merged segment 1609315444523936000 of size 57568 bytes
+[2020-12-30 16:04:04,606][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609315444475930000 refcount:0
+[2020-12-30 16:04:04,614][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609315428458998000 refcount:0
+[2020-12-30 16:04:04,623][DEBUG][ENGINE][Flush][reqsched_thread] End flush all collections
+[2020-12-30 16:04:04,628][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315444523936000 refcount:1
+[2020-12-30 16:04:04,630][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:1 new files:0 new_merge files:0 new_index files:0 to_index files:0
+[2020-12-30 16:04:04,630][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315444523936000 refcount:0
+[2020-12-30 16:04:04,631][DEBUG][ENGINE][WaitCollectionIndexRecursively][reqsched_thread] WaitCollectionIndexRecursively finished
+[2020-12-30 16:04:04,631][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): totally cost (0.088511 second [88.510900 ms])
+[2020-12-30 16:04:04,633][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 53
+[2020-12-30 16:04:04,634][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeIndexRequest(collection=retina_face): totally cost (0.000130 second [0.129700 ms])
+[2020-12-30 16:04:14,635][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609315428458998000 location:/var/lib/milvus/db/tables/retina_face/1609315428458998000/1609315428458998000
+[2020-12-30 16:04:14,637][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609315444475930000 location:/var/lib/milvus/db/tables/retina_face/1609315444475930000/1609315444475930000
+[2020-12-30 16:04:14,639][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Clean 2 files expired in 10 seconds
+[2020-12-30 16:04:14,648][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609315428458998000
+[2020-12-30 16:04:14,654][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609315444475930000
+[2020-12-30 16:04:14,654][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove 2 segments folder
+[2020-12-30 16:08:58,017][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 54
+[2020-12-30 16:08:58,018][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.000700 ms])
+[2020-12-30 16:08:58,020][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 55
+[2020-12-30 16:08:58,021][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000162 second [0.162100 ms])
+[2020-12-30 16:08:58,023][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 56
+[2020-12-30 16:08:58,025][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000096 second [0.095800 ms])
+[2020-12-30 16:08:58,026][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 57
+[2020-12-30 16:08:58,028][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): check validation (0.000132 second [0.132000 ms])
+[2020-12-30 16:08:58,028][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): prepare vectors data (0.000337 second [0.336900 ms])
+[2020-12-30 16:08:58,030][DEBUG][ENGINE][UpdateCollectionFlag][reqsched_thread] Successfully update collection flag, collection id = retina_face
+[2020-12-30 16:08:58,030][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): add vectors to engine (0.002329 second [2.328600 ms])
+[2020-12-30 16:08:58,031][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): total cost (0.003092 second [3.092200 ms])
+[2020-12-30 16:08:58,032][DEBUG][ENGINE][CreateCollectionFile][wal_thread] Successfully create collection file, file id = 1609315738032126000
+[2020-12-30 16:08:58,033][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 58
+[2020-12-30 16:08:58,033][DEBUG][SERVER][OnExecute][reqsched_thread] FlushRequest flush collections: retina_face, 
+[2020-12-30 16:08:58,036][DEBUG][ENGINE][Add][wal_thread] [insert][0]Insert float data into segment
+[2020-12-30 16:08:58,037][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush collection: retina_face
+[2020-12-30 16:08:58,037][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 16:08:58,038][DEBUG][ENGINE][Flush][wal_thread] Flushing collection: retina_face
+[2020-12-30 16:08:58,044][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.004846 second [4.846100 ms])
+[2020-12-30 16:08:58,052][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Adding 1 ids to bloom filter (0.008019 second [8.019000 ms])
+[2020-12-30 16:08:58,053][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.001145 second [1.145300 ms])
+[2020-12-30 16:08:58,055][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing bloom filter done (0.015731 second [15.731500 ms])
+[2020-12-30 16:08:58,058][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write rv done (0.002727 second [2.727100 ms])
+[2020-12-30 16:08:58,061][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write uids done (0.002423 second [2.422800 ms])
+[2020-12-30 16:08:58,062][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing vectors and uids done (0.007730 second [7.729900 ms])
+[2020-12-30 16:08:58,067][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing deleted docs done (0.004268 second [4.267900 ms])
+[2020-12-30 16:08:58,067][DEBUG][ENGINE][Serialize][wal_thread] New raw file 1609315738032126000 of size 2048 bytes, lsn = 4295415604
+[2020-12-30 16:08:58,067][DEBUG][ENGINE][Serialize][wal_thread] Flushed segment 1609315738032126000
+[2020-12-30 16:08:58,074][DEBUG][ENGINE][UpdateCollectionFiles][wal_thread] Update 1 collection files
+[2020-12-30 16:08:58,076][DEBUG][ENGINE][UpdateCollectionFlushLSN][wal_thread] Successfully update collection flush_lsn, collection id = retina_face flush_lsn = 4295415604
+[2020-12-30 16:08:58,076][DEBUG][SERVER][PrintTimeRecord][wal_thread] MemTable::Serialize collection retina_face: Finished flushing (0.037375 second [37.375100 ms])
+[2020-12-30 16:08:58,077][DEBUG][ENGINE][Flush][wal_thread] Flushed collection: retina_face
+[2020-12-30 16:08:58,077][DEBUG][ENGINE][Flush][reqsched_thread] End flush collection: retina_face
+[2020-12-30 16:08:58,078][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] FlushRequest flush collections: retina_face, : totally cost (0.044255 second [44.255000 ms])
+[2020-12-30 16:08:58,078][DEBUG][ENGINE][FilesToMerge][milvus_server] Collect 2 to-merge files in collection retina_face
+[2020-12-30 16:08:58,079][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609315444523936000 refcount:1
+[2020-12-30 16:08:58,079][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609315738032126000 refcount:1
+[2020-12-30 16:08:58,080][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 59
+[2020-12-30 16:08:58,081][DEBUG][ENGINE][CreateCollectionFile][milvus_server] Successfully create collection file, file id = 1609315738080783000
+[2020-12-30 16:08:58,087][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609315738032126000 to /var/lib/milvus/db/tables/retina_face/1609315738080783000
+[2020-12-30 16:08:58,088][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): check validation (0.006354 second [6.354500 ms])
+[2020-12-30 16:08:58,089][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): totally cost (0.007619 second [7.619300 ms])
+[2020-12-30 16:08:58,091][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 60
+[2020-12-30 16:08:58,092][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315444523936000 refcount:2
+[2020-12-30 16:08:58,093][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315738032126000 refcount:2
+[2020-12-30 16:08:58,093][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:2 to_index files:0 index files:0
+[2020-12-30 16:08:58,094][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315444523936000 refcount:1
+[2020-12-30 16:08:58,094][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315738032126000 refcount:1
+[2020-12-30 16:08:58,095][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] ShowCollectionInfoRequest(collection=retina_face): totally cost (0.003420 second [3.420400 ms])
+[2020-12-30 16:08:58,096][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.008584 second [8.583700 ms])
+[2020-12-30 16:08:58,097][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 61
+[2020-12-30 16:08:58,098][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000614 second [0.613900 ms])
+[2020-12-30 16:08:58,099][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): check validation (0.000152 second [0.152200 ms])
+[2020-12-30 16:08:58,099][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush all collections
+[2020-12-30 16:08:58,100][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 16:08:58,101][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 1 vectors and uids (0.001876 second [1.875700 ms])
+[2020-12-30 16:08:58,101][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609315738032126000 to /var/lib/milvus/db/tables/retina_face/1609315738080783000
+[2020-12-30 16:08:58,101][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609315444523936000 to /var/lib/milvus/db/tables/retina_face/1609315738080783000
+[2020-12-30 16:08:58,120][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.018187 second [18.186700 ms])
+[2020-12-30 16:08:58,121][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000533 second [0.533200 ms])
+[2020-12-30 16:08:58,121][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 28 vectors and uids (0.000412 second [0.412000 ms])
+[2020-12-30 16:08:58,121][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609315444523936000 to /var/lib/milvus/db/tables/retina_face/1609315738080783000
+[2020-12-30 16:08:58,122][DEBUG][ENGINE][Execute][milvus_server] Merge task files size info:2056, 57568, 
+[2020-12-30 16:08:58,127][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.004687 second [4.686700 ms])
+[2020-12-30 16:08:58,158][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Adding 29 ids to bloom filter (0.031142 second [31.142300 ms])
+[2020-12-30 16:08:58,161][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.002084 second [2.084200 ms])
+[2020-12-30 16:08:58,161][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing bloom filter done (0.038358 second [38.358100 ms])
+[2020-12-30 16:08:58,165][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write rv done (0.002418 second [2.418000 ms])
+[2020-12-30 16:08:58,168][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write uids done (0.002598 second [2.598200 ms])
+[2020-12-30 16:08:58,169][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing vectors and uids done (0.008067 second [8.067100 ms])
+[2020-12-30 16:08:58,176][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing deleted docs done (0.007418 second [7.418000 ms])
+[2020-12-30 16:08:58,178][DEBUG][ENGINE][UpdateCollectionFiles][milvus_server] Update 3 collection files
+[2020-12-30 16:08:58,179][DEBUG][ENGINE][Execute][milvus_server] New merged segment 1609315738080783000 of size 59624 bytes
+[2020-12-30 16:08:58,179][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609315738032126000 refcount:0
+[2020-12-30 16:08:58,191][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609315444523936000 refcount:0
+[2020-12-30 16:08:58,197][DEBUG][ENGINE][Flush][reqsched_thread] End flush all collections
+[2020-12-30 16:08:58,201][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315738080783000 refcount:1
+[2020-12-30 16:08:58,201][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:1 new files:0 new_merge files:0 new_index files:0 to_index files:0
+[2020-12-30 16:08:58,201][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315738080783000 refcount:0
+[2020-12-30 16:08:58,202][DEBUG][ENGINE][WaitCollectionIndexRecursively][reqsched_thread] WaitCollectionIndexRecursively finished
+[2020-12-30 16:08:58,202][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): totally cost (0.104089 second [104.089000 ms])
+[2020-12-30 16:08:58,205][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 62
+[2020-12-30 16:08:58,206][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeIndexRequest(collection=retina_face): totally cost (0.000143 second [0.142700 ms])
+[2020-12-30 16:09:08,220][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609315444523936000 location:/var/lib/milvus/db/tables/retina_face/1609315444523936000/1609315444523936000
+[2020-12-30 16:09:08,224][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609315738032126000 location:/var/lib/milvus/db/tables/retina_face/1609315738032126000/1609315738032126000
+[2020-12-30 16:09:08,230][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Clean 2 files expired in 10 seconds
+[2020-12-30 16:09:08,248][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609315444523936000
+[2020-12-30 16:09:08,256][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609315738032126000
+[2020-12-30 16:09:08,256][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove 2 segments folder
+[2020-12-30 16:09:32,817][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 63
+[2020-12-30 16:09:32,818][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.000800 ms])
+[2020-12-30 16:09:32,821][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 64
+[2020-12-30 16:09:32,823][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000098 second [0.097800 ms])
+[2020-12-30 16:09:32,824][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 65
+[2020-12-30 16:09:32,825][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000087 second [0.087200 ms])
+[2020-12-30 16:09:32,827][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 66
+[2020-12-30 16:09:32,828][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): check validation (0.000127 second [0.127400 ms])
+[2020-12-30 16:09:32,829][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): prepare vectors data (0.000501 second [0.500700 ms])
+[2020-12-30 16:09:32,831][DEBUG][ENGINE][UpdateCollectionFlag][reqsched_thread] Successfully update collection flag, collection id = retina_face
+[2020-12-30 16:09:32,832][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): add vectors to engine (0.003050 second [3.049800 ms])
+[2020-12-30 16:09:32,832][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): total cost (0.004342 second [4.341800 ms])
+[2020-12-30 16:09:32,833][DEBUG][ENGINE][CreateCollectionFile][wal_thread] Successfully create collection file, file id = 1609315772832532000
+[2020-12-30 16:09:32,834][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 67
+[2020-12-30 16:09:32,835][DEBUG][SERVER][OnExecute][reqsched_thread] FlushRequest flush collections: retina_face, 
+[2020-12-30 16:09:32,838][DEBUG][ENGINE][Add][wal_thread] [insert][0]Insert float data into segment
+[2020-12-30 16:09:32,838][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush collection: retina_face
+[2020-12-30 16:09:32,839][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 16:09:32,840][DEBUG][ENGINE][Flush][wal_thread] Flushing collection: retina_face
+[2020-12-30 16:09:32,845][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.004447 second [4.447000 ms])
+[2020-12-30 16:09:32,853][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Adding 1 ids to bloom filter (0.008164 second [8.163700 ms])
+[2020-12-30 16:09:32,853][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000536 second [0.535800 ms])
+[2020-12-30 16:09:32,854][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing bloom filter done (0.013639 second [13.639100 ms])
+[2020-12-30 16:09:32,857][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write rv done (0.002207 second [2.207500 ms])
+[2020-12-30 16:09:32,859][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write uids done (0.002346 second [2.345600 ms])
+[2020-12-30 16:09:32,860][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing vectors and uids done (0.006625 second [6.625100 ms])
+[2020-12-30 16:09:32,865][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing deleted docs done (0.004410 second [4.410400 ms])
+[2020-12-30 16:09:32,865][DEBUG][ENGINE][Serialize][wal_thread] New raw file 1609315772832532000 of size 2048 bytes, lsn = 4295417692
+[2020-12-30 16:09:32,865][DEBUG][ENGINE][Serialize][wal_thread] Flushed segment 1609315772832532000
+[2020-12-30 16:09:32,868][DEBUG][ENGINE][UpdateCollectionFiles][wal_thread] Update 1 collection files
+[2020-12-30 16:09:32,870][DEBUG][ENGINE][UpdateCollectionFlushLSN][wal_thread] Successfully update collection flush_lsn, collection id = retina_face flush_lsn = 4295417692
+[2020-12-30 16:09:32,870][DEBUG][SERVER][PrintTimeRecord][wal_thread] MemTable::Serialize collection retina_face: Finished flushing (0.030112 second [30.112200 ms])
+[2020-12-30 16:09:32,871][DEBUG][ENGINE][Flush][wal_thread] Flushed collection: retina_face
+[2020-12-30 16:09:32,872][DEBUG][ENGINE][Flush][reqsched_thread] End flush collection: retina_face
+[2020-12-30 16:09:32,872][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] FlushRequest flush collections: retina_face, : totally cost (0.037415 second [37.415400 ms])
+[2020-12-30 16:09:32,873][DEBUG][ENGINE][FilesToMerge][milvus_server] Collect 2 to-merge files in collection retina_face
+[2020-12-30 16:09:32,874][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609315738080783000 refcount:1
+[2020-12-30 16:09:32,874][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609315772832532000 refcount:1
+[2020-12-30 16:09:32,874][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 68
+[2020-12-30 16:09:32,876][DEBUG][ENGINE][CreateCollectionFile][milvus_server] Successfully create collection file, file id = 1609315772875702000
+[2020-12-30 16:09:32,880][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609315772832532000 to /var/lib/milvus/db/tables/retina_face/1609315772875702000
+[2020-12-30 16:09:32,880][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): check validation (0.004804 second [4.803700 ms])
+[2020-12-30 16:09:32,881][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): totally cost (0.005646 second [5.646300 ms])
+[2020-12-30 16:09:32,883][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 69
+[2020-12-30 16:09:32,884][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315738080783000 refcount:2
+[2020-12-30 16:09:32,885][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315772832532000 refcount:2
+[2020-12-30 16:09:32,886][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:2 to_index files:0 index files:0
+[2020-12-30 16:09:32,886][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315738080783000 refcount:1
+[2020-12-30 16:09:32,887][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315772832532000 refcount:1
+[2020-12-30 16:09:32,888][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] ShowCollectionInfoRequest(collection=retina_face): totally cost (0.004470 second [4.470500 ms])
+[2020-12-30 16:09:32,891][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.010258 second [10.258200 ms])
+[2020-12-30 16:09:32,891][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000416 second [0.415700 ms])
+[2020-12-30 16:09:32,891][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 70
+[2020-12-30 16:09:32,892][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 1 vectors and uids (0.000309 second [0.308700 ms])
+[2020-12-30 16:09:32,893][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609315772832532000 to /var/lib/milvus/db/tables/retina_face/1609315772875702000
+[2020-12-30 16:09:32,893][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): check validation (0.000135 second [0.134900 ms])
+[2020-12-30 16:09:32,893][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush all collections
+[2020-12-30 16:09:32,894][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609315738080783000 to /var/lib/milvus/db/tables/retina_face/1609315772875702000
+[2020-12-30 16:09:32,894][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 16:09:32,902][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.007427 second [7.427300 ms])
+[2020-12-30 16:09:32,902][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000491 second [0.491300 ms])
+[2020-12-30 16:09:32,903][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 29 vectors and uids (0.000500 second [0.500100 ms])
+[2020-12-30 16:09:32,903][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609315738080783000 to /var/lib/milvus/db/tables/retina_face/1609315772875702000
+[2020-12-30 16:09:32,904][DEBUG][ENGINE][Execute][milvus_server] Merge task files size info:2056, 59624, 
+[2020-12-30 16:09:32,909][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.004921 second [4.921300 ms])
+[2020-12-30 16:09:32,937][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Adding 30 ids to bloom filter (0.028071 second [28.071000 ms])
+[2020-12-30 16:09:32,938][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000474 second [0.473900 ms])
+[2020-12-30 16:09:32,938][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing bloom filter done (0.034000 second [33.999800 ms])
+[2020-12-30 16:09:32,941][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write rv done (0.002199 second [2.199200 ms])
+[2020-12-30 16:09:32,944][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write uids done (0.002099 second [2.098600 ms])
+[2020-12-30 16:09:32,944][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing vectors and uids done (0.006288 second [6.288500 ms])
+[2020-12-30 16:09:32,949][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing deleted docs done (0.004936 second [4.936000 ms])
+[2020-12-30 16:09:32,951][DEBUG][ENGINE][UpdateCollectionFiles][milvus_server] Update 3 collection files
+[2020-12-30 16:09:32,951][DEBUG][ENGINE][Execute][milvus_server] New merged segment 1609315772875702000 of size 61680 bytes
+[2020-12-30 16:09:32,953][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609315772832532000 refcount:0
+[2020-12-30 16:09:32,963][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609315738080783000 refcount:0
+[2020-12-30 16:09:32,966][DEBUG][ENGINE][Flush][reqsched_thread] End flush all collections
+[2020-12-30 16:09:32,976][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315772875702000 refcount:1
+[2020-12-30 16:09:32,977][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:1 new files:0 new_merge files:0 new_index files:0 to_index files:0
+[2020-12-30 16:09:32,978][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315772875702000 refcount:0
+[2020-12-30 16:09:32,978][DEBUG][ENGINE][WaitCollectionIndexRecursively][reqsched_thread] WaitCollectionIndexRecursively finished
+[2020-12-30 16:09:32,979][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): totally cost (0.086557 second [86.557300 ms])
+[2020-12-30 16:09:32,980][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 71
+[2020-12-30 16:09:32,981][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeIndexRequest(collection=retina_face): totally cost (0.000129 second [0.129000 ms])
+[2020-12-30 16:09:42,981][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609315738080783000 location:/var/lib/milvus/db/tables/retina_face/1609315738080783000/1609315738080783000
+[2020-12-30 16:09:42,982][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609315772832532000 location:/var/lib/milvus/db/tables/retina_face/1609315772832532000/1609315772832532000
+[2020-12-30 16:09:42,984][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Clean 2 files expired in 10 seconds
+[2020-12-30 16:09:42,992][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609315738080783000
+[2020-12-30 16:09:42,999][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609315772832532000
+[2020-12-30 16:09:43,000][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove 2 segments folder
+[2020-12-30 16:11:44,712][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 72
+[2020-12-30 16:11:44,713][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.000800 ms])
+[2020-12-30 16:11:44,715][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 73
+[2020-12-30 16:11:44,716][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000110 second [0.109700 ms])
+[2020-12-30 16:11:44,718][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 74
+[2020-12-30 16:11:44,720][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000126 second [0.125600 ms])
+[2020-12-30 16:11:44,721][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 75
+[2020-12-30 16:11:44,723][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): check validation (0.000092 second [0.091800 ms])
+[2020-12-30 16:11:44,724][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): prepare vectors data (0.001106 second [1.106200 ms])
+[2020-12-30 16:11:44,726][DEBUG][ENGINE][UpdateCollectionFlag][reqsched_thread] Successfully update collection flag, collection id = retina_face
+[2020-12-30 16:11:44,726][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): add vectors to engine (0.002197 second [2.196600 ms])
+[2020-12-30 16:11:44,726][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): total cost (0.003728 second [3.727800 ms])
+[2020-12-30 16:11:44,728][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 76
+[2020-12-30 16:11:44,729][DEBUG][SERVER][OnExecute][reqsched_thread] FlushRequest flush collections: retina_face, 
+[2020-12-30 16:11:44,759][DEBUG][ENGINE][CreateCollectionFile][wal_thread] Successfully create collection file, file id = 1609315904727583000
+[2020-12-30 16:11:44,763][DEBUG][ENGINE][Add][wal_thread] [insert][0]Insert float data into segment
+[2020-12-30 16:11:44,764][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush collection: retina_face
+[2020-12-30 16:11:44,764][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 16:11:44,766][DEBUG][ENGINE][Flush][wal_thread] Flushing collection: retina_face
+[2020-12-30 16:11:44,771][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.004390 second [4.389900 ms])
+[2020-12-30 16:11:44,778][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Adding 1 ids to bloom filter (0.007292 second [7.291600 ms])
+[2020-12-30 16:11:44,778][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000530 second [0.529600 ms])
+[2020-12-30 16:11:44,779][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing bloom filter done (0.012549 second [12.549300 ms])
+[2020-12-30 16:11:44,784][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write rv done (0.003882 second [3.882000 ms])
+[2020-12-30 16:11:44,786][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write uids done (0.002343 second [2.343200 ms])
+[2020-12-30 16:11:44,787][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing vectors and uids done (0.007954 second [7.954400 ms])
+[2020-12-30 16:11:44,791][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing deleted docs done (0.003954 second [3.954400 ms])
+[2020-12-30 16:11:44,791][DEBUG][ENGINE][Serialize][wal_thread] New raw file 1609315904727583000 of size 2048 bytes, lsn = 4295419780
+[2020-12-30 16:11:44,791][DEBUG][ENGINE][Serialize][wal_thread] Flushed segment 1609315904727583000
+[2020-12-30 16:11:44,797][DEBUG][ENGINE][UpdateCollectionFiles][wal_thread] Update 1 collection files
+[2020-12-30 16:11:44,799][DEBUG][ENGINE][UpdateCollectionFlushLSN][wal_thread] Successfully update collection flush_lsn, collection id = retina_face flush_lsn = 4295419780
+[2020-12-30 16:11:44,800][DEBUG][SERVER][PrintTimeRecord][wal_thread] MemTable::Serialize collection retina_face: Finished flushing (0.033455 second [33.455400 ms])
+[2020-12-30 16:11:44,800][DEBUG][ENGINE][Flush][wal_thread] Flushed collection: retina_face
+[2020-12-30 16:11:44,801][DEBUG][ENGINE][Flush][reqsched_thread] End flush collection: retina_face
+[2020-12-30 16:11:44,803][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] FlushRequest flush collections: retina_face, : totally cost (0.073739 second [73.739500 ms])
+[2020-12-30 16:11:44,804][DEBUG][ENGINE][FilesToMerge][milvus_server] Collect 2 to-merge files in collection retina_face
+[2020-12-30 16:11:44,805][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609315772875702000 refcount:1
+[2020-12-30 16:11:44,805][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609315904727583000 refcount:1
+[2020-12-30 16:11:44,805][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 77
+[2020-12-30 16:11:44,807][DEBUG][ENGINE][CreateCollectionFile][milvus_server] Successfully create collection file, file id = 1609315904806765000
+[2020-12-30 16:11:44,812][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609315904727583000 to /var/lib/milvus/db/tables/retina_face/1609315904806765000
+[2020-12-30 16:11:44,812][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): check validation (0.004857 second [4.856700 ms])
+[2020-12-30 16:11:44,812][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): totally cost (0.005632 second [5.632100 ms])
+[2020-12-30 16:11:44,814][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 78
+[2020-12-30 16:11:44,817][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315772875702000 refcount:2
+[2020-12-30 16:11:44,818][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315904727583000 refcount:2
+[2020-12-30 16:11:44,818][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:2 to_index files:0 index files:0
+[2020-12-30 16:11:44,819][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315772875702000 refcount:1
+[2020-12-30 16:11:44,819][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315904727583000 refcount:1
+[2020-12-30 16:11:44,820][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] ShowCollectionInfoRequest(collection=retina_face): totally cost (0.003525 second [3.525200 ms])
+[2020-12-30 16:11:44,822][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 79
+[2020-12-30 16:11:44,823][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): check validation (0.000164 second [0.163600 ms])
+[2020-12-30 16:11:44,823][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush all collections
+[2020-12-30 16:11:44,824][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.011186 second [11.186300 ms])
+[2020-12-30 16:11:44,824][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 16:11:44,825][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.001102 second [1.102400 ms])
+[2020-12-30 16:11:44,825][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 1 vectors and uids (0.000904 second [0.903900 ms])
+[2020-12-30 16:11:44,825][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609315904727583000 to /var/lib/milvus/db/tables/retina_face/1609315904806765000
+[2020-12-30 16:11:44,826][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609315772875702000 to /var/lib/milvus/db/tables/retina_face/1609315904806765000
+[2020-12-30 16:11:44,836][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.008777 second [8.777000 ms])
+[2020-12-30 16:11:44,836][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000439 second [0.439300 ms])
+[2020-12-30 16:11:44,836][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 30 vectors and uids (0.000425 second [0.424800 ms])
+[2020-12-30 16:11:44,837][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609315772875702000 to /var/lib/milvus/db/tables/retina_face/1609315904806765000
+[2020-12-30 16:11:44,837][DEBUG][ENGINE][Execute][milvus_server] Merge task files size info:2056, 61680, 
+[2020-12-30 16:11:44,841][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.003941 second [3.941000 ms])
+[2020-12-30 16:11:44,869][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Adding 31 ids to bloom filter (0.027292 second [27.292000 ms])
+[2020-12-30 16:11:44,869][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000503 second [0.502600 ms])
+[2020-12-30 16:11:44,869][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing bloom filter done (0.032130 second [32.129600 ms])
+[2020-12-30 16:11:44,873][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write rv done (0.002208 second [2.208100 ms])
+[2020-12-30 16:11:44,875][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write uids done (0.002357 second [2.357000 ms])
+[2020-12-30 16:11:44,876][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing vectors and uids done (0.006649 second [6.648600 ms])
+[2020-12-30 16:11:44,880][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing deleted docs done (0.004330 second [4.330100 ms])
+[2020-12-30 16:11:44,882][DEBUG][ENGINE][UpdateCollectionFiles][milvus_server] Update 3 collection files
+[2020-12-30 16:11:44,882][DEBUG][ENGINE][Execute][milvus_server] New merged segment 1609315904806765000 of size 63736 bytes
+[2020-12-30 16:11:44,883][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609315904727583000 refcount:0
+[2020-12-30 16:11:44,894][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609315772875702000 refcount:0
+[2020-12-30 16:11:44,901][DEBUG][ENGINE][Flush][reqsched_thread] End flush all collections
+[2020-12-30 16:11:44,904][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315904806765000 refcount:1
+[2020-12-30 16:11:44,905][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:1 new files:0 new_merge files:0 new_index files:0 to_index files:0
+[2020-12-30 16:11:44,905][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315904806765000 refcount:0
+[2020-12-30 16:11:44,906][DEBUG][ENGINE][WaitCollectionIndexRecursively][reqsched_thread] WaitCollectionIndexRecursively finished
+[2020-12-30 16:11:44,907][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): totally cost (0.083881 second [83.880800 ms])
+[2020-12-30 16:11:44,909][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 80
+[2020-12-30 16:11:44,910][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeIndexRequest(collection=retina_face): totally cost (0.000127 second [0.127100 ms])
+[2020-12-30 16:11:54,924][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609315772875702000 location:/var/lib/milvus/db/tables/retina_face/1609315772875702000/1609315772875702000
+[2020-12-30 16:11:54,927][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609315904727583000 location:/var/lib/milvus/db/tables/retina_face/1609315904727583000/1609315904727583000
+[2020-12-30 16:11:54,929][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Clean 2 files expired in 10 seconds
+[2020-12-30 16:11:54,940][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609315772875702000
+[2020-12-30 16:11:54,947][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609315904727583000
+[2020-12-30 16:11:54,948][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove 2 segments folder
+[2020-12-30 16:12:18,122][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 81
+[2020-12-30 16:12:18,123][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000000 second [0.000400 ms])
+[2020-12-30 16:12:18,125][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 82
+[2020-12-30 16:12:18,126][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000082 second [0.081800 ms])
+[2020-12-30 16:12:18,128][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 83
+[2020-12-30 16:12:18,129][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000114 second [0.113700 ms])
+[2020-12-30 16:12:18,131][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 84
+[2020-12-30 16:12:18,132][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): check validation (0.000104 second [0.103700 ms])
+[2020-12-30 16:12:18,132][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): prepare vectors data (0.000373 second [0.373500 ms])
+[2020-12-30 16:12:18,134][DEBUG][ENGINE][UpdateCollectionFlag][reqsched_thread] Successfully update collection flag, collection id = retina_face
+[2020-12-30 16:12:18,135][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): add vectors to engine (0.002167 second [2.166500 ms])
+[2020-12-30 16:12:18,135][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): total cost (0.003459 second [3.459500 ms])
+[2020-12-30 16:12:18,137][DEBUG][ENGINE][CreateCollectionFile][wal_thread] Successfully create collection file, file id = 1609315938135478000
+[2020-12-30 16:12:18,138][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 85
+[2020-12-30 16:12:18,138][DEBUG][SERVER][OnExecute][reqsched_thread] FlushRequest flush collections: retina_face, 
+[2020-12-30 16:12:18,141][DEBUG][ENGINE][Add][wal_thread] [insert][0]Insert float data into segment
+[2020-12-30 16:12:18,142][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush collection: retina_face
+[2020-12-30 16:12:18,142][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 16:12:18,143][DEBUG][ENGINE][Flush][wal_thread] Flushing collection: retina_face
+[2020-12-30 16:12:18,149][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.005187 second [5.187100 ms])
+[2020-12-30 16:12:18,159][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Adding 1 ids to bloom filter (0.009534 second [9.533700 ms])
+[2020-12-30 16:12:18,160][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.001155 second [1.155500 ms])
+[2020-12-30 16:12:18,160][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing bloom filter done (0.016282 second [16.282100 ms])
+[2020-12-30 16:12:18,163][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write rv done (0.001987 second [1.986600 ms])
+[2020-12-30 16:12:18,166][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write uids done (0.002317 second [2.316600 ms])
+[2020-12-30 16:12:18,167][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing vectors and uids done (0.006186 second [6.186200 ms])
+[2020-12-30 16:12:18,171][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing deleted docs done (0.004368 second [4.367600 ms])
+[2020-12-30 16:12:18,171][DEBUG][ENGINE][Serialize][wal_thread] New raw file 1609315938135478000 of size 2048 bytes, lsn = 4295421868
+[2020-12-30 16:12:18,173][DEBUG][ENGINE][Serialize][wal_thread] Flushed segment 1609315938135478000
+[2020-12-30 16:12:18,179][DEBUG][ENGINE][UpdateCollectionFiles][wal_thread] Update 1 collection files
+[2020-12-30 16:12:18,180][DEBUG][ENGINE][UpdateCollectionFlushLSN][wal_thread] Successfully update collection flush_lsn, collection id = retina_face flush_lsn = 4295421868
+[2020-12-30 16:12:18,180][DEBUG][SERVER][PrintTimeRecord][wal_thread] MemTable::Serialize collection retina_face: Finished flushing (0.036236 second [36.235600 ms])
+[2020-12-30 16:12:18,181][DEBUG][ENGINE][Flush][wal_thread] Flushed collection: retina_face
+[2020-12-30 16:12:18,182][DEBUG][ENGINE][Flush][reqsched_thread] End flush collection: retina_face
+[2020-12-30 16:12:18,182][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] FlushRequest flush collections: retina_face, : totally cost (0.043820 second [43.819700 ms])
+[2020-12-30 16:12:18,183][DEBUG][ENGINE][FilesToMerge][milvus_server] Collect 2 to-merge files in collection retina_face
+[2020-12-30 16:12:18,184][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 86
+[2020-12-30 16:12:18,185][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): check validation (0.000120 second [0.119700 ms])
+[2020-12-30 16:12:18,185][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609315904806765000 refcount:1
+[2020-12-30 16:12:18,185][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): totally cost (0.000586 second [0.585700 ms])
+[2020-12-30 16:12:18,186][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609315938135478000 refcount:1
+[2020-12-30 16:12:18,188][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 87
+[2020-12-30 16:12:18,189][DEBUG][ENGINE][CreateCollectionFile][milvus_server] Successfully create collection file, file id = 1609315938188484000
+[2020-12-30 16:12:18,194][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609315938135478000 to /var/lib/milvus/db/tables/retina_face/1609315938188484000
+[2020-12-30 16:12:18,194][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315904806765000 refcount:2
+[2020-12-30 16:12:18,195][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315938135478000 refcount:2
+[2020-12-30 16:12:18,195][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:2 to_index files:0 index files:0
+[2020-12-30 16:12:18,196][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315904806765000 refcount:1
+[2020-12-30 16:12:18,197][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315938135478000 refcount:1
+[2020-12-30 16:12:18,197][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] ShowCollectionInfoRequest(collection=retina_face): totally cost (0.008366 second [8.366500 ms])
+[2020-12-30 16:12:18,199][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 88
+[2020-12-30 16:12:18,200][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): check validation (0.000203 second [0.203000 ms])
+[2020-12-30 16:12:18,200][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush all collections
+[2020-12-30 16:12:18,201][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 16:12:18,203][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.008694 second [8.694500 ms])
+[2020-12-30 16:12:18,204][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000396 second [0.395900 ms])
+[2020-12-30 16:12:18,204][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 1 vectors and uids (0.000389 second [0.389500 ms])
+[2020-12-30 16:12:18,204][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609315938135478000 to /var/lib/milvus/db/tables/retina_face/1609315938188484000
+[2020-12-30 16:12:18,205][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609315904806765000 to /var/lib/milvus/db/tables/retina_face/1609315938188484000
+[2020-12-30 16:12:18,213][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.008222 second [8.222500 ms])
+[2020-12-30 16:12:18,214][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000343 second [0.342700 ms])
+[2020-12-30 16:12:18,214][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 31 vectors and uids (0.000423 second [0.422700 ms])
+[2020-12-30 16:12:18,214][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609315904806765000 to /var/lib/milvus/db/tables/retina_face/1609315938188484000
+[2020-12-30 16:12:18,215][DEBUG][ENGINE][Execute][milvus_server] Merge task files size info:2056, 63736, 
+[2020-12-30 16:12:18,219][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.004002 second [4.002300 ms])
+[2020-12-30 16:12:18,247][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Adding 32 ids to bloom filter (0.028139 second [28.139100 ms])
+[2020-12-30 16:12:18,248][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000331 second [0.331000 ms])
+[2020-12-30 16:12:18,248][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing bloom filter done (0.032845 second [32.844900 ms])
+[2020-12-30 16:12:18,251][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write rv done (0.002201 second [2.201100 ms])
+[2020-12-30 16:12:18,253][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write uids done (0.002240 second [2.240300 ms])
+[2020-12-30 16:12:18,254][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing vectors and uids done (0.006226 second [6.225700 ms])
+[2020-12-30 16:12:18,259][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing deleted docs done (0.004764 second [4.764400 ms])
+[2020-12-30 16:12:18,260][DEBUG][ENGINE][UpdateCollectionFiles][milvus_server] Update 3 collection files
+[2020-12-30 16:12:18,260][DEBUG][ENGINE][Execute][milvus_server] New merged segment 1609315938188484000 of size 65792 bytes
+[2020-12-30 16:12:18,261][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609315938135478000 refcount:0
+[2020-12-30 16:12:18,273][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609315904806765000 refcount:0
+[2020-12-30 16:12:18,278][DEBUG][ENGINE][Flush][reqsched_thread] End flush all collections
+[2020-12-30 16:12:18,283][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315938188484000 refcount:1
+[2020-12-30 16:12:18,285][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:1 new files:0 new_merge files:0 new_index files:0 to_index files:0
+[2020-12-30 16:12:18,287][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315938188484000 refcount:0
+[2020-12-30 16:12:18,287][DEBUG][ENGINE][WaitCollectionIndexRecursively][reqsched_thread] WaitCollectionIndexRecursively finished
+[2020-12-30 16:12:18,288][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): totally cost (0.088289 second [88.288800 ms])
+[2020-12-30 16:12:18,290][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 89
+[2020-12-30 16:12:18,291][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeIndexRequest(collection=retina_face): totally cost (0.000159 second [0.159100 ms])
+[2020-12-30 16:12:28,305][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609315904806765000 location:/var/lib/milvus/db/tables/retina_face/1609315904806765000/1609315904806765000
+[2020-12-30 16:12:28,307][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609315938135478000 location:/var/lib/milvus/db/tables/retina_face/1609315938135478000/1609315938135478000
+[2020-12-30 16:12:28,308][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Clean 2 files expired in 10 seconds
+[2020-12-30 16:12:28,316][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609315904806765000
+[2020-12-30 16:12:28,323][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609315938135478000
+[2020-12-30 16:12:28,323][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove 2 segments folder
+[2020-12-30 16:15:06,543][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 90
+[2020-12-30 16:15:06,545][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.000800 ms])
+[2020-12-30 16:15:06,546][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 91
+[2020-12-30 16:15:06,547][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000107 second [0.107500 ms])
+[2020-12-30 16:15:06,549][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 92
+[2020-12-30 16:15:06,550][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000115 second [0.115000 ms])
+[2020-12-30 16:15:06,552][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 93
+[2020-12-30 16:15:06,554][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): check validation (0.000142 second [0.141600 ms])
+[2020-12-30 16:15:06,554][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): prepare vectors data (0.000489 second [0.489200 ms])
+[2020-12-30 16:15:06,558][DEBUG][ENGINE][UpdateCollectionFlag][reqsched_thread] Successfully update collection flag, collection id = retina_face
+[2020-12-30 16:15:06,558][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): add vectors to engine (0.003746 second [3.745800 ms])
+[2020-12-30 16:15:06,559][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): total cost (0.005037 second [5.037400 ms])
+[2020-12-30 16:15:06,560][DEBUG][ENGINE][CreateCollectionFile][wal_thread] Successfully create collection file, file id = 1609316106559021000
+[2020-12-30 16:15:06,561][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 94
+[2020-12-30 16:15:06,561][DEBUG][SERVER][OnExecute][reqsched_thread] FlushRequest flush collections: retina_face, 
+[2020-12-30 16:15:06,564][DEBUG][ENGINE][Add][wal_thread] [insert][0]Insert float data into segment
+[2020-12-30 16:15:06,564][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush collection: retina_face
+[2020-12-30 16:15:06,564][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 16:15:06,566][DEBUG][ENGINE][Flush][wal_thread] Flushing collection: retina_face
+[2020-12-30 16:15:06,571][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.004706 second [4.706300 ms])
+[2020-12-30 16:15:06,579][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Adding 1 ids to bloom filter (0.008167 second [8.166600 ms])
+[2020-12-30 16:15:06,579][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000469 second [0.468500 ms])
+[2020-12-30 16:15:06,580][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing bloom filter done (0.013841 second [13.840900 ms])
+[2020-12-30 16:15:06,584][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write rv done (0.001960 second [1.960200 ms])
+[2020-12-30 16:15:06,586][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write uids done (0.002481 second [2.481000 ms])
+[2020-12-30 16:15:06,588][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing vectors and uids done (0.007535 second [7.534900 ms])
+[2020-12-30 16:15:06,592][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing deleted docs done (0.004598 second [4.598100 ms])
+[2020-12-30 16:15:06,592][DEBUG][ENGINE][Serialize][wal_thread] New raw file 1609316106559021000 of size 2048 bytes, lsn = 4295423956
+[2020-12-30 16:15:06,593][DEBUG][ENGINE][Serialize][wal_thread] Flushed segment 1609316106559021000
+[2020-12-30 16:15:06,598][DEBUG][ENGINE][UpdateCollectionFiles][wal_thread] Update 1 collection files
+[2020-12-30 16:15:06,599][DEBUG][ENGINE][UpdateCollectionFlushLSN][wal_thread] Successfully update collection flush_lsn, collection id = retina_face flush_lsn = 4295423956
+[2020-12-30 16:15:06,600][DEBUG][SERVER][PrintTimeRecord][wal_thread] MemTable::Serialize collection retina_face: Finished flushing (0.033719 second [33.719500 ms])
+[2020-12-30 16:15:06,600][DEBUG][ENGINE][Flush][wal_thread] Flushed collection: retina_face
+[2020-12-30 16:15:06,601][DEBUG][ENGINE][Flush][reqsched_thread] End flush collection: retina_face
+[2020-12-30 16:15:06,602][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] FlushRequest flush collections: retina_face, : totally cost (0.040200 second [40.200300 ms])
+[2020-12-30 16:15:06,602][DEBUG][ENGINE][FilesToMerge][milvus_server] Collect 2 to-merge files in collection retina_face
+[2020-12-30 16:15:06,603][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609315938188484000 refcount:1
+[2020-12-30 16:15:06,603][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609316106559021000 refcount:1
+[2020-12-30 16:15:06,604][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 95
+[2020-12-30 16:15:06,605][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): check validation (0.000112 second [0.111800 ms])
+[2020-12-30 16:15:06,606][DEBUG][ENGINE][CreateCollectionFile][milvus_server] Successfully create collection file, file id = 1609316106605660000
+[2020-12-30 16:15:06,611][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609316106559021000 to /var/lib/milvus/db/tables/retina_face/1609316106605660000
+[2020-12-30 16:15:06,611][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): totally cost (0.006577 second [6.577400 ms])
+[2020-12-30 16:15:06,613][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 96
+[2020-12-30 16:15:06,615][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609315938188484000 refcount:2
+[2020-12-30 16:15:06,616][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609316106559021000 refcount:2
+[2020-12-30 16:15:06,616][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:2 to_index files:0 index files:0
+[2020-12-30 16:15:06,617][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609315938188484000 refcount:1
+[2020-12-30 16:15:06,617][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609316106559021000 refcount:1
+[2020-12-30 16:15:06,618][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] ShowCollectionInfoRequest(collection=retina_face): totally cost (0.003804 second [3.804000 ms])
+[2020-12-30 16:15:06,619][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.007497 second [7.497100 ms])
+[2020-12-30 16:15:06,619][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000428 second [0.427600 ms])
+[2020-12-30 16:15:06,620][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 97
+[2020-12-30 16:15:06,620][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 1 vectors and uids (0.000447 second [0.447300 ms])
+[2020-12-30 16:15:06,621][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609316106559021000 to /var/lib/milvus/db/tables/retina_face/1609316106605660000
+[2020-12-30 16:15:06,621][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609315938188484000 to /var/lib/milvus/db/tables/retina_face/1609316106605660000
+[2020-12-30 16:15:06,622][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): check validation (0.000161 second [0.160800 ms])
+[2020-12-30 16:15:06,622][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush all collections
+[2020-12-30 16:15:06,622][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 16:15:06,631][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.009089 second [9.089200 ms])
+[2020-12-30 16:15:06,631][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000380 second [0.380100 ms])
+[2020-12-30 16:15:06,632][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 32 vectors and uids (0.000657 second [0.656800 ms])
+[2020-12-30 16:15:06,632][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609315938188484000 to /var/lib/milvus/db/tables/retina_face/1609316106605660000
+[2020-12-30 16:15:06,633][DEBUG][ENGINE][Execute][milvus_server] Merge task files size info:2056, 65792, 
+[2020-12-30 16:15:06,638][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.004611 second [4.611400 ms])
+[2020-12-30 16:15:06,666][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Adding 33 ids to bloom filter (0.027817 second [27.816600 ms])
+[2020-12-30 16:15:06,666][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000291 second [0.290900 ms])
+[2020-12-30 16:15:06,666][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing bloom filter done (0.033066 second [33.066400 ms])
+[2020-12-30 16:15:06,670][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write rv done (0.002311 second [2.311300 ms])
+[2020-12-30 16:15:06,673][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write uids done (0.003148 second [3.148400 ms])
+[2020-12-30 16:15:06,675][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing vectors and uids done (0.008374 second [8.373900 ms])
+[2020-12-30 16:15:06,679][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing deleted docs done (0.004566 second [4.566500 ms])
+[2020-12-30 16:15:06,680][DEBUG][ENGINE][UpdateCollectionFiles][milvus_server] Update 3 collection files
+[2020-12-30 16:15:06,681][DEBUG][ENGINE][Execute][milvus_server] New merged segment 1609316106605660000 of size 67848 bytes
+[2020-12-30 16:15:06,682][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609316106559021000 refcount:0
+[2020-12-30 16:15:06,692][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609315938188484000 refcount:0
+[2020-12-30 16:15:06,697][DEBUG][ENGINE][Flush][reqsched_thread] End flush all collections
+[2020-12-30 16:15:06,701][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609316106605660000 refcount:1
+[2020-12-30 16:15:06,702][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:1 new files:0 new_merge files:0 new_index files:0 to_index files:0
+[2020-12-30 16:15:06,703][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609316106605660000 refcount:0
+[2020-12-30 16:15:06,703][DEBUG][ENGINE][WaitCollectionIndexRecursively][reqsched_thread] WaitCollectionIndexRecursively finished
+[2020-12-30 16:15:06,704][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): totally cost (0.082994 second [82.993600 ms])
+[2020-12-30 16:15:06,706][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 98
+[2020-12-30 16:15:06,707][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeIndexRequest(collection=retina_face): totally cost (0.000132 second [0.132400 ms])
+[2020-12-30 16:15:16,715][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609315938188484000 location:/var/lib/milvus/db/tables/retina_face/1609315938188484000/1609315938188484000
+[2020-12-30 16:15:16,716][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609316106559021000 location:/var/lib/milvus/db/tables/retina_face/1609316106559021000/1609316106559021000
+[2020-12-30 16:15:16,718][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Clean 2 files expired in 10 seconds
+[2020-12-30 16:15:16,724][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609315938188484000
+[2020-12-30 16:15:16,730][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609316106559021000
+[2020-12-30 16:15:16,731][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove 2 segments folder
+[2020-12-30 16:15:24,632][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 99
+[2020-12-30 16:15:24,633][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.000700 ms])
+[2020-12-30 16:15:24,635][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 100
+[2020-12-30 16:15:24,636][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000100 second [0.100100 ms])
+[2020-12-30 16:15:24,638][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 101
+[2020-12-30 16:15:24,639][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000123 second [0.123500 ms])
+[2020-12-30 16:15:24,640][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 102
+[2020-12-30 16:15:24,642][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): check validation (0.000122 second [0.121700 ms])
+[2020-12-30 16:15:24,642][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): prepare vectors data (0.000342 second [0.341600 ms])
+[2020-12-30 16:15:24,644][DEBUG][ENGINE][UpdateCollectionFlag][reqsched_thread] Successfully update collection flag, collection id = retina_face
+[2020-12-30 16:15:24,644][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): add vectors to engine (0.001724 second [1.724100 ms])
+[2020-12-30 16:15:24,644][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): total cost (0.002457 second [2.457100 ms])
+[2020-12-30 16:15:24,646][DEBUG][ENGINE][CreateCollectionFile][wal_thread] Successfully create collection file, file id = 1609316124645860000
+[2020-12-30 16:15:24,647][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 103
+[2020-12-30 16:15:24,648][DEBUG][SERVER][OnExecute][reqsched_thread] FlushRequest flush collections: retina_face, 
+[2020-12-30 16:15:24,650][DEBUG][ENGINE][Add][wal_thread] [insert][0]Insert float data into segment
+[2020-12-30 16:15:24,650][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush collection: retina_face
+[2020-12-30 16:15:24,651][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 16:15:24,652][DEBUG][ENGINE][Flush][wal_thread] Flushing collection: retina_face
+[2020-12-30 16:15:24,657][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.004329 second [4.329200 ms])
+[2020-12-30 16:15:24,668][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Adding 1 ids to bloom filter (0.011674 second [11.674400 ms])
+[2020-12-30 16:15:24,669][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000419 second [0.419200 ms])
+[2020-12-30 16:15:24,669][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing bloom filter done (0.016854 second [16.854100 ms])
+[2020-12-30 16:15:24,673][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write rv done (0.001958 second [1.957500 ms])
+[2020-12-30 16:15:24,675][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write uids done (0.002373 second [2.373000 ms])
+[2020-12-30 16:15:24,676][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing vectors and uids done (0.006628 second [6.627800 ms])
+[2020-12-30 16:15:24,681][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing deleted docs done (0.004883 second [4.882600 ms])
+[2020-12-30 16:15:24,681][DEBUG][ENGINE][Serialize][wal_thread] New raw file 1609316124645860000 of size 2048 bytes, lsn = 4295426044
+[2020-12-30 16:15:24,682][DEBUG][ENGINE][Serialize][wal_thread] Flushed segment 1609316124645860000
+[2020-12-30 16:15:24,687][DEBUG][ENGINE][UpdateCollectionFiles][wal_thread] Update 1 collection files
+[2020-12-30 16:15:24,688][DEBUG][ENGINE][UpdateCollectionFlushLSN][wal_thread] Successfully update collection flush_lsn, collection id = retina_face flush_lsn = 4295426044
+[2020-12-30 16:15:24,689][DEBUG][SERVER][PrintTimeRecord][wal_thread] MemTable::Serialize collection retina_face: Finished flushing (0.036208 second [36.208200 ms])
+[2020-12-30 16:15:24,689][DEBUG][ENGINE][Flush][wal_thread] Flushed collection: retina_face
+[2020-12-30 16:15:24,690][DEBUG][ENGINE][Flush][reqsched_thread] End flush collection: retina_face
+[2020-12-30 16:15:24,690][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] FlushRequest flush collections: retina_face, : totally cost (0.042502 second [42.502100 ms])
+[2020-12-30 16:15:24,691][DEBUG][ENGINE][FilesToMerge][milvus_server] Collect 2 to-merge files in collection retina_face
+[2020-12-30 16:15:24,691][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609316106605660000 refcount:1
+[2020-12-30 16:15:24,692][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609316124645860000 refcount:1
+[2020-12-30 16:15:24,692][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 104
+[2020-12-30 16:15:24,693][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): check validation (0.000090 second [0.089800 ms])
+[2020-12-30 16:15:24,694][DEBUG][ENGINE][CreateCollectionFile][milvus_server] Successfully create collection file, file id = 1609316124693850000
+[2020-12-30 16:15:24,699][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609316124645860000 to /var/lib/milvus/db/tables/retina_face/1609316124693850000
+[2020-12-30 16:15:24,699][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): totally cost (0.006449 second [6.449500 ms])
+[2020-12-30 16:15:24,701][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 105
+[2020-12-30 16:15:24,702][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609316106605660000 refcount:2
+[2020-12-30 16:15:24,704][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609316124645860000 refcount:2
+[2020-12-30 16:15:24,704][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:2 to_index files:0 index files:0
+[2020-12-30 16:15:24,704][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609316106605660000 refcount:1
+[2020-12-30 16:15:24,705][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609316124645860000 refcount:1
+[2020-12-30 16:15:24,705][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] ShowCollectionInfoRequest(collection=retina_face): totally cost (0.003550 second [3.549900 ms])
+[2020-12-30 16:15:24,707][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 106
+[2020-12-30 16:15:24,708][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.008153 second [8.152900 ms])
+[2020-12-30 16:15:24,708][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000690 second [0.689900 ms])
+[2020-12-30 16:15:24,709][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): check validation (0.000204 second [0.204400 ms])
+[2020-12-30 16:15:24,709][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush all collections
+[2020-12-30 16:15:24,709][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 16:15:24,710][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 1 vectors and uids (0.000423 second [0.423200 ms])
+[2020-12-30 16:15:24,711][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609316124645860000 to /var/lib/milvus/db/tables/retina_face/1609316124693850000
+[2020-12-30 16:15:24,711][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609316106605660000 to /var/lib/milvus/db/tables/retina_face/1609316124693850000
+[2020-12-30 16:15:24,720][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.008410 second [8.410300 ms])
+[2020-12-30 16:15:24,721][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000390 second [0.389600 ms])
+[2020-12-30 16:15:24,721][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 33 vectors and uids (0.000446 second [0.446100 ms])
+[2020-12-30 16:15:24,721][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609316106605660000 to /var/lib/milvus/db/tables/retina_face/1609316124693850000
+[2020-12-30 16:15:24,722][DEBUG][ENGINE][Execute][milvus_server] Merge task files size info:2056, 67848, 
+[2020-12-30 16:15:24,726][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.003807 second [3.806800 ms])
+[2020-12-30 16:15:24,754][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Adding 34 ids to bloom filter (0.027853 second [27.852700 ms])
+[2020-12-30 16:15:24,754][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000560 second [0.559700 ms])
+[2020-12-30 16:15:24,755][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing bloom filter done (0.032664 second [32.664100 ms])
+[2020-12-30 16:15:24,759][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write rv done (0.002806 second [2.805900 ms])
+[2020-12-30 16:15:24,761][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write uids done (0.002353 second [2.352600 ms])
+[2020-12-30 16:15:24,762][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing vectors and uids done (0.007510 second [7.510300 ms])
+[2020-12-30 16:15:24,767][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing deleted docs done (0.005115 second [5.114900 ms])
+[2020-12-30 16:15:24,769][DEBUG][ENGINE][UpdateCollectionFiles][milvus_server] Update 3 collection files
+[2020-12-30 16:15:24,769][DEBUG][ENGINE][Execute][milvus_server] New merged segment 1609316124693850000 of size 69904 bytes
+[2020-12-30 16:15:24,770][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609316124645860000 refcount:0
+[2020-12-30 16:15:24,780][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609316106605660000 refcount:0
+[2020-12-30 16:15:24,783][DEBUG][ENGINE][Flush][reqsched_thread] End flush all collections
+[2020-12-30 16:15:24,787][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609316124693850000 refcount:1
+[2020-12-30 16:15:24,788][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:1 new files:0 new_merge files:0 new_index files:0 to_index files:0
+[2020-12-30 16:15:24,789][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609316124693850000 refcount:0
+[2020-12-30 16:15:24,789][DEBUG][ENGINE][WaitCollectionIndexRecursively][reqsched_thread] WaitCollectionIndexRecursively finished
+[2020-12-30 16:15:24,790][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): totally cost (0.081862 second [81.862000 ms])
+[2020-12-30 16:15:24,791][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 107
+[2020-12-30 16:15:24,792][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeIndexRequest(collection=retina_face): totally cost (0.000138 second [0.138300 ms])
+[2020-12-30 16:15:34,799][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609316106605660000 location:/var/lib/milvus/db/tables/retina_face/1609316106605660000/1609316106605660000
+[2020-12-30 16:15:34,800][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609316124645860000 location:/var/lib/milvus/db/tables/retina_face/1609316124645860000/1609316124645860000
+[2020-12-30 16:15:34,801][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Clean 2 files expired in 10 seconds
+[2020-12-30 16:15:34,809][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609316106605660000
+[2020-12-30 16:15:34,816][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609316124645860000
+[2020-12-30 16:15:34,816][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove 2 segments folder
+[2020-12-30 16:16:43,840][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 108
+[2020-12-30 16:16:43,841][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.000900 ms])
+[2020-12-30 16:16:43,843][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 109
+[2020-12-30 16:16:43,845][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000135 second [0.135000 ms])
+[2020-12-30 16:16:43,847][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 110
+[2020-12-30 16:16:43,848][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000127 second [0.127100 ms])
+[2020-12-30 16:16:43,849][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 111
+[2020-12-30 16:16:43,851][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): check validation (0.000122 second [0.121700 ms])
+[2020-12-30 16:16:43,852][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): prepare vectors data (0.000500 second [0.499600 ms])
+[2020-12-30 16:16:43,854][DEBUG][ENGINE][UpdateCollectionFlag][reqsched_thread] Successfully update collection flag, collection id = retina_face
+[2020-12-30 16:16:43,854][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): add vectors to engine (0.002536 second [2.535600 ms])
+[2020-12-30 16:16:43,854][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): total cost (0.003511 second [3.510900 ms])
+[2020-12-30 16:16:43,856][DEBUG][ENGINE][CreateCollectionFile][wal_thread] Successfully create collection file, file id = 1609316203855806000
+[2020-12-30 16:16:43,856][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 112
+[2020-12-30 16:16:43,857][DEBUG][SERVER][OnExecute][reqsched_thread] FlushRequest flush collections: retina_face, 
+[2020-12-30 16:16:43,861][DEBUG][ENGINE][Add][wal_thread] [insert][0]Insert float data into segment
+[2020-12-30 16:16:43,861][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush collection: retina_face
+[2020-12-30 16:16:43,862][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 16:16:43,863][DEBUG][ENGINE][Flush][wal_thread] Flushing collection: retina_face
+[2020-12-30 16:16:43,869][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.005464 second [5.464000 ms])
+[2020-12-30 16:16:43,879][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Adding 1 ids to bloom filter (0.009945 second [9.945200 ms])
+[2020-12-30 16:16:43,879][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000496 second [0.496400 ms])
+[2020-12-30 16:16:43,880][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing bloom filter done (0.016669 second [16.668800 ms])
+[2020-12-30 16:16:43,884][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write rv done (0.002534 second [2.534500 ms])
+[2020-12-30 16:16:43,886][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write uids done (0.002599 second [2.599100 ms])
+[2020-12-30 16:16:43,888][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing vectors and uids done (0.008011 second [8.011300 ms])
+[2020-12-30 16:16:43,894][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing deleted docs done (0.006450 second [6.449800 ms])
+[2020-12-30 16:16:43,895][DEBUG][ENGINE][Serialize][wal_thread] New raw file 1609316203855806000 of size 2048 bytes, lsn = 4295428132
+[2020-12-30 16:16:43,895][DEBUG][ENGINE][Serialize][wal_thread] Flushed segment 1609316203855806000
+[2020-12-30 16:16:43,901][DEBUG][ENGINE][UpdateCollectionFiles][wal_thread] Update 1 collection files
+[2020-12-30 16:16:43,902][DEBUG][ENGINE][UpdateCollectionFlushLSN][wal_thread] Successfully update collection flush_lsn, collection id = retina_face flush_lsn = 4295428132
+[2020-12-30 16:16:43,903][DEBUG][SERVER][PrintTimeRecord][wal_thread] MemTable::Serialize collection retina_face: Finished flushing (0.039420 second [39.420100 ms])
+[2020-12-30 16:16:43,903][DEBUG][ENGINE][Flush][wal_thread] Flushed collection: retina_face
+[2020-12-30 16:16:43,904][DEBUG][ENGINE][Flush][reqsched_thread] End flush collection: retina_face
+[2020-12-30 16:16:43,904][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] FlushRequest flush collections: retina_face, : totally cost (0.046908 second [46.907900 ms])
+[2020-12-30 16:16:43,905][DEBUG][ENGINE][FilesToMerge][milvus_server] Collect 2 to-merge files in collection retina_face
+[2020-12-30 16:16:43,906][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609316124693850000 refcount:1
+[2020-12-30 16:16:43,907][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609316203855806000 refcount:1
+[2020-12-30 16:16:43,907][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 113
+[2020-12-30 16:16:43,909][DEBUG][ENGINE][CreateCollectionFile][milvus_server] Successfully create collection file, file id = 1609316203908963000
+[2020-12-30 16:16:43,917][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): check validation (0.008137 second [8.136600 ms])
+[2020-12-30 16:16:43,918][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609316203855806000 to /var/lib/milvus/db/tables/retina_face/1609316203908963000
+[2020-12-30 16:16:43,918][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): totally cost (0.009040 second [9.040000 ms])
+[2020-12-30 16:16:43,920][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 114
+[2020-12-30 16:16:43,921][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609316124693850000 refcount:2
+[2020-12-30 16:16:43,922][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609316203855806000 refcount:2
+[2020-12-30 16:16:43,923][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:2 to_index files:0 index files:0
+[2020-12-30 16:16:43,923][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609316124693850000 refcount:1
+[2020-12-30 16:16:43,924][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609316203855806000 refcount:1
+[2020-12-30 16:16:43,924][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] ShowCollectionInfoRequest(collection=retina_face): totally cost (0.003447 second [3.446700 ms])
+[2020-12-30 16:16:43,927][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 115
+[2020-12-30 16:16:43,929][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): check validation (0.000140 second [0.139600 ms])
+[2020-12-30 16:16:43,929][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush all collections
+[2020-12-30 16:16:43,929][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 16:16:43,930][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.010436 second [10.435500 ms])
+[2020-12-30 16:16:43,930][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.001635 second [1.635300 ms])
+[2020-12-30 16:16:43,931][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 1 vectors and uids (0.000362 second [0.361900 ms])
+[2020-12-30 16:16:43,931][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609316203855806000 to /var/lib/milvus/db/tables/retina_face/1609316203908963000
+[2020-12-30 16:16:43,932][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609316124693850000 to /var/lib/milvus/db/tables/retina_face/1609316203908963000
+[2020-12-30 16:16:43,939][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.007412 second [7.412100 ms])
+[2020-12-30 16:16:43,940][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000295 second [0.294700 ms])
+[2020-12-30 16:16:43,940][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 34 vectors and uids (0.000427 second [0.426700 ms])
+[2020-12-30 16:16:43,940][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609316124693850000 to /var/lib/milvus/db/tables/retina_face/1609316203908963000
+[2020-12-30 16:16:43,941][DEBUG][ENGINE][Execute][milvus_server] Merge task files size info:2056, 69904, 
+[2020-12-30 16:16:43,948][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.006266 second [6.266200 ms])
+[2020-12-30 16:16:43,981][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Adding 35 ids to bloom filter (0.033161 second [33.161100 ms])
+[2020-12-30 16:16:43,981][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000577 second [0.576700 ms])
+[2020-12-30 16:16:43,982][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing bloom filter done (0.040336 second [40.336000 ms])
+[2020-12-30 16:16:43,986][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write rv done (0.002514 second [2.514400 ms])
+[2020-12-30 16:16:43,988][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write uids done (0.002295 second [2.294900 ms])
+[2020-12-30 16:16:43,989][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing vectors and uids done (0.007190 second [7.190200 ms])
+[2020-12-30 16:16:43,994][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing deleted docs done (0.004909 second [4.909200 ms])
+[2020-12-30 16:16:43,995][DEBUG][ENGINE][UpdateCollectionFiles][milvus_server] Update 3 collection files
+[2020-12-30 16:16:43,995][DEBUG][ENGINE][Execute][milvus_server] New merged segment 1609316203908963000 of size 71960 bytes
+[2020-12-30 16:16:43,997][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609316203855806000 refcount:0
+[2020-12-30 16:16:44,005][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609316124693850000 refcount:0
+[2020-12-30 16:16:44,015][DEBUG][ENGINE][Flush][reqsched_thread] End flush all collections
+[2020-12-30 16:16:44,019][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609316203908963000 refcount:1
+[2020-12-30 16:16:44,019][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:1 new files:0 new_merge files:0 new_index files:0 to_index files:0
+[2020-12-30 16:16:44,019][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609316203908963000 refcount:0
+[2020-12-30 16:16:44,020][DEBUG][ENGINE][WaitCollectionIndexRecursively][reqsched_thread] WaitCollectionIndexRecursively finished
+[2020-12-30 16:16:44,020][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): totally cost (0.092039 second [92.039100 ms])
+[2020-12-30 16:16:44,022][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 116
+[2020-12-30 16:16:44,023][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeIndexRequest(collection=retina_face): totally cost (0.000134 second [0.133600 ms])
+[2020-12-30 16:16:54,031][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609316124693850000 location:/var/lib/milvus/db/tables/retina_face/1609316124693850000/1609316124693850000
+[2020-12-30 16:16:54,034][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609316203855806000 location:/var/lib/milvus/db/tables/retina_face/1609316203855806000/1609316203855806000
+[2020-12-30 16:16:54,038][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Clean 2 files expired in 10 seconds
+[2020-12-30 16:16:54,054][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609316124693850000
+[2020-12-30 16:16:54,063][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609316203855806000
+[2020-12-30 16:16:54,064][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove 2 segments folder
+[2020-12-30 16:17:24,627][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 117
+[2020-12-30 16:17:24,628][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000000 second [0.000400 ms])
+[2020-12-30 16:17:24,630][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 118
+[2020-12-30 16:17:24,631][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000132 second [0.131800 ms])
+[2020-12-30 16:17:24,633][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 119
+[2020-12-30 16:17:24,634][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000122 second [0.121700 ms])
+[2020-12-30 16:17:24,635][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 120
+[2020-12-30 16:17:24,637][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): check validation (0.000151 second [0.150800 ms])
+[2020-12-30 16:17:24,637][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): prepare vectors data (0.000505 second [0.505200 ms])
+[2020-12-30 16:17:24,639][DEBUG][ENGINE][UpdateCollectionFlag][reqsched_thread] Successfully update collection flag, collection id = retina_face
+[2020-12-30 16:17:24,641][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): add vectors to engine (0.002453 second [2.453500 ms])
+[2020-12-30 16:17:24,641][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): total cost (0.004573 second [4.572900 ms])
+[2020-12-30 16:17:24,642][DEBUG][ENGINE][CreateCollectionFile][wal_thread] Successfully create collection file, file id = 1609316244641474000
+[2020-12-30 16:17:24,643][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 121
+[2020-12-30 16:17:24,643][DEBUG][SERVER][OnExecute][reqsched_thread] FlushRequest flush collections: retina_face, 
+[2020-12-30 16:17:24,645][DEBUG][ENGINE][Add][wal_thread] [insert][0]Insert float data into segment
+[2020-12-30 16:17:24,646][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush collection: retina_face
+[2020-12-30 16:17:24,646][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 16:17:24,647][DEBUG][ENGINE][Flush][wal_thread] Flushing collection: retina_face
+[2020-12-30 16:17:24,652][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.004426 second [4.426500 ms])
+[2020-12-30 16:17:24,662][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Adding 1 ids to bloom filter (0.010131 second [10.131100 ms])
+[2020-12-30 16:17:24,662][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000508 second [0.508000 ms])
+[2020-12-30 16:17:24,663][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing bloom filter done (0.015673 second [15.672800 ms])
+[2020-12-30 16:17:24,666][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write rv done (0.002351 second [2.350900 ms])
+[2020-12-30 16:17:24,669][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write uids done (0.002337 second [2.337000 ms])
+[2020-12-30 16:17:24,670][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing vectors and uids done (0.006737 second [6.737100 ms])
+[2020-12-30 16:17:24,675][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing deleted docs done (0.004793 second [4.792800 ms])
+[2020-12-30 16:17:24,675][DEBUG][ENGINE][Serialize][wal_thread] New raw file 1609316244641474000 of size 2048 bytes, lsn = 4295430220
+[2020-12-30 16:17:24,675][DEBUG][ENGINE][Serialize][wal_thread] Flushed segment 1609316244641474000
+[2020-12-30 16:17:24,680][DEBUG][ENGINE][UpdateCollectionFiles][wal_thread] Update 1 collection files
+[2020-12-30 16:17:24,681][DEBUG][ENGINE][UpdateCollectionFlushLSN][wal_thread] Successfully update collection flush_lsn, collection id = retina_face flush_lsn = 4295430220
+[2020-12-30 16:17:24,682][DEBUG][SERVER][PrintTimeRecord][wal_thread] MemTable::Serialize collection retina_face: Finished flushing (0.034264 second [34.264000 ms])
+[2020-12-30 16:17:24,682][DEBUG][ENGINE][Flush][wal_thread] Flushed collection: retina_face
+[2020-12-30 16:17:24,683][DEBUG][ENGINE][Flush][reqsched_thread] End flush collection: retina_face
+[2020-12-30 16:17:24,683][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] FlushRequest flush collections: retina_face, : totally cost (0.039578 second [39.577700 ms])
+[2020-12-30 16:17:24,684][DEBUG][ENGINE][FilesToMerge][milvus_server] Collect 2 to-merge files in collection retina_face
+[2020-12-30 16:17:24,685][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609316203908963000 refcount:1
+[2020-12-30 16:17:24,685][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609316244641474000 refcount:1
+[2020-12-30 16:17:24,686][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 122
+[2020-12-30 16:17:24,687][DEBUG][ENGINE][CreateCollectionFile][milvus_server] Successfully create collection file, file id = 1609316244686741000
+[2020-12-30 16:17:24,691][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609316244641474000 to /var/lib/milvus/db/tables/retina_face/1609316244686741000
+[2020-12-30 16:17:24,692][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): check validation (0.004884 second [4.884300 ms])
+[2020-12-30 16:17:24,692][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): totally cost (0.005944 second [5.943900 ms])
+[2020-12-30 16:17:24,694][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 123
+[2020-12-30 16:17:24,695][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609316203908963000 refcount:2
+[2020-12-30 16:17:24,697][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609316244641474000 refcount:2
+[2020-12-30 16:17:24,698][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:2 to_index files:0 index files:0
+[2020-12-30 16:17:24,699][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609316203908963000 refcount:1
+[2020-12-30 16:17:24,700][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609316244641474000 refcount:1
+[2020-12-30 16:17:24,701][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] ShowCollectionInfoRequest(collection=retina_face): totally cost (0.006086 second [6.086300 ms])
+[2020-12-30 16:17:24,703][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 124
+[2020-12-30 16:17:24,704][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): check validation (0.000215 second [0.215200 ms])
+[2020-12-30 16:17:24,704][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush all collections
+[2020-12-30 16:17:24,705][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 16:17:24,705][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.011096 second [11.096000 ms])
+[2020-12-30 16:17:24,706][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.002713 second [2.713200 ms])
+[2020-12-30 16:17:24,706][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 1 vectors and uids (0.000435 second [0.435500 ms])
+[2020-12-30 16:17:24,706][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609316244641474000 to /var/lib/milvus/db/tables/retina_face/1609316244686741000
+[2020-12-30 16:17:24,707][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609316203908963000 to /var/lib/milvus/db/tables/retina_face/1609316244686741000
+[2020-12-30 16:17:24,716][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.008646 second [8.645900 ms])
+[2020-12-30 16:17:24,716][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000525 second [0.524600 ms])
+[2020-12-30 16:17:24,717][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 35 vectors and uids (0.000401 second [0.400700 ms])
+[2020-12-30 16:17:24,717][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609316203908963000 to /var/lib/milvus/db/tables/retina_face/1609316244686741000
+[2020-12-30 16:17:24,717][DEBUG][ENGINE][Execute][milvus_server] Merge task files size info:2056, 71960, 
+[2020-12-30 16:17:24,723][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.004712 second [4.712200 ms])
+[2020-12-30 16:17:24,745][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Adding 36 ids to bloom filter (0.022341 second [22.340900 ms])
+[2020-12-30 16:17:24,745][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000462 second [0.461700 ms])
+[2020-12-30 16:17:24,746][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing bloom filter done (0.027921 second [27.920600 ms])
+[2020-12-30 16:17:24,749][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write rv done (0.002110 second [2.110500 ms])
+[2020-12-30 16:17:24,752][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write uids done (0.003167 second [3.167000 ms])
+[2020-12-30 16:17:24,754][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing vectors and uids done (0.007733 second [7.732900 ms])
+[2020-12-30 16:17:24,758][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing deleted docs done (0.004782 second [4.782200 ms])
+[2020-12-30 16:17:24,760][DEBUG][ENGINE][UpdateCollectionFiles][milvus_server] Update 3 collection files
+[2020-12-30 16:17:24,761][DEBUG][ENGINE][Execute][milvus_server] New merged segment 1609316244686741000 of size 74016 bytes
+[2020-12-30 16:17:24,762][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609316244641474000 refcount:0
+[2020-12-30 16:17:24,772][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609316203908963000 refcount:0
+[2020-12-30 16:17:24,782][DEBUG][ENGINE][Flush][reqsched_thread] End flush all collections
+[2020-12-30 16:17:24,787][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609316244686741000 refcount:1
+[2020-12-30 16:17:24,788][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:1 new files:0 new_merge files:0 new_index files:0 to_index files:0
+[2020-12-30 16:17:24,788][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609316244686741000 refcount:0
+[2020-12-30 16:17:24,789][DEBUG][ENGINE][WaitCollectionIndexRecursively][reqsched_thread] WaitCollectionIndexRecursively finished
+[2020-12-30 16:17:24,789][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateIndexRequest(collection=retina_face): totally cost (0.085920 second [85.919700 ms])
+[2020-12-30 16:17:24,791][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 125
+[2020-12-30 16:17:24,792][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeIndexRequest(collection=retina_face): totally cost (0.000127 second [0.126700 ms])
+[2020-12-30 16:17:34,799][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609316203908963000 location:/var/lib/milvus/db/tables/retina_face/1609316203908963000/1609316203908963000
+[2020-12-30 16:17:34,801][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609316244641474000 location:/var/lib/milvus/db/tables/retina_face/1609316244641474000/1609316244641474000
+[2020-12-30 16:17:34,802][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Clean 2 files expired in 10 seconds
+[2020-12-30 16:17:34,809][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609316203908963000
+[2020-12-30 16:17:34,817][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609316244641474000
+[2020-12-30 16:17:34,817][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove 2 segments folder
+[2020-12-30 16:20:03,773][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 126
+[2020-12-30 16:20:03,775][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.001000 ms])
+[2020-12-30 16:20:03,777][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 127
+[2020-12-30 16:20:03,778][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000101 second [0.101100 ms])
+[2020-12-30 16:20:03,780][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 128
+[2020-12-30 16:20:03,781][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000089 second [0.089500 ms])
+[2020-12-30 16:20:03,782][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 129
+[2020-12-30 16:20:03,784][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): check validation (0.000122 second [0.122100 ms])
+[2020-12-30 16:20:03,784][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): prepare vectors data (0.000414 second [0.414400 ms])
+[2020-12-30 16:20:03,786][DEBUG][ENGINE][UpdateCollectionFlag][reqsched_thread] Successfully update collection flag, collection id = retina_face
+[2020-12-30 16:20:03,786][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): add vectors to engine (0.002147 second [2.146900 ms])
+[2020-12-30 16:20:03,787][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [insert][0] InsertRequest(collection=retina_face, n=1, partition_tag=): total cost (0.003219 second [3.218900 ms])
+[2020-12-30 16:20:03,788][DEBUG][ENGINE][CreateCollectionFile][wal_thread] Successfully create collection file, file id = 1609316403787160000
+[2020-12-30 16:20:03,788][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 130
+[2020-12-30 16:20:03,789][DEBUG][SERVER][OnExecute][reqsched_thread] FlushRequest flush collections: retina_face, 
+[2020-12-30 16:20:03,792][DEBUG][ENGINE][Add][wal_thread] [insert][0]Insert float data into segment
+[2020-12-30 16:20:03,793][DEBUG][ENGINE][Flush][reqsched_thread] Begin flush collection: retina_face
+[2020-12-30 16:20:03,793][DEBUG][ENGINE][Flush][reqsched_thread] WAL flush
+[2020-12-30 16:20:03,794][DEBUG][ENGINE][Flush][wal_thread] Flushing collection: retina_face
+[2020-12-30 16:20:03,800][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.004852 second [4.851600 ms])
+[2020-12-30 16:20:03,807][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Adding 1 ids to bloom filter (0.007126 second [7.126100 ms])
+[2020-12-30 16:20:03,807][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.000411 second [0.411500 ms])
+[2020-12-30 16:20:03,808][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing bloom filter done (0.012913 second [12.912800 ms])
+[2020-12-30 16:20:03,812][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write rv done (0.003572 second [3.572000 ms])
+[2020-12-30 16:20:03,814][DEBUG][SERVER][PrintTimeRecord][wal_thread] write vectors: write uids done (0.002089 second [2.089200 ms])
+[2020-12-30 16:20:03,815][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing vectors and uids done (0.007631 second [7.631100 ms])
+[2020-12-30 16:20:03,820][DEBUG][SERVER][PrintTimeRecord][wal_thread] SegmentWriter::Serialize: Writing deleted docs done (0.004485 second [4.484600 ms])
+[2020-12-30 16:20:03,820][DEBUG][ENGINE][Serialize][wal_thread] New raw file 1609316403787160000 of size 2048 bytes, lsn = 4295432308
+[2020-12-30 16:20:03,821][DEBUG][ENGINE][Serialize][wal_thread] Flushed segment 1609316403787160000
+[2020-12-30 16:20:03,829][DEBUG][ENGINE][UpdateCollectionFiles][wal_thread] Update 1 collection files
+[2020-12-30 16:20:03,831][DEBUG][ENGINE][UpdateCollectionFlushLSN][wal_thread] Successfully update collection flush_lsn, collection id = retina_face flush_lsn = 4295432308
+[2020-12-30 16:20:03,832][DEBUG][SERVER][PrintTimeRecord][wal_thread] MemTable::Serialize collection retina_face: Finished flushing (0.036972 second [36.971900 ms])
+[2020-12-30 16:20:03,832][DEBUG][ENGINE][Flush][wal_thread] Flushed collection: retina_face
+[2020-12-30 16:20:03,833][DEBUG][ENGINE][Flush][reqsched_thread] End flush collection: retina_face
+[2020-12-30 16:20:03,833][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] FlushRequest flush collections: retina_face, : totally cost (0.043887 second [43.886900 ms])
+[2020-12-30 16:20:03,834][DEBUG][ENGINE][FilesToMerge][milvus_server] Collect 2 to-merge files in collection retina_face
+[2020-12-30 16:20:03,835][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609316244686741000 refcount:1
+[2020-12-30 16:20:03,835][DEBUG][ENGINE][MarkOngoingFileNoLock][milvus_server] Mark ongoing file:1609316403787160000 refcount:1
+[2020-12-30 16:20:03,836][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 131
+[2020-12-30 16:20:03,838][DEBUG][ENGINE][CreateCollectionFile][milvus_server] Successfully create collection file, file id = 1609316403836908000
+[2020-12-30 16:20:03,843][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609316403787160000 to /var/lib/milvus/db/tables/retina_face/1609316403836908000
+[2020-12-30 16:20:03,843][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): check validation (0.005342 second [5.341700 ms])
+[2020-12-30 16:20:03,844][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CountCollectionRequest(collection=retina_face): totally cost (0.006502 second [6.501800 ms])
+[2020-12-30 16:20:03,846][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 132
+[2020-12-30 16:20:03,847][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609316244686741000 refcount:2
+[2020-12-30 16:20:03,849][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609316403787160000 refcount:2
+[2020-12-30 16:20:03,849][DEBUG][ENGINE][FilesByType][reqsched_thread] Get collection files by type. raw files:2 to_index files:0 index files:0
+[2020-12-30 16:20:03,850][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609316244686741000 refcount:1
+[2020-12-30 16:20:03,850][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609316403787160000 refcount:1
+[2020-12-30 16:20:03,851][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] ShowCollectionInfoRequest(collection=retina_face): totally cost (0.003370 second [3.370500 ms])
+[2020-12-30 16:20:03,852][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 133
+[2020-12-30 16:20:03,853][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.009008 second [9.008100 ms])
+[2020-12-30 16:20:03,854][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000978 second [0.978200 ms])
+[2020-12-30 16:20:03,854][DEBUG][SERVER][PrintTimeRecord][grpcpp_sync_ser] [search][0] SearchRequest pre-execute(collection=retina_face): totally cost (0.000005 second [0.004700 ms])
+[2020-12-30 16:20:03,855][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 1 vectors and uids (0.000773 second [0.772600 ms])
+[2020-12-30 16:20:03,856][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609316403787160000 to /var/lib/milvus/db/tables/retina_face/1609316403836908000
+[2020-12-30 16:20:03,857][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [search][0] SearchRequest execute(collection=retina_face, nq=1, k=10): check validation (0.000121 second [0.120600 ms])
+[2020-12-30 16:20:03,857][DEBUG][ENGINE][Merge][milvus_server] Merging from /var/lib/milvus/db/tables/retina_face/1609316244686741000 to /var/lib/milvus/db/tables/retina_face/1609316403836908000
+[2020-12-30 16:20:03,857][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609316244686741000 refcount:2
+[2020-12-30 16:20:03,858][DEBUG][ENGINE][MarkOngoingFileNoLock][reqsched_thread] Mark ongoing file:1609316403787160000 refcount:2
+[2020-12-30 16:20:03,859][DEBUG][ENGINE][FilesToSearch][reqsched_thread] Collect 2 to-search files in collection retina_face
+[2020-12-30 16:20:03,859][DEBUG][ENGINE][FilesToSearchEx][reqsched_thread] No file to search for collection: retina_face
+[2020-12-30 16:20:03,860][DEBUG][SERVER][print][reqsched_thread] [CACHE CPU] [item count]: 0, [usage] 0MB, [capacity] 1024MB
+[2020-12-30 16:20:03,860][DEBUG][ENGINE][QueryAsync][reqsched_thread] Engine query begin, index file count: 2
+[2020-12-30 16:20:03,861][DEBUG][SERVER][AddIndexFile][reqsched_thread] [search][0] SearchJob 0 add index file: 77
+[2020-12-30 16:20:03,861][DEBUG][SERVER][AddIndexFile][reqsched_thread] [search][0] SearchJob 0 add index file: 78
+[2020-12-30 16:20:03,863][DEBUG][ENGINE][Build][jobmgr_thread] EngineFactory index type: 1
+[2020-12-30 16:20:03,863][DEBUG][ENGINE][ExecutionEngineImpl][jobmgr_thread] Index params: {"dim":512,"gpu_id":0,"metric_type":"L2","nlist":2048}
+[2020-12-30 16:20:03,867][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Loading segment (0.009954 second [9.954200 ms])
+[2020-12-30 16:20:03,868][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: erase (0.000392 second [0.392500 ms])
+[2020-12-30 16:20:03,868][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Merge: Adding 36 vectors and uids (0.000372 second [0.372100 ms])
+[2020-12-30 16:20:03,868][DEBUG][ENGINE][Merge][milvus_server] Merging completed from /var/lib/milvus/db/tables/retina_face/1609316244686741000 to /var/lib/milvus/db/tables/retina_face/1609316403836908000
+[2020-12-30 16:20:03,869][DEBUG][ENGINE][Execute][milvus_server] Merge task files size info:2056, 74016, 
+[2020-12-30 16:20:03,873][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Initializing bloom filter (0.003805 second [3.805500 ms])
+[2020-12-30 16:20:03,874][DEBUG][ENGINE][Build][jobmgr_thread] EngineFactory index type: 1
+[2020-12-30 16:20:03,875][DEBUG][ENGINE][ExecutionEngineImpl][jobmgr_thread] Index params: {"dim":512,"gpu_id":0,"metric_type":"L2","nlist":2048}
+[2020-12-30 16:20:03,876][DEBUG][SERVER][Run][jobmgr_thread] FallbackPass!
+[2020-12-30 16:20:03,878][DEBUG][SERVER][Run][jobmgr_thread] FallbackPass!
+[2020-12-30 16:20:03,879][DEBUG][ENGINE][Load][taskloader_th] Index params: {"dim":512,"gpu_id":0,"metric_type":"L2"}
+[2020-12-30 16:20:03,883][DEBUG][ENGINE][Load][taskloader_th] set uids 1 for index /var/lib/milvus/db/tables/retina_face/1609316403787160000/1609316403787160000
+[2020-12-30 16:20:03,886][DEBUG][ENGINE][Load][taskloader_th] Finished loading raw data from segment /var/lib/milvus/db/tables/retina_face/1609316403787160000
+[2020-12-30 16:20:03,887][DEBUG][SERVER][insert_internal][taskloader_th] [CACHE CPU] Insert /var/lib/milvus/db/tables/retina_face/1609316403787160000/1609316403787160000 size: 0MB into cache
+[2020-12-30 16:20:03,887][DEBUG][SERVER][insert_internal][taskloader_th] [CACHE CPU] Count: 1, Usage: 0MB, Capacity: 1024MB
+[2020-12-30 16:20:03,888][DEBUG][SERVER][PrintTimeRecord][taskloader_th] [search][0]: Search task load file id:78 DISK2CPU file type:1 size:2057 bytes from location: /var/lib/milvus/db/tables/retina_face/1609316403787160000/1609316403787160000 totally cost (0.009305 second [9.304600 ms])
+[2020-12-30 16:20:03,888][DEBUG][ENGINE][Load][taskloader_th] Index params: {"dim":512,"gpu_id":0,"metric_type":"L2"}
+[2020-12-30 16:20:03,889][DEBUG][SERVER][PrintTimeRecord][taskexector_th] [search][0] ExecutionEngineImpl::Search float: query prepare (0.000002 second [0.002000 ms])
+[2020-12-30 16:20:03,890][DEBUG][SERVER][PrintTimeRecord][taskexector_th] [search][0] ExecutionEngineImpl::Search float: query done (0.002084 second [2.084500 ms])
+[2020-12-30 16:20:03,892][DEBUG][ENGINE][Search][taskexector_th] [search][0] get 1 uids from index /var/lib/milvus/db/tables/retina_face/1609316403787160000/1609316403787160000
+[2020-12-30 16:20:03,895][DEBUG][SERVER][PrintTimeRecord][taskexector_th] [search][0] ExecutionEngineImpl::Search float: map uids 10 (0.004306 second [4.306300 ms])
+[2020-12-30 16:20:03,895][DEBUG][SERVER][SearchDone][taskexector_th] [search][0] SearchJob 0 finish index file: 78
+[2020-12-30 16:20:03,896][DEBUG][SERVER][PrintTimeRecord][taskexector_th] [search][0] DoSearch file id:78: totally cost (0.008250 second [8.250400 ms])
+[2020-12-30 16:20:03,897][DEBUG][ENGINE][Load][taskloader_th] set uids 36 for index /var/lib/milvus/db/tables/retina_face/1609316244686741000/1609316244686741000
+[2020-12-30 16:20:03,898][DEBUG][ENGINE][Load][taskloader_th] Finished loading raw data from segment /var/lib/milvus/db/tables/retina_face/1609316244686741000
+[2020-12-30 16:20:03,901][DEBUG][SERVER][insert_internal][taskloader_th] [CACHE CPU] Insert /var/lib/milvus/db/tables/retina_face/1609316244686741000/1609316244686741000 size: 0MB into cache
+[2020-12-30 16:20:03,902][DEBUG][SERVER][insert_internal][taskloader_th] [CACHE CPU] Count: 2, Usage: 0MB, Capacity: 1024MB
+[2020-12-30 16:20:03,903][DEBUG][SERVER][PrintTimeRecord][taskloader_th] [search][0]: Search task load file id:77 DISK2CPU file type:1 size:74021 bytes from location: /var/lib/milvus/db/tables/retina_face/1609316244686741000/1609316244686741000 totally cost (0.014881 second [14.881100 ms])
+[2020-12-30 16:20:03,904][DEBUG][SERVER][PrintTimeRecord][taskexector_th] [search][0] ExecutionEngineImpl::Search float: query prepare (0.000016 second [0.015600 ms])
+[2020-12-30 16:20:03,904][DEBUG][SERVER][PrintTimeRecord][taskexector_th] [search][0] ExecutionEngineImpl::Search float: query done (0.000650 second [0.649500 ms])
+[2020-12-30 16:20:03,906][DEBUG][ENGINE][Search][taskexector_th] [search][0] get 36 uids from index /var/lib/milvus/db/tables/retina_face/1609316244686741000/1609316244686741000
+[2020-12-30 16:20:03,906][DEBUG][SERVER][PrintTimeRecord][taskexector_th] [search][0] ExecutionEngineImpl::Search float: map uids 10 (0.001593 second [1.593100 ms])
+[2020-12-30 16:20:03,906][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Adding 37 ids to bloom filter (0.032388 second [32.388000 ms])
+[2020-12-30 16:20:03,907][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::WriteBloomFilter: Writing bloom filter (0.001821 second [1.821000 ms])
+[2020-12-30 16:20:03,907][DEBUG][SERVER][SearchDone][taskexector_th] [search][0] SearchJob 0 finish index file: 77
+[2020-12-30 16:20:03,908][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing bloom filter done (0.038531 second [38.531400 ms])
+[2020-12-30 16:20:03,908][DEBUG][SERVER][PrintTimeRecord][taskexector_th] [search][0] DoSearch file id:77: totally cost (0.004167 second [4.166900 ms])
+[2020-12-30 16:20:03,909][DEBUG][SERVER][WaitResult][reqsched_thread] [search][0] SearchJob 0 all done
+[2020-12-30 16:20:03,910][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609316244686741000 refcount:1
+[2020-12-30 16:20:03,911][DEBUG][ENGINE][UnmarkOngoingFileNoLock][reqsched_thread] Unmark ongoing file:1609316403787160000 refcount:1
+[2020-12-30 16:20:03,911][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] Engine query totally cost (0.051048 second [51.048400 ms])
+[2020-12-30 16:20:03,912][DEBUG][SERVER][print][reqsched_thread] [CACHE CPU] [item count]: 2, [usage] 0MB, [capacity] 1024MB
+[2020-12-30 16:20:03,912][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write rv done (0.002794 second [2.793800 ms])
+[2020-12-30 16:20:03,913][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [search][0] SearchRequest execute(collection=retina_face, nq=1, k=10): query vectors from engine (0.055751 second [55.751100 ms])
+[2020-12-30 16:20:03,913][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [search][0] SearchRequest execute(collection=retina_face, nq=1, k=10): construct result (0.000796 second [0.796000 ms])
+[2020-12-30 16:20:03,913][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] [search][0] SearchRequest execute(collection=retina_face, nq=1, k=10): totally cost (0.056975 second [56.975000 ms])
+[2020-12-30 16:20:03,915][DEBUG][SERVER][PrintTimeRecord][milvus_server] write vectors: write uids done (0.002943 second [2.943200 ms])
+[2020-12-30 16:20:03,919][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing vectors and uids done (0.011430 second [11.430400 ms])
+[2020-12-30 16:20:03,925][DEBUG][SERVER][PrintTimeRecord][milvus_server] SegmentWriter::Serialize: Writing deleted docs done (0.006258 second [6.257900 ms])
+[2020-12-30 16:20:03,928][DEBUG][ENGINE][UpdateCollectionFiles][milvus_server] Update 3 collection files
+[2020-12-30 16:20:03,929][DEBUG][ENGINE][Execute][milvus_server] New merged segment 1609316403836908000 of size 76072 bytes
+[2020-12-30 16:20:03,929][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609316403787160000 refcount:0
+[2020-12-30 16:20:03,943][DEBUG][ENGINE][UnmarkOngoingFileNoLock][milvus_server] Unmark ongoing file:1609316244686741000 refcount:0
+[2020-12-30 16:20:14,134][DEBUG][SERVER][erase_internal][milvus_server] [CACHE CPU] Erase /var/lib/milvus/db/tables/retina_face/1609316244686741000/1609316244686741000 size: 0MB from cache
+[2020-12-30 16:20:14,136][DEBUG][SERVER][erase_internal][milvus_server] [CACHE CPU] Count: 1, Usage: 0MB, Capacity: 1024MB
+[2020-12-30 16:20:14,141][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609316244686741000 location:/var/lib/milvus/db/tables/retina_face/1609316244686741000/1609316244686741000
+[2020-12-30 16:20:14,142][DEBUG][SERVER][erase_internal][milvus_server] [CACHE CPU] Erase /var/lib/milvus/db/tables/retina_face/1609316403787160000/1609316403787160000 size: 0MB from cache
+[2020-12-30 16:20:14,143][DEBUG][SERVER][erase_internal][milvus_server] [CACHE CPU] Count: 0, Usage: 0MB, Capacity: 1024MB
+[2020-12-30 16:20:14,146][DEBUG][ENGINE][operator()][milvus_server] Remove file id:1609316403787160000 location:/var/lib/milvus/db/tables/retina_face/1609316403787160000/1609316403787160000
+[2020-12-30 16:20:14,147][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Clean 2 files expired in 10 seconds
+[2020-12-30 16:20:14,155][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609316244686741000
+[2020-12-30 16:20:14,162][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove segment directory: /var/lib/milvus/db/tables/retina_face/1609316403787160000
+[2020-12-30 16:20:14,162][DEBUG][ENGINE][CleanUpFilesWithTTL][milvus_server] Remove 2 segments folder

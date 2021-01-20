@@ -1,0 +1,11 @@
+[2021-01-03 14:07:21,104][ERROR][ENGINE][Execute][milvus_server] Failed to create collection: Not found: Collection retina_face not found
+[2021-01-03 14:07:21,107][ERROR][ENGINE][BackgroundMerge][milvus_server] Failed to get merge files for collection: retina_face reason:Collection retina_face not found
+[2021-01-03 14:07:21,158][ERROR][SERVER][OnExecute][reqsched_thread] [search][0] Collection retina_face not found: Collection retina_face not found
+[2021-01-03 14:07:21,159][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30100): Collection retina_face does not exist. Use milvus.has_collection to verify whether the collection exists. You also can check whether the collection name exists.
+[2021-01-03 20:08:28,489][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Entities IDs are user-defined. Please provide IDs for all entities of the collection.
+[2021-01-03 20:08:28,489][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30109): Entities IDs are user-defined. Please provide IDs for all entities of the collection.
+[2021-01-03 20:08:28,543][ERROR][SERVER][OnExecute][reqsched_thread] [search][0] Collection retina_face not found: Collection retina_face not found
+[2021-01-03 20:08:28,543][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30100): Collection retina_face does not exist. Use milvus.has_collection to verify whether the collection exists. You also can check whether the collection name exists.
+[2021-01-03 20:09:56,083][ERROR][SERVER][TakeToExecute][reqsched_thread] Take null from request queue, stop thread
+[2021-01-03 20:09:56,084][ERROR][SERVER][TakeToExecute][reqsched_thread] Take null from request queue, stop thread
+[2021-01-03 20:09:56,085][ERROR][SERVER][TakeToExecute][reqsched_thread] Take null from request queue, stop thread

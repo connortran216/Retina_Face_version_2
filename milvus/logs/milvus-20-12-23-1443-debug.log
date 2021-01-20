@@ -1,0 +1,103 @@
+[2020-12-23 14:43:01,206][DEBUG][ENGINE][CheckCpuInstructionSet][milvus_server] Supported CPU instruction sets: avx2, sse4_2
+[2020-12-23 14:43:01,264][DEBUG][ENGINE][Initialize][milvus_server] FAISS hook AVX2
+[2020-12-23 14:43:01,728][DEBUG][WAL][Init][milvus_server] start_lsn 0 end_lsn 0
+[2020-12-23 14:44:50,506][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 0
+[2020-12-23 14:44:50,512][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000002 second [0.001600 ms])
+[2020-12-23 14:44:50,522][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 1
+[2020-12-23 14:44:50,562][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.024883 second [24.883300 ms])
+[2020-12-23 14:44:50,571][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 2
+[2020-12-23 14:44:50,572][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateCollectionRequest(collection=retina_face, dimension=512): check validation (0.000003 second [0.002600 ms])
+[2020-12-23 14:44:50,684][DEBUG][ENGINE][CreateCollection][reqsched_thread] Successfully create collection: retina_face
+[2020-12-23 14:44:50,723][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CreateCollectionRequest(collection=retina_face, dimension=512): totally cost (0.151455 second [151.454600 ms])
+[2020-12-23 14:44:50,734][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 3
+[2020-12-23 14:44:50,750][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.014272 second [14.271900 ms])
+[2020-12-23 14:44:58,004][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 4
+[2020-12-23 14:44:58,005][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.000900 ms])
+[2020-12-23 14:44:58,007][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 5
+[2020-12-23 14:44:58,008][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000401 second [0.401300 ms])
+[2020-12-23 14:44:58,267][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 6
+[2020-12-23 14:44:58,268][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000404 second [0.403900 ms])
+[2020-12-23 14:45:05,123][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 7
+[2020-12-23 14:45:05,124][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.000800 ms])
+[2020-12-23 14:45:05,126][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 8
+[2020-12-23 14:45:05,127][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000409 second [0.408800 ms])
+[2020-12-23 14:45:05,130][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 9
+[2020-12-23 14:45:05,132][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000522 second [0.521600 ms])
+[2020-12-23 14:45:12,535][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 10
+[2020-12-23 14:45:12,536][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.001000 ms])
+[2020-12-23 14:45:12,672][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 11
+[2020-12-23 14:45:12,673][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000462 second [0.462500 ms])
+[2020-12-23 14:45:12,675][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 12
+[2020-12-23 14:45:12,676][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000356 second [0.356100 ms])
+[2020-12-23 14:45:22,244][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 13
+[2020-12-23 14:45:22,244][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.001000 ms])
+[2020-12-23 14:45:22,247][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 14
+[2020-12-23 14:45:22,248][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000422 second [0.422300 ms])
+[2020-12-23 14:45:22,331][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 15
+[2020-12-23 14:45:22,332][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000444 second [0.444500 ms])
+[2020-12-23 15:15:38,620][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 16
+[2020-12-23 15:15:38,623][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000002 second [0.002500 ms])
+[2020-12-23 15:15:38,643][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 17
+[2020-12-23 15:15:38,646][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.001279 second [1.279400 ms])
+[2020-12-23 15:15:38,654][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 18
+[2020-12-23 15:15:38,657][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.001703 second [1.703200 ms])
+[2020-12-23 15:32:39,106][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 19
+[2020-12-23 15:32:39,107][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.001000 ms])
+[2020-12-23 15:32:39,112][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 20
+[2020-12-23 15:32:39,113][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000455 second [0.455000 ms])
+[2020-12-23 15:32:39,116][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 21
+[2020-12-23 15:32:39,118][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000683 second [0.682700 ms])
+[2020-12-23 15:33:17,397][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 22
+[2020-12-23 15:33:17,398][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.000800 ms])
+[2020-12-23 15:33:17,401][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 23
+[2020-12-23 15:33:17,402][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000413 second [0.412600 ms])
+[2020-12-23 15:33:17,406][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 24
+[2020-12-23 15:33:17,407][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000516 second [0.516200 ms])
+[2020-12-23 15:42:07,663][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 25
+[2020-12-23 15:42:07,664][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.001300 ms])
+[2020-12-23 15:42:07,668][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 26
+[2020-12-23 15:42:07,669][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000339 second [0.338600 ms])
+[2020-12-23 15:42:07,671][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 27
+[2020-12-23 15:42:07,672][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000411 second [0.410600 ms])
+[2020-12-23 15:43:15,244][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 28
+[2020-12-23 15:43:15,245][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.001300 ms])
+[2020-12-23 15:43:15,248][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 29
+[2020-12-23 15:43:15,249][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000556 second [0.555800 ms])
+[2020-12-23 15:43:15,252][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 30
+[2020-12-23 15:43:15,253][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000409 second [0.409300 ms])
+[2020-12-23 15:44:16,072][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 31
+[2020-12-23 15:44:16,072][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.001000 ms])
+[2020-12-23 15:44:16,076][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 32
+[2020-12-23 15:44:16,077][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000375 second [0.375300 ms])
+[2020-12-23 15:44:16,080][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 33
+[2020-12-23 15:44:16,081][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000351 second [0.351500 ms])
+[2020-12-23 15:47:40,118][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 34
+[2020-12-23 15:47:40,118][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.000900 ms])
+[2020-12-23 15:47:40,122][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 35
+[2020-12-23 15:47:40,123][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000457 second [0.456700 ms])
+[2020-12-23 15:47:40,126][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 36
+[2020-12-23 15:47:40,127][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000424 second [0.424100 ms])
+[2020-12-23 15:48:08,249][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 37
+[2020-12-23 15:48:08,250][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.000800 ms])
+[2020-12-23 15:48:08,253][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 38
+[2020-12-23 15:48:08,254][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000322 second [0.321600 ms])
+[2020-12-23 15:48:08,256][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 39
+[2020-12-23 15:48:08,256][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000385 second [0.385100 ms])
+[2020-12-23 15:51:29,592][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 40
+[2020-12-23 15:51:29,593][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.001100 ms])
+[2020-12-23 15:51:29,596][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 41
+[2020-12-23 15:51:29,597][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000529 second [0.528700 ms])
+[2020-12-23 15:51:29,600][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 42
+[2020-12-23 15:51:29,601][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000492 second [0.491900 ms])
+[2020-12-23 15:53:48,611][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 43
+[2020-12-23 15:53:48,611][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000001 second [0.000900 ms])
+[2020-12-23 15:53:48,613][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 44
+[2020-12-23 15:53:48,614][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000349 second [0.348900 ms])
+[2020-12-23 15:53:48,617][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 45
+[2020-12-23 15:53:48,617][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000344 second [0.344300 ms])
+[2020-12-23 15:57:35,889][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 46
+[2020-12-23 15:57:35,891][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] CmdRequest(cmd=version): totally cost (0.000002 second [0.002200 ms])
+[2020-12-23 15:57:35,896][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 47
+[2020-12-23 15:57:35,899][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] HasCollectionRequest(collection=retina_face): totally cost (0.000888 second [0.888200 ms])
+[2020-12-23 15:57:35,904][DEBUG][SERVER][OnPostRecvInitialMetaData][grpcpp_sync_ser] milvus generate request_id: 48
+[2020-12-23 15:57:35,906][DEBUG][SERVER][PrintTimeRecord][reqsched_thread] DescribeCollectionRequest(collection=retina_face): totally cost (0.000693 second [0.693300 ms])

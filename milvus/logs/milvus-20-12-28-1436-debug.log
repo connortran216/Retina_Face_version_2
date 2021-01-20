@@ -1,0 +1,6 @@
+[2020-12-28 14:36:06,537][DEBUG][ENGINE][CheckCpuInstructionSet][milvus_server] Supported CPU instruction sets: avx2, sse4_2
+[2020-12-28 14:36:06,544][DEBUG][ENGINE][Initialize][milvus_server] FAISS hook AVX2
+[2020-12-28 14:36:06,706][DEBUG][WAL][Init][milvus_server] start_lsn 4295327908 end_lsn 4295384284
+[2020-12-28 14:36:53,691][DEBUG][ENGINE][CheckCpuInstructionSet][milvus_server] Supported CPU instruction sets: avx2, sse4_2
+[2020-12-28 14:36:53,695][DEBUG][ENGINE][Initialize][milvus_server] FAISS hook AVX2
+[2020-12-28 14:36:53,793][DEBUG][WAL][Init][milvus_server] start_lsn 4295327908 end_lsn 4295384284

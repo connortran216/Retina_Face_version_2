@@ -1,0 +1,58 @@
+[2020-12-24 10:10:39,242][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:10:39,243][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:10:39,310][ERROR][SERVER][OnExecute][reqsched_thread] [search][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:10:39,311][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:10:46,699][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:10:46,700][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:10:46,778][ERROR][SERVER][OnExecute][reqsched_thread] [search][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:10:46,778][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:27:24,666][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:27:24,666][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:27:24,741][ERROR][SERVER][OnExecute][reqsched_thread] [search][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:27:24,742][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:29:01,842][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:29:01,842][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:29:01,907][ERROR][SERVER][OnExecute][reqsched_thread] [search][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:29:01,907][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:40:35,831][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:40:35,831][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:40:35,916][ERROR][SERVER][OnExecute][reqsched_thread] [search][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:40:35,917][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:45:50,989][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:45:50,989][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:45:51,091][ERROR][SERVER][OnExecute][reqsched_thread] [search][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:45:51,092][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:47:03,660][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:47:03,660][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:47:03,747][ERROR][SERVER][OnExecute][reqsched_thread] [search][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:47:03,748][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:49:15,807][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:49:15,807][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:49:15,876][ERROR][SERVER][OnExecute][reqsched_thread] [search][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:49:15,876][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:49:48,997][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:49:48,997][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:49:49,067][ERROR][SERVER][OnExecute][reqsched_thread] [search][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 10:49:49,067][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 11:25:48,802][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 11:25:48,803][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 11:26:29,045][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 11:26:29,045][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 11:32:21,416][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 11:32:21,416][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 11:33:10,950][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 11:33:10,951][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 11:39:15,778][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 11:39:15,778][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 11:40:38,080][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 11:40:38,080][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 11:42:18,519][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 11:42:18,520][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 11:42:49,822][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 11:42:49,823][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 11:45:28,160][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 11:45:28,160][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 11:47:51,932][ERROR][SERVER][OnExecute][reqsched_thread] [insert][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 11:47:51,932][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
+[2020-12-24 11:47:51,967][ERROR][SERVER][OnExecute][reqsched_thread] [search][0] Invalid vector data: The vector dimension must be equal to the collection dimension.
+[2020-12-24 11:47:51,967][ERROR][SERVER][TakeToExecute][reqsched_thread] Request failed with code: Error code(30104): The vector dimension must be equal to the collection dimension.
